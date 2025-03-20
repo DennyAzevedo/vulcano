@@ -50,5 +50,17 @@ Este projeto apresenta uma arquitetura de sistema para automatizar o processo de
 
 Este projeto demonstra uma abordagem eficiente para a inspeção automatizada de segmentos de matrizes de cristal líquido, utilizando processamento de imagens e técnicas matemáticas para garantir precisão na análise. O sistema foi projetado para ser flexível, permitindo a integração com diferentes dispositivos de captura de imagem.
 
+## Testes do Algortimo de Vizinhança e das estruturas de dados para localização de elementos na imagem
 
+[Video do teste do algoritmo de vizinhança](https://youtu.be/JpsyqKUG5YU)
 
+## Principais imagens do sistema
+
+### Tela Principal do Vulcano
+![Tela Principal - Sistema Vulcano](https://mdcursos.dev.br/img/sisdesk/TelaPrincipalVulcano.png)
+
+### Tela de Parametros
+![Tela de Parametros - Sistema Vulcano](https://mdcursos.dev.br/img/sisdesk/TelaParametro.png)
+
+### Capa Livro - Resultado da Pesquisa para desenvolver o Sistema
+![Capa Livro - Resultado da Pesquisa](https://mdcursos.dev.br/img/sisdesk/Capa_Livro.png)
