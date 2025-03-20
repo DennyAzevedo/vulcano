@@ -1,0 +1,181 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="hrt.exe"/>
+    <OBJFILES value="hrt.obj Units\unt_principal.obj Units\unt_config.obj Units\unt_imagem.obj 
+      Units\unt_histograma.obj Units\unt_ajustegamma.obj 
+      Units\unt_ajustebrilho.obj Units\unt_ajustethreshold.obj 
+      Units\unt_conv_matrix.obj Units\unt_ajuda.obj Units\EscoPalhe.obj 
+      Units\Tolera.obj"/>
+    <RESFILES value="hrt.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) Units\unt_principal.dfm Units\unt_config.dfm 
+      Units\unt_imagem.dfm Units\unt_histograma.dfm Units\unt_ajustegamma.dfm 
+      Units\unt_ajustebrilho.dfm Units\unt_ajustethreshold.dfm 
+      Units\unt_conv_matrix.dfm Units\unt_ajuda.dfm Units\EscoPalhe.dfm 
+      Units\Tolera.dfm"/>
+    <LIBFILES value="include\vic32.lib include\vichrt32.lib"/>
+    <LIBRARIES value="CJCL60.lib"/>
+    <SPARELIBS value="vcl.lib rtl.lib bcbie.lib bcbsmp.lib vclx.lib dbrtl.lib bdertl.lib 
+      vcldb.lib CJCL60.lib"/>
+    <PACKAGES value="vcl.bpi rtl.bpi vclx.bpi bcbsmp.bpi vcldb.bpi dbrtl.bpi qrpt.bpi 
+      bdertl.bpi vcldbx.bpi dsnap.bpi cds.bpi bdecds.bpi teeui.bpi teedb.bpi 
+      tee.bpi teeqr.bpi ibxpress.bpi visualclx.bpi visualdbclx.bpi vclie.bpi 
+      xmlrtl.bpi inet.bpi inetdbbde.bpi inetdbxpress.bpi inetdb.bpi nmfast.bpi 
+      bcbie.bpi soaprtl.bpi dclocx.bpi dbexpress.bpi dbxcds.bpi indy.bpi 
+      bcb2kaxserver.bpi adortl.bpi"/>
+    <PATHCPP value=".;Units;Units;Units;Units;Units;Units;Units;Units;Units;Units;Units"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="_DEBUG"/>
+    <SYSDEFINES value="NO_STRICT;USEPACKAGES"/>
+    <MAINSOURCE value="hrt.cpp"/>
+    <INCLUDEPATH value="Units;&quot;C:\Arquivos de programas\Borland\CBuilder6\Projects&quot;;C:\hrt_mestrado;$(BCB)\include;$(BCB)\include\vcl;&quot;C:\Arquivos de programas\Borland\jvcl\jvcl\source&quot;;&quot;C:\Arquivos de programas\Borland\CBuilder6\Include\Stlport&quot;"/>
+    <LIBPATH value="$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\Projects\Lib;&quot;C:\Arquivos de programas\Borland\jvcl\jvcl\lib6&quot;;&quot;C:\Arquivos de programas\Borland\jvcl\jvcl\source&quot;;Units;&quot;C:\Arquivos de programas\Borland\CBuilder6\Projects&quot;;D:\hrt_mestrado\include;&quot;C:\Arquivos de programas\Borland\jvcl\JCL\dcu&quot;;&quot;C:\Arquivos de programas\Borland\jvcl\jvcl\dcu&quot;"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-IUnits -I&quot;C:\Arquivos de programas\Borland\CBuilder6\Projects&quot; 
+      -IC:\hrt_mestrado -I$(BCB)\include -I$(BCB)\include\vcl 
+      -I&quot;C:\Arquivos de programas\Borland\jvcl\jvcl\source&quot; 
+      -I&quot;C:\Arquivos de programas\Borland\CBuilder6\Include\Stlport&quot; -src_suffix 
+      cpp -D_DEBUG -boa"/>
+    <CFLAG1 value="-Od -H=$(BCB)\lib\vcl60.csm -Hc -P -Vx -Ve -X- -r- -a8 -6 -b- -k -y -v 
+      -vi- -c -tW -tWM"/>
+    <PFLAGS value="-$YD -$W -$O- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zd"/>
+    <LFLAGS value="-D&quot;&quot; -aa -Tpe -x -Gn -v"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj $(PACKAGES) sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib vic32.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="hrt.res" FORMNAME="" UNITNAME="hrt.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="hrt.cpp" FORMNAME="" UNITNAME="hrt" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Units\unt_principal.cpp" FORMNAME="WndPrincipal" UNITNAME="unt_principal" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="include\vic32.lib" FORMNAME="" UNITNAME="vic32.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Units\unt_config.cpp" FORMNAME="WndConfig" UNITNAME="unt_config" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Units\unt_imagem.cpp" FORMNAME="WndImagem" UNITNAME="unt_imagem" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Units\unt_histograma.cpp" FORMNAME="WndHistograma" UNITNAME="unt_histograma" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="include\vichrt32.lib" FORMNAME="" UNITNAME="vichrt32.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Units\unt_ajustegamma.cpp" FORMNAME="WndGamma" UNITNAME="unt_ajustegamma" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Units\unt_ajustebrilho.cpp" FORMNAME="WndBrilho" UNITNAME="unt_ajustebrilho" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Units\unt_ajustethreshold.cpp" FORMNAME="WndSegmenta" UNITNAME="unt_ajustethreshold" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Units\unt_conv_matrix.cpp" FORMNAME="WndMatrix" UNITNAME="unt_conv_matrix" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Units\unt_ajuda.cpp" FORMNAME="WndAjuda" UNITNAME="unt_ajuda" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Units\EscoPalhe.cpp" FORMNAME="frmEscoPalhe" UNITNAME="EscoPalhe" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Units\Tolera.cpp" FORMNAME="frmTolera" UNITNAME="Tolera" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1046
+CodePage=1252
+
+[Version Info Keys]
+CompanyName=Denny P. Azevedo Filho
+FileDescription=
+FileVersion=1.0.0.0
+InternalName=
+LegalCopyright=Denny P. Azevedo Filho
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[HistoryLists\hlIncludePath]
+Count=11
+Item0=Units;C:\Arquivos de programas\Borland\CBuilder6\Projects;C:\hrt_mestrado;$(BCB)\include;$(BCB)\include\vcl;C:\Arquivos de programas\Borland\jvcl\jvcl\source;C:\Arquivos de programas\Borland\CBuilder6\Include\Stlport
+Item1=C:\Arquivos de programas\Borland\jvcl\jvcl\source;Units;C:\Arquivos de programas\Borland\CBuilder6\Projects;C:\hrt_mestrado;$(BCB)\include;$(BCB)\include\vcl;C:\Arquivos de programas\Borland\CBuilder6\Include\Stlport
+Item2=Units;C:\Arquivos de programas\Borland\CBuilder6\Projects;C:\hrt_mestrado;$(BCB)\include;$(BCB)\include\vcl;C:\Arquivos de programas\Borland\CBuilder6\Include\Stlport
+Item3=Units;C:\hrt_mestrado\Units;C:\Arquivos de programas\Borland\CBuilder6\Projects;C:\hrt_mestrado;$(BCB)\include;$(BCB)\include\vcl;C:\Arquivos de programas\Borland\CBuilder6\Include\Stlport
+Item4=C:\hrt_mestrado\Units;C:\Arquivos de programas\Borland\CBuilder6\Projects;C:\hrt_mestrado;$(BCB)\include;$(BCB)\include\vcl;C:\Arquivos de programas\Borland\CBuilder6\Include\Stlport
+Item5=Units;C:\Arquivos de programas\Borland\CBuilder6\Projects;C:\hrt_mestrado;$(BCB)\include;$(BCB)\include\vcl
+Item6=Units;C:\hrt_mestrado\Units;C:\Arquivos de programas\Borland\CBuilder6\Projects;C:\hrt_mestrado;$(BCB)\include;$(BCB)\include\vcl
+Item7=C:\hrt_mestrado\Units;C:\Arquivos de programas\Borland\CBuilder6\Projects;C:\hrt_mestrado;$(BCB)\include;$(BCB)\include\vcl
+Item8=Units;C:\Arquivos de programas\Borland\CBuilder6\Projects;C:\hrt;$(BCB)\include;$(BCB)\include\vcl
+Item9=Units;d:\Arquivos de programas\Borland\CBuilder6\Projects;C:\hrt;$(BCB)\include;$(BCB)\include\vcl
+Item10=d:\Arquivos de programas\Borland\CBuilder6\Projects;C:\hrt;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=12
+Item0=$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\Projects\Lib;C:\Arquivos de programas\Borland\jvcl\jvcl\lib6;C:\Arquivos de programas\Borland\jvcl\jvcl\source;Units;C:\Arquivos de programas\Borland\CBuilder6\Projects;D:\hrt_mestrado\include;C:\Arquivos de programas\Borland\jvcl\JCL\dcu;C:\Arquivos de programas\Borland\jvcl\jvcl\dcu
+Item1=$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\Projects\Lib;C:\Arquivos de programas\Borland\jvcl\jvcl\lib6;C:\Arquivos de programas\Borland\jvcl\jvcl\source;Units;C:\Arquivos de programas\Borland\CBuilder6\Projects;D:\hrt_mestrado;D:\hrt_mestrado\include;C:\Arquivos de programas\Borland\jvcl\JCL\dcu;C:\Arquivos de programas\Borland\jvcl\jvcl\dcu
+Item2=$(BCB)\Projects\Lib;C:\Arquivos de programas\Borland\jvcl\jvcl\source;Units;C:\Arquivos de programas\Borland\CBuilder6\Projects;$(BCB)\lib\obj;$(BCB)\lib;D:\hrt_mestrado;D:\hrt_mestrado\include;C:\Arquivos de programas\Borland\jvcl\JCL\dcu;C:\Arquivos de programas\Borland\jvcl\jvcl\dcu
+Item3=$(BCB)\Projects\Lib;C:\Arquivos de programas\Borland\jvcl\jvcl\source;Units;C:\Arquivos de programas\Borland\CBuilder6\Projects;C:\hrt_mestrado;C:\hrt_mestrado\include;$(BCB)\lib\obj;$(BCB)\lib
+Item4=Units;C:\Arquivos de programas\Borland\CBuilder6\Projects;C:\hrt_mestrado;C:\hrt_mestrado\include;$(BCB)\lib\obj;$(BCB)\lib
+Item5=Units;C:\hrt_mestrado\Units;C:\Arquivos de programas\Borland\CBuilder6\Projects;C:\hrt_mestrado;C:\hrt_mestrado\include;$(BCB)\lib\obj;$(BCB)\lib
+Item6=C:\hrt_mestrado\Units;C:\Arquivos de programas\Borland\CBuilder6\Projects;C:\hrt_mestrado;C:\hrt_mestrado\include;$(BCB)\lib\obj;$(BCB)\lib
+Item7=Units;C:\Arquivos de programas\Borland\CBuilder6\Projects;C:\hrt_mestrado;$(BCB)\lib\obj;$(BCB)\lib;C:\hrt_mestrado\include
+Item8=Units;C:\Arquivos de programas\Borland\CBuilder6\Projects;C:\hrt;$(BCB)\lib\obj;$(BCB)\lib;c:\hrt\include
+Item9=Units;d:\Arquivos de programas\Borland\CBuilder6\Projects;C:\hrt;$(BCB)\lib\obj;$(BCB)\lib;c:\hrt\include
+Item10=d:\Arquivos de programas\Borland\CBuilder6\Projects;C:\hrt;$(BCB)\lib\obj;$(BCB)\lib;c:\hrt\include
+Item11=d:\Arquivos de programas\Borland\CBuilder6\Projects;C:\hrt;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_DEBUG
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+  </IDEOPTIONS>
+</PROJECT>

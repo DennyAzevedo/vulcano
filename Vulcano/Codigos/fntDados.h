@@ -1,0 +1,202 @@
+//---------------------------------------------------------------------------
+
+#ifndef fntDadosH
+#define fntDadosH
+//---------------------------------------------------------------------------
+#include <Classes.hpp>
+#include <Controls.hpp>
+#include <StdCtrls.hpp>
+#include <Forms.hpp>
+#include <DB.hpp>
+#include <DBTables.hpp>
+//---------------------------------------------------------------------------
+class TdmDados : public TDataModule
+{
+__published:	// IDE-managed Components
+        TDataSource *dsInspecao;
+        TDataSource *dsParamet;
+        TDataSource *dsElemPara;
+        TDataSource *dsPontoPara;
+        TDataSource *dsDiagPara;
+        TTable *tbInspecao;
+        TTable *tbParamet;
+        TTable *tbElemPara;
+  TTable *tbPontosPara;
+        TTable *tbDiagPara;
+        TTable *tbPoDiagPara;
+        TDataSource *dsPoDiagPara;
+        TDataSource *dsPeca;
+        TDataSource *dsElemen;
+        TDataSource *dsPontos;
+        TDataSource *dsDiag;
+        TTable *tbPeca;
+        TAutoIncField *tbInspecaoCodigo;
+        TDateField *tbInspecaoDtInicio;
+        TTimeField *tbInspecaoHrInicio;
+        TDateField *tbInspecaoDtTermino;
+        TTimeField *tbInspecaoHrTermino;
+        TStringField *tbInspecaoStatus;
+        TStringField *tbPecaNumSerie;
+        TDateField *tbPecaData;
+        TTimeField *tbPecaHora;
+        TStringField *tbPecaStatus;
+        TIntegerField *tbParametCodInsp;
+        TSmallintField *tbParametCorBusca;
+        TSmallintField *tbParametCorFundo;
+        TSmallintField *tbParametTolSup;
+        TSmallintField *tbParametTolInf;
+        TBooleanField *tbParametPerc;
+        TSmallintField *tbParametCorBDiag;
+        TSmallintField *tbParametCorFDiag;
+        TStringField *tbParametTipoDiag;
+        TStringField *tbParametBaseDiag;
+        TSmallintField *tbParametTolSupProp;
+        TSmallintField *tbParametTolInfProp;
+        TBooleanField *tbParametEqualizado;
+        TBooleanField *tbParametBinarizado;
+        TSmallintField *tbParametNiveBin;
+        TBooleanField *tbParametConvolucao;
+        TStringField *tbParametMat0;
+        TStringField *tbParametMat1;
+        TStringField *tbParametMat2;
+        TStringField *tbParametMat3;
+        TStringField *tbParametMat4;
+        TStringField *tbParametMat5;
+        TStringField *tbParametMat6;
+        TStringField *tbParametMat7;
+        TStringField *tbParametMat8;
+        TStringField *tbParametMat9;
+        TIntegerField *tbElemParaCodInsp;
+        TSmallintField *tbElemParaNumElem;
+        TSmallintField *tbElemParaNumPontos;
+        TSmallintField *tbElemParaCenCol;
+        TSmallintField *tbElemParaCenLin;
+        TFloatField *tbElemParaDistDiag;
+        TFloatField *tbElemParaDistElem;
+        TSmallintField *tbElemParaColFis;
+        TSmallintField *tbElemParaLinFis;
+  TIntegerField *tbPontosParaCodInsp;
+  TSmallintField *tbPontosParaNumElem;
+  TSmallintField *tbPontosParaPonto;
+  TSmallintField *tbPontosParaColuna;
+  TSmallintField *tbPontosParaLinha;
+  TSmallintField *tbPontosParaCor;
+        TIntegerField *tbDiagParaCodInsp;
+        TSmallintField *tbDiagParaNumElem;
+        TSmallintField *tbDiagParaNuDiag;
+        TSmallintField *tbDiagParaCenCol;
+        TSmallintField *tbDiagParaCenLin;
+        TIntegerField *tbPoDiagParaCodInsp;
+        TSmallintField *tbPoDiagParaNumElem;
+        TSmallintField *tbPoDiagParaNuDiag;
+        TSmallintField *tbPoDiagParaPonto;
+        TSmallintField *tbPoDiagParaColuna;
+        TSmallintField *tbPoDiagParaLinha;
+        TSmallintField *tbPoDiagParaCor;
+        TTable *tbElemen;
+        TTable *tbPontos;
+        TStringField *tbElemenNumSerie;
+        TSmallintField *tbElemenNumElem;
+        TSmallintField *tbElemenNumPontos;
+        TSmallintField *tbElemenCenCol;
+        TSmallintField *tbElemenCenLin;
+        TFloatField *tbElemenDistDiag;
+        TFloatField *tbElemenDistElem;
+        TStringField *tbElemenStatus;
+        TStringField *tbPontosNumSerie;
+        TSmallintField *tbPontosNumElem;
+        TSmallintField *tbPontosPonto;
+        TSmallintField *tbPontosColuna;
+        TSmallintField *tbPontosLinha;
+        TSmallintField *tbPontosCor;
+        TDataSource *dsPoDiag;
+        TTable *tbDiag;
+        TStringField *tbDiagNumSerie;
+        TSmallintField *tbDiagNumElem;
+        TSmallintField *tbDiagNuDiag;
+        TSmallintField *tbDiagCenCol;
+        TSmallintField *tbDiagCenLin;
+        TTable *tbPoDiag;
+        TStringField *tbPoDiagNumSerie;
+        TSmallintField *tbPoDiagNumElem;
+        TSmallintField *tbPoDiagNuDiag;
+        TSmallintField *tbPoDiagPonto;
+        TSmallintField *tbPoDiagColuna;
+        TSmallintField *tbPoDiagLinha;
+        TSmallintField *tbPoDiagCor;
+        TFloatField *tbElemParaProp;
+  TFloatField *tbElemenProp;
+        TIntegerField *tbPecaCodInsp;
+  TSmallintField *tbParametTolFalhas;
+  TTable *tbTeste;
+  TSmallintField *tbTesteCorBusca;
+  TSmallintField *tbTesteCorFundo;
+  TSmallintField *tbTesteTolSup;
+  TSmallintField *tbTesteTolInf;
+  TBooleanField *tbTestePerc;
+  TSmallintField *tbTesteTolFalhas;
+  TSmallintField *tbTesteCorBDiag;
+  TSmallintField *tbTesteCorFDiag;
+  TStringField *tbTesteTipoDiag;
+  TStringField *tbTesteBaseDiag;
+  TSmallintField *tbTesteTolSupProp;
+  TSmallintField *tbTesteTolInfProp;
+  TBooleanField *tbTesteEqualizado;
+  TBooleanField *tbTesteBinarizado;
+  TSmallintField *tbTesteNiveBin;
+  TBooleanField *tbTesteConvolucao;
+  TStringField *tbTesteMat0;
+  TStringField *tbTesteMat1;
+  TStringField *tbTesteMat2;
+  TStringField *tbTesteMat3;
+  TStringField *tbTesteMat4;
+  TStringField *tbTesteMat5;
+  TStringField *tbTesteMat6;
+  TStringField *tbTesteMat7;
+  TStringField *tbTesteMat8;
+  TStringField *tbTesteMat9;
+  TDataSource *dsTeste;
+  TIntegerField *tbTesteCodTeste;
+  TTable *tbElemTeste;
+  TTable *tbPontosTeste;
+  TTable *tbDiagTeste;
+  TTable *tbPoDiagTeste;
+  TDataSource *dsElemTeste;
+  TDataSource *dsPoDiagTeste;
+  TDataSource *dsPontosTeste;
+  TDataSource *dsDiagTeste;
+  TIntegerField *tbElemTesteCodTeste;
+  TSmallintField *tbElemTesteNumElem;
+  TSmallintField *tbElemTesteNumPontos;
+  TSmallintField *tbElemTesteCenCol;
+  TSmallintField *tbElemTesteCenLin;
+  TFloatField *tbElemTesteDistDiag;
+  TFloatField *tbElemTesteDistElem;
+  TIntegerField *tbPontosTesteCodTeste;
+  TSmallintField *tbPontosTesteNumElem;
+  TSmallintField *tbPontosTestePonto;
+  TSmallintField *tbPontosTesteColuna;
+  TSmallintField *tbPontosTesteLinha;
+  TSmallintField *tbPontosTesteCor;
+  TIntegerField *tbDiagTesteCodTeste;
+  TSmallintField *tbDiagTesteNumElem;
+  TSmallintField *tbDiagTesteNuDiag;
+  TSmallintField *tbDiagTesteCenCol;
+  TSmallintField *tbDiagTesteCenLin;
+  TIntegerField *tbPoDiagTesteCodTeste;
+  TSmallintField *tbPoDiagTesteNumElem;
+  TSmallintField *tbPoDiagTesteNuDiag;
+  TSmallintField *tbPoDiagTestePonto;
+  TSmallintField *tbPoDiagTesteColuna;
+  TSmallintField *tbPoDiagTesteLinha;
+  TSmallintField *tbPoDiagTesteCor;
+        void __fastcall tbElemParaCalcFields(TDataSet *DataSet);
+  void __fastcall tbElemenCalcFields(TDataSet *DataSet);
+private:	// User declarations
+public:		// User declarations
+  __fastcall TdmDados(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TdmDados *dmDados;
+//---------------------------------------------------------------------------
+#endif

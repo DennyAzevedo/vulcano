@@ -1,0 +1,5254 @@
+object frmImagem: TfrmImagem
+  Left = 117
+  Top = 101
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'Vulcano - Valida'#231#227'o Funcional de Matrizes de Cristal L'#237'quido'
+  ClientHeight = 652
+  ClientWidth = 997
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  Menu = MenuImagem
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  ShowHint = True
+  OnCreate = FormCreate
+  OnMouseWheelDown = FormMouseWheelDown
+  OnMouseWheelUp = FormMouseWheelUp
+  OnPaint = FormPaint
+  PixelsPerInch = 96
+  TextHeight = 13
+  object QuadroOrg: TBevel
+    Left = 530
+    Top = 40
+    Width = 463
+    Height = 416
+  end
+  object PanOrg: TBevel
+    Left = 525
+    Top = 34
+    Width = 474
+    Height = 447
+    Style = bsRaised
+  end
+  object Bevel3: TBevel
+    Left = 0
+    Top = 528
+    Width = 200
+    Height = 48
+    Style = bsRaised
+  end
+  object QuadroZoom: TBevel
+    Left = 849
+    Top = 481
+    Width = 150
+    Height = 154
+    Style = bsRaised
+  end
+  object RImage: TImage
+    Left = 6
+    Top = 41
+    Width = 512
+    Height = 460
+  end
+  object PanTrab: TBevel
+    Left = 0
+    Top = 34
+    Width = 525
+    Height = 493
+    Style = bsRaised
+  end
+  object QuadroEqua: TBevel
+    Left = 687
+    Top = 481
+    Width = 81
+    Height = 77
+    Style = bsRaised
+  end
+  object QuadroConv: TBevel
+    Left = 606
+    Top = 481
+    Width = 81
+    Height = 77
+    Style = bsRaised
+  end
+  object QuadroDelay: TBevel
+    Left = 525
+    Top = 481
+    Width = 81
+    Height = 77
+    Style = bsRaised
+  end
+  object QuadroImg: TBevel
+    Left = 5
+    Top = 40
+    Width = 515
+    Height = 463
+  end
+  object ImgOrg: TImage
+    Left = 531
+    Top = 41
+    Width = 461
+    Height = 414
+  end
+  object JvxLabel1: TJvxLabel
+    Left = 184
+    Top = 504
+    Width = 157
+    Height = 19
+    Caption = 'Imagem de Trabalho'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Style = [fsBold]
+    ParentFont = False
+    Transparent = True
+  end
+  object JvxLabel2: TJvxLabel
+    Left = 709
+    Top = 458
+    Width = 125
+    Height = 19
+    Caption = 'Imagem Original'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Style = [fsBold]
+    ParentFont = False
+    Transparent = True
+  end
+  object QuadroTolBus: TBevel
+    Left = 525
+    Top = 558
+    Width = 81
+    Height = 77
+    Style = bsRaised
+  end
+  object QuadroTolDiag: TBevel
+    Left = 606
+    Top = 558
+    Width = 81
+    Height = 77
+    Style = bsRaised
+  end
+  object QuadroAmplia: TBevel
+    Left = 768
+    Top = 481
+    Width = 81
+    Height = 77
+    Style = bsRaised
+  end
+  object JvxLabel3: TJvxLabel
+    Left = 886
+    Top = 612
+    Width = 82
+    Height = 19
+    Caption = 'Amplia'#231#227'o'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Style = [fsBold]
+    ParentFont = False
+    Transparent = True
+  end
+  object MoldZoom: TBevel
+    Left = 854
+    Top = 485
+    Width = 141
+    Height = 128
+  end
+  object StatusLed: TJvTransLED
+    Left = 141
+    Top = 532
+    Width = 18
+    Color = clAqua
+  end
+  object JvxLabel4: TJvxLabel
+    Left = 6
+    Top = 530
+    Width = 131
+    Height = 19
+    Caption = 'Status Inspe'#231#227'o:'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Style = [fsBold]
+    ParentFont = False
+    Transparent = True
+  end
+  object Bevel1: TBevel
+    Left = 687
+    Top = 558
+    Width = 81
+    Height = 77
+    Style = bsRaised
+  end
+  object Bevel2: TBevel
+    Left = 768
+    Top = 558
+    Width = 81
+    Height = 77
+    Style = bsRaised
+  end
+  object JvxLabel5: TJvxLabel
+    Left = 551
+    Top = 535
+    Width = 29
+    Height = 13
+    Caption = 'Delay'
+  end
+  object JvxLabel6: TJvxLabel
+    Left = 616
+    Top = 534
+    Width = 59
+    Height = 13
+    Caption = 'Convolu'#231#227'o'
+  end
+  object JvxLabel7: TJvxLabel
+    Left = 697
+    Top = 534
+    Width = 60
+    Height = 13
+    Caption = 'Equaliza'#231#227'o'
+  end
+  object JvxLabel8: TJvxLabel
+    Left = 789
+    Top = 534
+    Width = 36
+    Height = 13
+    Caption = 'Ampliar'
+  end
+  object JvxLabel9: TJvxLabel
+    Left = 700
+    Top = 609
+    Width = 57
+    Height = 13
+    Caption = 'Binariza'#231#227'o'
+  end
+  object JvxLabel10: TJvxLabel
+    Left = 789
+    Top = 609
+    Width = 34
+    Height = 13
+    Caption = 'Livre 2'
+  end
+  object JvxLabel11: TJvxLabel
+    Left = 537
+    Top = 604
+    Width = 52
+    Height = 26
+    Alignment = taCenter
+    Caption = 'Toler'#226'ncia'#13#10'Busca'
+    WordWrap = True
+  end
+  object JvxLabel12: TJvxLabel
+    Left = 618
+    Top = 604
+    Width = 52
+    Height = 26
+    Alignment = taCenter
+    Caption = 'Toler'#226'ncia'#13#10'Diagonal'
+    WordWrap = True
+  end
+  object JvxLabel13: TJvxLabel
+    Left = 6
+    Top = 551
+    Width = 99
+    Height = 19
+    Caption = 'Status Pe'#231'a:'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Style = [fsBold]
+    ParentFont = False
+    Transparent = True
+  end
+  object StatusPeca: TJvTransLED
+    Left = 141
+    Top = 553
+    Width = 18
+    Color = clAqua
+  end
+  object ImgTrab: TPaintBox
+    Left = 6
+    Top = 41
+    Width = 512
+    Height = 460
+    Color = clWhite
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentColor = False
+    ParentFont = False
+    ParentShowHint = False
+    ShowHint = False
+    OnMouseDown = ImgTrabMouseDown
+    OnMouseMove = ImgTrabMouseMove
+    OnMouseUp = ImgTrabMouseUp
+  end
+  object pnlMascara2: TPanel
+    Left = 200
+    Top = 528
+    Width = 325
+    Height = 107
+    TabOrder = 11
+  end
+  object pnlElemento: TPanel
+    Left = 0
+    Top = 576
+    Width = 200
+    Height = 59
+    TabOrder = 10
+    Visible = False
+    object JvxLabel14: TJvxLabel
+      Left = 6
+      Top = 2
+      Width = 49
+      Height = 13
+      Caption = 'Elemento:'
+    end
+    object JvxLabel15: TJvxLabel
+      Left = 9
+      Top = 19
+      Width = 29
+      Height = 13
+      Caption = 'Atual:'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clMaroon
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+    end
+    object JvxLabel16: TJvxLabel
+      Left = 99
+      Top = 19
+      Width = 42
+      Height = 13
+      Caption = 'Pr'#243'ximo:'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clMaroon
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+    end
+    object lblAtu: TJvxLabel
+      Left = 43
+      Top = 19
+      Width = 7
+      Height = 13
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object lblProx: TJvxLabel
+      Left = 147
+      Top = 19
+      Width = 7
+      Height = 13
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object JvxLabel17: TJvxLabel
+      Left = 9
+      Top = 40
+      Width = 63
+      Height = 13
+      Caption = 'Linha F'#237'sica:'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clNavy
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+    end
+    object JvxLabel18: TJvxLabel
+      Left = 99
+      Top = 40
+      Width = 70
+      Height = 13
+      Caption = 'Coluna F'#237'sica:'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clNavy
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+    end
+    object lblLinF: TJvxLabel
+      Left = 76
+      Top = 40
+      Width = 7
+      Height = 13
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object lblColF: TJvxLabel
+      Left = 175
+      Top = 40
+      Width = 7
+      Height = 13
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object StatusEle: TJvTransLED
+      Left = 177
+      Top = 4
+      Width = 18
+      Color = clAqua
+    end
+  end
+  object pnlMascara1: TPanel
+    Left = 0
+    Top = 576
+    Width = 200
+    Height = 59
+    TabOrder = 12
+  end
+  object pnlIniciar: TPanel
+    Left = 200
+    Top = 528
+    Width = 325
+    Height = 107
+    TabOrder = 15
+    Visible = False
+    object lblElem: TLabel
+      Left = 143
+      Top = 26
+      Width = 61
+      Height = 23
+      AutoSize = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Arial Black'
+      Font.Style = [fsBold, fsItalic]
+      ParentFont = False
+      Visible = False
+    end
+    object JvxLabel23: TJvxLabel
+      Left = 16
+      Top = 24
+      Width = 115
+      Height = 24
+      Caption = '# Elemento:'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -19
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object JvxLabel24: TJvxLabel
+      Left = 16
+      Top = 56
+      Width = 114
+      Height = 24
+      Caption = '# Diagonal :'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -19
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object lblDiag: TLabel
+      Left = 143
+      Top = 58
+      Width = 61
+      Height = 23
+      AutoSize = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Arial Black'
+      Font.Style = [fsBold, fsItalic]
+      ParentFont = False
+      Visible = False
+    end
+  end
+  object pnlCores: TPanel
+    Left = 200
+    Top = 528
+    Width = 325
+    Height = 107
+    TabOrder = 9
+    Visible = False
+    object Quadro1: TShape
+      Left = 135
+      Top = 32
+      Width = 21
+      Height = 21
+    end
+    object Quadro2: TShape
+      Left = 229
+      Top = 33
+      Width = 21
+      Height = 21
+    end
+    object lblQuadro1: TLabel
+      Left = 161
+      Top = 36
+      Width = 21
+      Height = 16
+      Alignment = taRightJustify
+      Caption = '000'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object lblQuadro2: TLabel
+      Left = 255
+      Top = 36
+      Width = 21
+      Height = 16
+      Alignment = taRightJustify
+      Caption = '000'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object QuadroD1: TShape
+      Left = 135
+      Top = 70
+      Width = 21
+      Height = 21
+    end
+    object lblQuadroD1: TLabel
+      Left = 163
+      Top = 73
+      Width = 21
+      Height = 16
+      Alignment = taRightJustify
+      Caption = '000'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object JvxLabel19: TJvxLabel
+      Left = 128
+      Top = 8
+      Width = 51
+      Height = 13
+      Caption = 'Cor Busca'
+    end
+    object JvxLabel20: TJvxLabel
+      Left = 221
+      Top = 8
+      Width = 51
+      Height = 13
+      Caption = 'Cor Fundo'
+    end
+    object QuadroD2: TShape
+      Left = 229
+      Top = 70
+      Width = 21
+      Height = 21
+    end
+    object lblQuadroD2: TLabel
+      Left = 257
+      Top = 73
+      Width = 21
+      Height = 16
+      Alignment = taRightJustify
+      Caption = '000'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object JvxLabel21: TJvxLabel
+      Left = 33
+      Top = 32
+      Width = 70
+      Height = 20
+      Caption = 'Elemento'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+    end
+    object JvxLabel22: TJvxLabel
+      Left = 33
+      Top = 67
+      Width = 65
+      Height = 20
+      Caption = 'Diagonal'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+    end
+    object JvBevel1: TJvBevel
+      Left = 19
+      Top = 60
+      Width = 283
+      Height = 2
+      Shape = bsFrame
+      Style = bsRaised
+    end
+    object JvBevel2: TJvBevel
+      Left = 19
+      Top = 24
+      Width = 283
+      Height = 2
+      Shape = bsFrame
+      Style = bsRaised
+    end
+    object JvBevel3: TJvBevel
+      Left = 117
+      Top = 6
+      Width = 2
+      Height = 95
+      Shape = bsFrame
+      Style = bsRaised
+    end
+    object JvBevel4: TJvBevel
+      Left = 202
+      Top = 6
+      Width = 2
+      Height = 95
+      Shape = bsFrame
+      Style = bsRaised
+    end
+  end
+  object Zoom: TJvZoom
+    Left = 855
+    Top = 487
+    Width = 138
+    Height = 124
+    Active = False
+    ZoomLevel = 60
+    Crosshair = True
+    CrosshairColor = clRed
+    CrosshairSize = 30
+    CacheOnDeactivate = False
+  end
+  object ToolBar1: TToolBar
+    Left = 0
+    Top = 0
+    Width = 997
+    Height = 34
+    AutoSize = True
+    ButtonHeight = 30
+    ButtonWidth = 31
+    Caption = 'ToolBar1'
+    EdgeBorders = [ebLeft, ebTop, ebRight, ebBottom]
+    Flat = True
+    Images = ImageList1
+    TabOrder = 0
+    object btnSalvar: TToolButton
+      Left = 0
+      Top = 0
+      Hint = 'Salvar'
+      Caption = 'btnSalvar'
+      Enabled = False
+      ImageIndex = 6
+      OnClick = Salvar1Click
+    end
+    object btnVoltar: TToolButton
+      Left = 31
+      Top = 0
+      Hint = 'Voltar Opera'#231#227'o'
+      Caption = 'btnVoltar'
+      Enabled = False
+      ImageIndex = 5
+      OnClick = Desfazer1Click
+    end
+    object btnOriginal: TToolButton
+      Left = 62
+      Top = 0
+      Hint = 'Imagem Original'
+      Caption = 'btnOriginal'
+      Enabled = False
+      ImageIndex = 17
+      OnClick = RestaurarOriginal1Click
+    end
+    object Separador1: TToolButton
+      Left = 93
+      Top = 0
+      Width = 8
+      Caption = 'Separador1'
+      ImageIndex = 8
+      Style = tbsSeparator
+    end
+    object btnCapturar: TToolButton
+      Left = 101
+      Top = 0
+      Hint = 'Capturar Imagem'
+      Caption = 'btnCapturar'
+      Enabled = False
+      ImageIndex = 16
+      OnClick = btnCapturarClick
+    end
+    object Separador2: TToolButton
+      Left = 132
+      Top = 0
+      Width = 8
+      Caption = 'Separador2'
+      ImageIndex = 8
+      Style = tbsSeparator
+    end
+    object btnHisto: TToolButton
+      Left = 140
+      Top = 0
+      Hint = 'Histograma'
+      Caption = 'btnHisto'
+      Enabled = False
+      ImageIndex = 18
+      OnClick = Histograma1Click
+    end
+    object btnGamma: TToolButton
+      Left = 171
+      Top = 0
+      Hint = 'Configurar Gamma'
+      Caption = 'btnGamma'
+      Enabled = False
+      ImageIndex = 0
+      OnClick = Gamma1Click
+    end
+    object btnBrilho: TToolButton
+      Left = 202
+      Top = 0
+      Hint = 'Configurar Brilho'
+      Caption = 'btnBrilho'
+      Enabled = False
+      ImageIndex = 1
+      OnClick = Brilho1Click
+    end
+    object btnConv: TToolButton
+      Left = 233
+      Top = 0
+      Hint = 'Configurar Convolu'#231#227'o'
+      Caption = 'btnConv'
+      Enabled = False
+      ImageIndex = 25
+      OnClick = MatrizConvoluo1Click
+    end
+    object btnEqua: TToolButton
+      Left = 264
+      Top = 0
+      Hint = 'Equalizar Imagem'
+      Caption = 'btnEqua'
+      Enabled = False
+      ImageIndex = 19
+      OnClick = Equalizar1Click
+    end
+    object Separador3: TToolButton
+      Left = 295
+      Top = 0
+      Width = 8
+      Caption = 'Separador3'
+      ImageIndex = 5
+      Style = tbsSeparator
+    end
+    object btnIniInsp: TToolButton
+      Left = 303
+      Top = 0
+      Hint = 'Iniciar Inspe'#231#227'o'
+      Caption = 'btnIniInsp'
+      ImageIndex = 28
+      OnClick = btnIniInspClick
+    end
+    object btnTerInsp: TToolButton
+      Left = 334
+      Top = 0
+      Hint = 'Terminar Inspe'#231#227'o'
+      Caption = 'btnTerInsp'
+      Enabled = False
+      ImageIndex = 26
+      OnClick = btnTerInspClick
+    end
+    object btnCanInsp: TToolButton
+      Left = 365
+      Top = 0
+      Hint = 'Cancelar Inspe'#231#227'o'
+      Caption = 'btnCanInsp'
+      Enabled = False
+      ImageIndex = 22
+      OnClick = btnCanInspClick
+    end
+    object Separador4: TToolButton
+      Left = 396
+      Top = 0
+      Width = 8
+      Caption = 'Separador4'
+      ImageIndex = 11
+      Style = tbsSeparator
+    end
+    object btnIniTeste: TToolButton
+      Left = 404
+      Top = 0
+      Hint = 'Iniciar Teste'
+      Caption = 'btnIniTeste'
+      Enabled = False
+      ImageIndex = 29
+      OnClick = btnIniTesteClick
+    end
+    object btnTerTeste: TToolButton
+      Left = 435
+      Top = 0
+      Hint = 'T'#233'rminar Teste'
+      Caption = 'btnTerTeste'
+      Enabled = False
+      ImageIndex = 26
+      OnClick = btnTerTesteClick
+    end
+    object Separador5: TToolButton
+      Left = 466
+      Top = 0
+      Width = 8
+      Caption = 'Separador5'
+      ImageIndex = 11
+      Style = tbsSeparator
+    end
+    object btnIniPara: TToolButton
+      Left = 474
+      Top = 0
+      Hint = 'Iniciar Parametriza'#231#227'o'
+      Caption = 'btnIniPara'
+      Enabled = False
+      ImageIndex = 20
+      OnClick = btnIniParaClick
+    end
+    object btnTerPara: TToolButton
+      Left = 505
+      Top = 0
+      Hint = 'Terminar Parametriza'#231#227'o'
+      Caption = 'btnTerPara'
+      Enabled = False
+      ImageIndex = 26
+      OnClick = btnTerParaClick
+    end
+    object Separador6: TToolButton
+      Left = 536
+      Top = 0
+      Width = 8
+      Caption = 'Separador6'
+      ImageIndex = 11
+      Style = tbsSeparator
+    end
+    object btnPaleta: TToolButton
+      Left = 544
+      Top = 0
+      Hint = 'Escolhe da Palheta'
+      Enabled = False
+      ImageIndex = 8
+      OnClick = btnPaletaClick
+    end
+    object btnPegImg: TToolButton
+      Left = 575
+      Top = 0
+      Hint = 'Captura Cor'
+      Enabled = False
+      ImageIndex = 9
+      OnClick = btnPegImgClick
+    end
+    object btnTolera: TToolButton
+      Left = 606
+      Top = 0
+      Hint = 'Toler'#226'ncia Elemento'
+      Enabled = False
+      ImageIndex = 27
+      OnClick = btnToleraClick
+    end
+    object Separador7: TToolButton
+      Left = 637
+      Top = 0
+      Width = 8
+      Caption = 'Separador7'
+      ImageIndex = 11
+      Style = tbsSeparator
+    end
+    object btnIniPeca: TToolButton
+      Left = 645
+      Top = 0
+      Hint = 'Nova Pe'#231'a'
+      Caption = 'btnIniPeca'
+      Enabled = False
+      ImageIndex = 30
+      OnClick = btnIniPecaClick
+    end
+    object btnIniciar: TToolButton
+      Left = 676
+      Top = 0
+      Hint = 'Iniciar Varredura'
+      Enabled = False
+      ImageIndex = 21
+      OnClick = btnIniciarClick
+    end
+    object btnCentroide: TToolButton
+      Left = 707
+      Top = 0
+      Hint = 'Iniciar Centro'#237'de'
+      Caption = 'btnCentroide'
+      Enabled = False
+      ImageIndex = 24
+      OnClick = btnCentroideClick
+    end
+    object btnTerPeca: TToolButton
+      Left = 738
+      Top = 0
+      Hint = 'Verifica pe'#231'a'
+      Caption = 'btnTerPeca'
+      Enabled = False
+      ImageIndex = 4
+      OnClick = btnTerPecaClick
+    end
+    object Separador8: TToolButton
+      Left = 769
+      Top = 0
+      Width = 8
+      Caption = 'Separador8'
+      Enabled = False
+      ImageIndex = 13
+      Style = tbsSeparator
+    end
+    object btnSair: TToolButton
+      Left = 777
+      Top = 0
+      Hint = 'Sair'
+      Caption = 'btnSair'
+      ImageIndex = 10
+      OnClick = btnSairClick
+    end
+  end
+  object swtDelay: TJvSwitch
+    Left = 550
+    Top = 484
+    Width = 30
+    Height = 46
+    Cursor = crHandPoint
+    Caption = 'swtDelay'
+    GlyphOff.Data = {
+      360A0000424D360A000000000000360400002800000020000000300000000100
+      08000000000000060000C40E0000C40E00000001000000000000000000004000
+      000080000000FF000000002000004020000080200000FF200000004000004040
+      000080400000FF400000006000004060000080600000FF600000008000004080
+      000080800000FF80000000A0000040A0000080A00000FFA0000000C0000040C0
+      000080C00000FFC0000000FF000040FF000080FF0000FFFF0000000020004000
+      200080002000FF002000002020004020200080202000FF202000004020004040
+      200080402000FF402000006020004060200080602000FF602000008020004080
+      200080802000FF80200000A0200040A0200080A02000FFA0200000C0200040C0
+      200080C02000FFC0200000FF200040FF200080FF2000FFFF2000000040004000
+      400080004000FF004000002040004020400080204000FF204000004040004040
+      400080404000FF404000006040004060400080604000FF604000008040004080
+      400080804000FF80400000A0400040A0400080A04000FFA0400000C0400040C0
+      400080C04000FFC0400000FF400040FF400080FF4000FFFF4000000060004000
+      600080006000FF006000002060004020600080206000FF206000004060004040
+      600080406000FF406000006060004060600080606000FF606000008060004080
+      600080806000FF80600000A0600040A0600080A06000FFA0600000C0600040C0
+      600080C06000FFC0600000FF600040FF600080FF6000FFFF6000000080004000
+      800080008000FF008000002080004020800080208000FF208000004080004040
+      800080408000FF408000006080004060800080608000FF608000008080004080
+      800080808000FF80800000A0800040A0800080A08000FFA0800000C0800040C0
+      800080C08000FFC0800000FF800040FF800080FF8000FFFF80000000A0004000
+      A0008000A000FF00A0000020A0004020A0008020A000FF20A0000040A0004040
+      A0008040A000FF40A0000060A0004060A0008060A000FF60A0000080A0004080
+      A0008080A000FF80A00000A0A00040A0A00080A0A000FFA0A00000C0A00040C0
+      A00080C0A000FFC0A00000FFA00040FFA00080FFA000FFFFA0000000C0004000
+      C0008000C000FF00C0000020C0004020C0008020C000FF20C0000040C0004040
+      C0008040C000FF40C0000060C0004060C0008060C000FF60C0000080C0004080
+      C0008080C000FF80C00000A0C00040A0C00080A0C000FFA0C00000C0C00040C0
+      C00080C0C000FFC0C00000FFC00040FFC00080FFC000FFFFC0000000FF004000
+      FF008000FF00FF00FF000020FF004020FF008020FF00FF20FF000040FF004040
+      FF008040FF00FF40FF000060FF004060FF008060FF00FF60FF000080FF004080
+      FF008080FF00FF80FF0000A0FF0040A0FF0080A0FF00FFA0FF0000C0FF0040C0
+      FF0080C0FF00FFC0FF0000FFFF0040FFFF0080FFFF00FFFFFF00E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E30000
+      00000000000000000000000000000000000000000000E3E3E3E3E3E3E3E300FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00E3E3E3E3E3E3E3E300FF
+      0000000000000000000000000000000000000000FF00E3E3E3E3E3E3E3E300FF
+      0000000000000000000000000000000000000000FF00E3E3E3E3E3E3E3E300FF
+      0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E30000
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D00FF00E3E3E3E3E3E3E3E300FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D00FF00E3E3E3E3E3E3E300FFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D00FF00E3E3E3E3E3E300FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D6D00FF00E3E3E3E3E3E300000000
+      000000000000000000000000006D6D6D6D6D6D00FF00E3E3E3E3E3E300FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D6D00FF00E3E3E3E3E3E3E300FFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D00FF00E3E3E3E3E3E3E300FFFF
+      FF000000000000000000FFFFFF006D6D6D6D6D00FF00E3E3E3E3E3E3E3E300FF
+      FF00E0E0E0E0E0E0E0E000FFFFFF006D6D6D6D00FF00E3E3E3E3E3E3E3E300FF
+      FFFF00E0E0E0E0E0E0E000FFFFFF006D6D6D6D00FF00E3E3E3E3E3E3E3E30000
+      FFFF00E0E0E0E0E0E0E0E000FFFFFF006D6D6D00FF00E3E3E3E3E3E3E3E30000
+      FFFFFF000000000000000000FFFFFF006D6D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00000000000000000000000000000000006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00000000000000000000000000000000006D6D00FF00E3E3E3E3E3E3E3E300FF
+      0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D00FF00E3E3E3E3E3E3E3E300FF
+      0000000000000000000000000000000000000000FF00E3E3E3E3E3E3E3E300FF
+      0000000000000000000000000000000000000000FF00E3E3E3E3E3E3E3E300FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00E3E3E3E3E3E3E3E30000
+      00000000000000000000000000000000000000000000E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3}
+    GlyphOn.Data = {
+      360A0000424D360A000000000000360400002800000020000000300000000100
+      08000000000000060000C40E0000C40E00000001000000000000000000004000
+      000080000000FF000000002000004020000080200000FF200000004000004040
+      000080400000FF400000006000004060000080600000FF600000008000004080
+      000080800000FF80000000A0000040A0000080A00000FFA0000000C0000040C0
+      000080C00000FFC0000000FF000040FF000080FF0000FFFF0000000020004000
+      200080002000FF002000002020004020200080202000FF202000004020004040
+      200080402000FF402000006020004060200080602000FF602000008020004080
+      200080802000FF80200000A0200040A0200080A02000FFA0200000C0200040C0
+      200080C02000FFC0200000FF200040FF200080FF2000FFFF2000000040004000
+      400080004000FF004000002040004020400080204000FF204000004040004040
+      400080404000FF404000006040004060400080604000FF604000008040004080
+      400080804000FF80400000A0400040A0400080A04000FFA0400000C0400040C0
+      400080C04000FFC0400000FF400040FF400080FF4000FFFF4000000060004000
+      600080006000FF006000002060004020600080206000FF206000004060004040
+      600080406000FF406000006060004060600080606000FF606000008060004080
+      600080806000FF80600000A0600040A0600080A06000FFA0600000C0600040C0
+      600080C06000FFC0600000FF600040FF600080FF6000FFFF6000000080004000
+      800080008000FF008000002080004020800080208000FF208000004080004040
+      800080408000FF408000006080004060800080608000FF608000008080004080
+      800080808000FF80800000A0800040A0800080A08000FFA0800000C0800040C0
+      800080C08000FFC0800000FF800040FF800080FF8000FFFF80000000A0004000
+      A0008000A000FF00A0000020A0004020A0008020A000FF20A0000040A0004040
+      A0008040A000FF40A0000060A0004060A0008060A000FF60A0000080A0004080
+      A0008080A000FF80A00000A0A00040A0A00080A0A000FFA0A00000C0A00040C0
+      A00080C0A000FFC0A00000FFA00040FFA00080FFA000FFFFA0000000C0004000
+      C0008000C000FF00C0000020C0004020C0008020C000FF20C0000040C0004040
+      C0008040C000FF40C0000060C0004060C0008060C000FF60C0000080C0004080
+      C0008080C000FF80C00000A0C00040A0C00080A0C000FFA0C00000C0C00040C0
+      C00080C0C000FFC0C00000FFC00040FFC00080FFC000FFFFC0000000FF004000
+      FF008000FF00FF00FF000020FF004020FF008020FF00FF20FF000040FF004040
+      FF008040FF00FF40FF000060FF004060FF008060FF00FF60FF000080FF004080
+      FF008080FF00FF80FF0000A0FF0040A0FF0080A0FF00FFA0FF0000C0FF0040C0
+      FF0080C0FF00FFC0FF0000FFFF0040FFFF0080FFFF00FFFFFF00E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E30000
+      00000000000000000000000000000000000000000000E3E3E3E3E3E3E3E300FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00E3E3E3E3E3E3E3E300FF
+      0000000000000000000000000000000000000000FF00E3E3E3E3E3E3E3E300FF
+      00006D6D6D6D6D6D6D6D6D6D6D6D6D6D6D6D0000FF00E3E3E3E3E3E3E3E300FF
+      006D6D6D6D6D6D6D6D6D6D6D6D6D6D6D6D006D00FF00E3E3E3E3E3E3E3E300FF
+      00000000000000000000000000000000006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFF000000000000000000FFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFF001C1C1C1C1C1C1C00FFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFF001C1C1C1C1C1C1C00FFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFF001C1C1C1C1C1C1C00FFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFF001C1C1C1C1C1C1C00FFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFF000000000000000000FFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00000000000000000000000000000000006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E30000
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D00FF00E3E3E3E3E3E3E3E30000
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D00FF00E3E3E3E3E3E3E3E300FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D00FF00E3E3E3E3E3E3E3E300FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D00FF00E3E3E3E3E3E3E300FFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D00FF00E3E3E3E3E3E3E300FFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D00FF00E3E3E3E3E3E300FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D6D00FF00E3E3E3E3E3E300000000
+      000000000000000000000000006D6D6D6D6D6D00FF00E3E3E3E3E3E300FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D6D00FF00E3E3E3E3E3E3E300FFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D00FF00E3E3E3E3E3E3E3E300FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D00FF00E3E3E3E3E3E3E3E30000
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D00FF00E3E3E3E3E3E3E3E300FF
+      0000000000000000000000000000000000000000FF00E3E3E3E3E3E3E3E300FF
+      0000000000000000000000000000000000000000FF00E3E3E3E3E3E3E3E300FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00E3E3E3E3E3E3E3E30000
+      00000000000000000000000000000000000000000000E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3}
+    TabOrder = 1
+    Data = {03}
+  end
+  object swtConvo: TJvSwitch
+    Left = 630
+    Top = 484
+    Width = 30
+    Height = 46
+    Cursor = crHandPoint
+    Caption = 'JvSwitch1'
+    GlyphOff.Data = {
+      360A0000424D360A000000000000360400002800000020000000300000000100
+      08000000000000060000C40E0000C40E00000001000000000000000000004000
+      000080000000FF000000002000004020000080200000FF200000004000004040
+      000080400000FF400000006000004060000080600000FF600000008000004080
+      000080800000FF80000000A0000040A0000080A00000FFA0000000C0000040C0
+      000080C00000FFC0000000FF000040FF000080FF0000FFFF0000000020004000
+      200080002000FF002000002020004020200080202000FF202000004020004040
+      200080402000FF402000006020004060200080602000FF602000008020004080
+      200080802000FF80200000A0200040A0200080A02000FFA0200000C0200040C0
+      200080C02000FFC0200000FF200040FF200080FF2000FFFF2000000040004000
+      400080004000FF004000002040004020400080204000FF204000004040004040
+      400080404000FF404000006040004060400080604000FF604000008040004080
+      400080804000FF80400000A0400040A0400080A04000FFA0400000C0400040C0
+      400080C04000FFC0400000FF400040FF400080FF4000FFFF4000000060004000
+      600080006000FF006000002060004020600080206000FF206000004060004040
+      600080406000FF406000006060004060600080606000FF606000008060004080
+      600080806000FF80600000A0600040A0600080A06000FFA0600000C0600040C0
+      600080C06000FFC0600000FF600040FF600080FF6000FFFF6000000080004000
+      800080008000FF008000002080004020800080208000FF208000004080004040
+      800080408000FF408000006080004060800080608000FF608000008080004080
+      800080808000FF80800000A0800040A0800080A08000FFA0800000C0800040C0
+      800080C08000FFC0800000FF800040FF800080FF8000FFFF80000000A0004000
+      A0008000A000FF00A0000020A0004020A0008020A000FF20A0000040A0004040
+      A0008040A000FF40A0000060A0004060A0008060A000FF60A0000080A0004080
+      A0008080A000FF80A00000A0A00040A0A00080A0A000FFA0A00000C0A00040C0
+      A00080C0A000FFC0A00000FFA00040FFA00080FFA000FFFFA0000000C0004000
+      C0008000C000FF00C0000020C0004020C0008020C000FF20C0000040C0004040
+      C0008040C000FF40C0000060C0004060C0008060C000FF60C0000080C0004080
+      C0008080C000FF80C00000A0C00040A0C00080A0C000FFA0C00000C0C00040C0
+      C00080C0C000FFC0C00000FFC00040FFC00080FFC000FFFFC0000000FF004000
+      FF008000FF00FF00FF000020FF004020FF008020FF00FF20FF000040FF004040
+      FF008040FF00FF40FF000060FF004060FF008060FF00FF60FF000080FF004080
+      FF008080FF00FF80FF0000A0FF0040A0FF0080A0FF00FFA0FF0000C0FF0040C0
+      FF0080C0FF00FFC0FF0000FFFF0040FFFF0080FFFF00FFFFFF00E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E30000
+      00000000000000000000000000000000000000000000E3E3E3E3E3E3E3E300FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00E3E3E3E3E3E3E3E300FF
+      0000000000000000000000000000000000000000FF00E3E3E3E3E3E3E3E300FF
+      0000000000000000000000000000000000000000FF00E3E3E3E3E3E3E3E300FF
+      0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E30000
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D00FF00E3E3E3E3E3E3E3E300FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D00FF00E3E3E3E3E3E3E300FFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D00FF00E3E3E3E3E3E300FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D6D00FF00E3E3E3E3E3E300000000
+      000000000000000000000000006D6D6D6D6D6D00FF00E3E3E3E3E3E300FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D6D00FF00E3E3E3E3E3E3E300FFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D00FF00E3E3E3E3E3E3E300FFFF
+      FF000000000000000000FFFFFF006D6D6D6D6D00FF00E3E3E3E3E3E3E3E300FF
+      FF00E0E0E0E0E0E0E0E000FFFFFF006D6D6D6D00FF00E3E3E3E3E3E3E3E300FF
+      FFFF00E0E0E0E0E0E0E000FFFFFF006D6D6D6D00FF00E3E3E3E3E3E3E3E30000
+      FFFF00E0E0E0E0E0E0E0E000FFFFFF006D6D6D00FF00E3E3E3E3E3E3E3E30000
+      FFFFFF000000000000000000FFFFFF006D6D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00000000000000000000000000000000006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00000000000000000000000000000000006D6D00FF00E3E3E3E3E3E3E3E300FF
+      0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D00FF00E3E3E3E3E3E3E3E300FF
+      0000000000000000000000000000000000000000FF00E3E3E3E3E3E3E3E300FF
+      0000000000000000000000000000000000000000FF00E3E3E3E3E3E3E3E300FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00E3E3E3E3E3E3E3E30000
+      00000000000000000000000000000000000000000000E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3}
+    GlyphOn.Data = {
+      360A0000424D360A000000000000360400002800000020000000300000000100
+      08000000000000060000C40E0000C40E00000001000000000000000000004000
+      000080000000FF000000002000004020000080200000FF200000004000004040
+      000080400000FF400000006000004060000080600000FF600000008000004080
+      000080800000FF80000000A0000040A0000080A00000FFA0000000C0000040C0
+      000080C00000FFC0000000FF000040FF000080FF0000FFFF0000000020004000
+      200080002000FF002000002020004020200080202000FF202000004020004040
+      200080402000FF402000006020004060200080602000FF602000008020004080
+      200080802000FF80200000A0200040A0200080A02000FFA0200000C0200040C0
+      200080C02000FFC0200000FF200040FF200080FF2000FFFF2000000040004000
+      400080004000FF004000002040004020400080204000FF204000004040004040
+      400080404000FF404000006040004060400080604000FF604000008040004080
+      400080804000FF80400000A0400040A0400080A04000FFA0400000C0400040C0
+      400080C04000FFC0400000FF400040FF400080FF4000FFFF4000000060004000
+      600080006000FF006000002060004020600080206000FF206000004060004040
+      600080406000FF406000006060004060600080606000FF606000008060004080
+      600080806000FF80600000A0600040A0600080A06000FFA0600000C0600040C0
+      600080C06000FFC0600000FF600040FF600080FF6000FFFF6000000080004000
+      800080008000FF008000002080004020800080208000FF208000004080004040
+      800080408000FF408000006080004060800080608000FF608000008080004080
+      800080808000FF80800000A0800040A0800080A08000FFA0800000C0800040C0
+      800080C08000FFC0800000FF800040FF800080FF8000FFFF80000000A0004000
+      A0008000A000FF00A0000020A0004020A0008020A000FF20A0000040A0004040
+      A0008040A000FF40A0000060A0004060A0008060A000FF60A0000080A0004080
+      A0008080A000FF80A00000A0A00040A0A00080A0A000FFA0A00000C0A00040C0
+      A00080C0A000FFC0A00000FFA00040FFA00080FFA000FFFFA0000000C0004000
+      C0008000C000FF00C0000020C0004020C0008020C000FF20C0000040C0004040
+      C0008040C000FF40C0000060C0004060C0008060C000FF60C0000080C0004080
+      C0008080C000FF80C00000A0C00040A0C00080A0C000FFA0C00000C0C00040C0
+      C00080C0C000FFC0C00000FFC00040FFC00080FFC000FFFFC0000000FF004000
+      FF008000FF00FF00FF000020FF004020FF008020FF00FF20FF000040FF004040
+      FF008040FF00FF40FF000060FF004060FF008060FF00FF60FF000080FF004080
+      FF008080FF00FF80FF0000A0FF0040A0FF0080A0FF00FFA0FF0000C0FF0040C0
+      FF0080C0FF00FFC0FF0000FFFF0040FFFF0080FFFF00FFFFFF00E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E30000
+      00000000000000000000000000000000000000000000E3E3E3E3E3E3E3E300FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00E3E3E3E3E3E3E3E300FF
+      0000000000000000000000000000000000000000FF00E3E3E3E3E3E3E3E300FF
+      00006D6D6D6D6D6D6D6D6D6D6D6D6D6D6D6D0000FF00E3E3E3E3E3E3E3E300FF
+      006D6D6D6D6D6D6D6D6D6D6D6D6D6D6D6D006D00FF00E3E3E3E3E3E3E3E300FF
+      00000000000000000000000000000000006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFF000000000000000000FFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFF001C1C1C1C1C1C1C00FFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFF001C1C1C1C1C1C1C00FFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFF001C1C1C1C1C1C1C00FFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFF001C1C1C1C1C1C1C00FFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFF000000000000000000FFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00000000000000000000000000000000006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E30000
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D00FF00E3E3E3E3E3E3E3E30000
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D00FF00E3E3E3E3E3E3E3E300FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D00FF00E3E3E3E3E3E3E3E300FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D00FF00E3E3E3E3E3E3E300FFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D00FF00E3E3E3E3E3E3E300FFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D00FF00E3E3E3E3E3E300FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D6D00FF00E3E3E3E3E3E300000000
+      000000000000000000000000006D6D6D6D6D6D00FF00E3E3E3E3E3E300FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D6D00FF00E3E3E3E3E3E3E300FFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D00FF00E3E3E3E3E3E3E3E300FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D00FF00E3E3E3E3E3E3E3E30000
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D00FF00E3E3E3E3E3E3E3E300FF
+      0000000000000000000000000000000000000000FF00E3E3E3E3E3E3E3E300FF
+      0000000000000000000000000000000000000000FF00E3E3E3E3E3E3E3E300FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00E3E3E3E3E3E3E3E30000
+      00000000000000000000000000000000000000000000E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3}
+    TabOrder = 2
+    OnOn = MatrizConvoluo1Click
+    Data = {03}
+  end
+  object swtEqua: TJvSwitch
+    Left = 711
+    Top = 484
+    Width = 30
+    Height = 46
+    Cursor = crHandPoint
+    Caption = 'JvSwitch1'
+    GlyphOff.Data = {
+      360A0000424D360A000000000000360400002800000020000000300000000100
+      08000000000000060000C40E0000C40E00000001000000000000000000004000
+      000080000000FF000000002000004020000080200000FF200000004000004040
+      000080400000FF400000006000004060000080600000FF600000008000004080
+      000080800000FF80000000A0000040A0000080A00000FFA0000000C0000040C0
+      000080C00000FFC0000000FF000040FF000080FF0000FFFF0000000020004000
+      200080002000FF002000002020004020200080202000FF202000004020004040
+      200080402000FF402000006020004060200080602000FF602000008020004080
+      200080802000FF80200000A0200040A0200080A02000FFA0200000C0200040C0
+      200080C02000FFC0200000FF200040FF200080FF2000FFFF2000000040004000
+      400080004000FF004000002040004020400080204000FF204000004040004040
+      400080404000FF404000006040004060400080604000FF604000008040004080
+      400080804000FF80400000A0400040A0400080A04000FFA0400000C0400040C0
+      400080C04000FFC0400000FF400040FF400080FF4000FFFF4000000060004000
+      600080006000FF006000002060004020600080206000FF206000004060004040
+      600080406000FF406000006060004060600080606000FF606000008060004080
+      600080806000FF80600000A0600040A0600080A06000FFA0600000C0600040C0
+      600080C06000FFC0600000FF600040FF600080FF6000FFFF6000000080004000
+      800080008000FF008000002080004020800080208000FF208000004080004040
+      800080408000FF408000006080004060800080608000FF608000008080004080
+      800080808000FF80800000A0800040A0800080A08000FFA0800000C0800040C0
+      800080C08000FFC0800000FF800040FF800080FF8000FFFF80000000A0004000
+      A0008000A000FF00A0000020A0004020A0008020A000FF20A0000040A0004040
+      A0008040A000FF40A0000060A0004060A0008060A000FF60A0000080A0004080
+      A0008080A000FF80A00000A0A00040A0A00080A0A000FFA0A00000C0A00040C0
+      A00080C0A000FFC0A00000FFA00040FFA00080FFA000FFFFA0000000C0004000
+      C0008000C000FF00C0000020C0004020C0008020C000FF20C0000040C0004040
+      C0008040C000FF40C0000060C0004060C0008060C000FF60C0000080C0004080
+      C0008080C000FF80C00000A0C00040A0C00080A0C000FFA0C00000C0C00040C0
+      C00080C0C000FFC0C00000FFC00040FFC00080FFC000FFFFC0000000FF004000
+      FF008000FF00FF00FF000020FF004020FF008020FF00FF20FF000040FF004040
+      FF008040FF00FF40FF000060FF004060FF008060FF00FF60FF000080FF004080
+      FF008080FF00FF80FF0000A0FF0040A0FF0080A0FF00FFA0FF0000C0FF0040C0
+      FF0080C0FF00FFC0FF0000FFFF0040FFFF0080FFFF00FFFFFF00E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E30000
+      00000000000000000000000000000000000000000000E3E3E3E3E3E3E3E300FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00E3E3E3E3E3E3E3E300FF
+      0000000000000000000000000000000000000000FF00E3E3E3E3E3E3E3E300FF
+      0000000000000000000000000000000000000000FF00E3E3E3E3E3E3E3E300FF
+      0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E30000
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D00FF00E3E3E3E3E3E3E3E300FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D00FF00E3E3E3E3E3E3E300FFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D00FF00E3E3E3E3E3E300FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D6D00FF00E3E3E3E3E3E300000000
+      000000000000000000000000006D6D6D6D6D6D00FF00E3E3E3E3E3E300FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D6D00FF00E3E3E3E3E3E3E300FFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D00FF00E3E3E3E3E3E3E300FFFF
+      FF000000000000000000FFFFFF006D6D6D6D6D00FF00E3E3E3E3E3E3E3E300FF
+      FF00E0E0E0E0E0E0E0E000FFFFFF006D6D6D6D00FF00E3E3E3E3E3E3E3E300FF
+      FFFF00E0E0E0E0E0E0E000FFFFFF006D6D6D6D00FF00E3E3E3E3E3E3E3E30000
+      FFFF00E0E0E0E0E0E0E0E000FFFFFF006D6D6D00FF00E3E3E3E3E3E3E3E30000
+      FFFFFF000000000000000000FFFFFF006D6D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00000000000000000000000000000000006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00000000000000000000000000000000006D6D00FF00E3E3E3E3E3E3E3E300FF
+      0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D00FF00E3E3E3E3E3E3E3E300FF
+      0000000000000000000000000000000000000000FF00E3E3E3E3E3E3E3E300FF
+      0000000000000000000000000000000000000000FF00E3E3E3E3E3E3E3E300FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00E3E3E3E3E3E3E3E30000
+      00000000000000000000000000000000000000000000E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3}
+    GlyphOn.Data = {
+      360A0000424D360A000000000000360400002800000020000000300000000100
+      08000000000000060000C40E0000C40E00000001000000000000000000004000
+      000080000000FF000000002000004020000080200000FF200000004000004040
+      000080400000FF400000006000004060000080600000FF600000008000004080
+      000080800000FF80000000A0000040A0000080A00000FFA0000000C0000040C0
+      000080C00000FFC0000000FF000040FF000080FF0000FFFF0000000020004000
+      200080002000FF002000002020004020200080202000FF202000004020004040
+      200080402000FF402000006020004060200080602000FF602000008020004080
+      200080802000FF80200000A0200040A0200080A02000FFA0200000C0200040C0
+      200080C02000FFC0200000FF200040FF200080FF2000FFFF2000000040004000
+      400080004000FF004000002040004020400080204000FF204000004040004040
+      400080404000FF404000006040004060400080604000FF604000008040004080
+      400080804000FF80400000A0400040A0400080A04000FFA0400000C0400040C0
+      400080C04000FFC0400000FF400040FF400080FF4000FFFF4000000060004000
+      600080006000FF006000002060004020600080206000FF206000004060004040
+      600080406000FF406000006060004060600080606000FF606000008060004080
+      600080806000FF80600000A0600040A0600080A06000FFA0600000C0600040C0
+      600080C06000FFC0600000FF600040FF600080FF6000FFFF6000000080004000
+      800080008000FF008000002080004020800080208000FF208000004080004040
+      800080408000FF408000006080004060800080608000FF608000008080004080
+      800080808000FF80800000A0800040A0800080A08000FFA0800000C0800040C0
+      800080C08000FFC0800000FF800040FF800080FF8000FFFF80000000A0004000
+      A0008000A000FF00A0000020A0004020A0008020A000FF20A0000040A0004040
+      A0008040A000FF40A0000060A0004060A0008060A000FF60A0000080A0004080
+      A0008080A000FF80A00000A0A00040A0A00080A0A000FFA0A00000C0A00040C0
+      A00080C0A000FFC0A00000FFA00040FFA00080FFA000FFFFA0000000C0004000
+      C0008000C000FF00C0000020C0004020C0008020C000FF20C0000040C0004040
+      C0008040C000FF40C0000060C0004060C0008060C000FF60C0000080C0004080
+      C0008080C000FF80C00000A0C00040A0C00080A0C000FFA0C00000C0C00040C0
+      C00080C0C000FFC0C00000FFC00040FFC00080FFC000FFFFC0000000FF004000
+      FF008000FF00FF00FF000020FF004020FF008020FF00FF20FF000040FF004040
+      FF008040FF00FF40FF000060FF004060FF008060FF00FF60FF000080FF004080
+      FF008080FF00FF80FF0000A0FF0040A0FF0080A0FF00FFA0FF0000C0FF0040C0
+      FF0080C0FF00FFC0FF0000FFFF0040FFFF0080FFFF00FFFFFF00E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E30000
+      00000000000000000000000000000000000000000000E3E3E3E3E3E3E3E300FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00E3E3E3E3E3E3E3E300FF
+      0000000000000000000000000000000000000000FF00E3E3E3E3E3E3E3E300FF
+      00006D6D6D6D6D6D6D6D6D6D6D6D6D6D6D6D0000FF00E3E3E3E3E3E3E3E300FF
+      006D6D6D6D6D6D6D6D6D6D6D6D6D6D6D6D006D00FF00E3E3E3E3E3E3E3E300FF
+      00000000000000000000000000000000006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFF000000000000000000FFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFF001C1C1C1C1C1C1C00FFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFF001C1C1C1C1C1C1C00FFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFF001C1C1C1C1C1C1C00FFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFF001C1C1C1C1C1C1C00FFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFF000000000000000000FFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00000000000000000000000000000000006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E30000
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D00FF00E3E3E3E3E3E3E3E30000
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D00FF00E3E3E3E3E3E3E3E300FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D00FF00E3E3E3E3E3E3E3E300FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D00FF00E3E3E3E3E3E3E300FFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D00FF00E3E3E3E3E3E3E300FFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D00FF00E3E3E3E3E3E300FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D6D00FF00E3E3E3E3E3E300000000
+      000000000000000000000000006D6D6D6D6D6D00FF00E3E3E3E3E3E300FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D6D00FF00E3E3E3E3E3E3E300FFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D00FF00E3E3E3E3E3E3E3E300FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D00FF00E3E3E3E3E3E3E3E30000
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D00FF00E3E3E3E3E3E3E3E300FF
+      0000000000000000000000000000000000000000FF00E3E3E3E3E3E3E3E300FF
+      0000000000000000000000000000000000000000FF00E3E3E3E3E3E3E3E300FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00E3E3E3E3E3E3E3E30000
+      00000000000000000000000000000000000000000000E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3}
+    TabOrder = 3
+    OnOn = Equalizar1Click
+    Data = {03}
+  end
+  object StatusBar1: TStatusBar
+    Left = 0
+    Top = 633
+    Width = 997
+    Height = 19
+    Panels = <>
+    SimplePanel = False
+  end
+  object swtTolBusca: TJvSwitch
+    Left = 550
+    Top = 560
+    Width = 30
+    Height = 46
+    Cursor = crHandPoint
+    Caption = 'JvSwitch1'
+    GlyphOff.Data = {
+      360A0000424D360A000000000000360400002800000020000000300000000100
+      08000000000000060000C40E0000C40E00000001000000000000000000004000
+      000080000000FF000000002000004020000080200000FF200000004000004040
+      000080400000FF400000006000004060000080600000FF600000008000004080
+      000080800000FF80000000A0000040A0000080A00000FFA0000000C0000040C0
+      000080C00000FFC0000000FF000040FF000080FF0000FFFF0000000020004000
+      200080002000FF002000002020004020200080202000FF202000004020004040
+      200080402000FF402000006020004060200080602000FF602000008020004080
+      200080802000FF80200000A0200040A0200080A02000FFA0200000C0200040C0
+      200080C02000FFC0200000FF200040FF200080FF2000FFFF2000000040004000
+      400080004000FF004000002040004020400080204000FF204000004040004040
+      400080404000FF404000006040004060400080604000FF604000008040004080
+      400080804000FF80400000A0400040A0400080A04000FFA0400000C0400040C0
+      400080C04000FFC0400000FF400040FF400080FF4000FFFF4000000060004000
+      600080006000FF006000002060004020600080206000FF206000004060004040
+      600080406000FF406000006060004060600080606000FF606000008060004080
+      600080806000FF80600000A0600040A0600080A06000FFA0600000C0600040C0
+      600080C06000FFC0600000FF600040FF600080FF6000FFFF6000000080004000
+      800080008000FF008000002080004020800080208000FF208000004080004040
+      800080408000FF408000006080004060800080608000FF608000008080004080
+      800080808000FF80800000A0800040A0800080A08000FFA0800000C0800040C0
+      800080C08000FFC0800000FF800040FF800080FF8000FFFF80000000A0004000
+      A0008000A000FF00A0000020A0004020A0008020A000FF20A0000040A0004040
+      A0008040A000FF40A0000060A0004060A0008060A000FF60A0000080A0004080
+      A0008080A000FF80A00000A0A00040A0A00080A0A000FFA0A00000C0A00040C0
+      A00080C0A000FFC0A00000FFA00040FFA00080FFA000FFFFA0000000C0004000
+      C0008000C000FF00C0000020C0004020C0008020C000FF20C0000040C0004040
+      C0008040C000FF40C0000060C0004060C0008060C000FF60C0000080C0004080
+      C0008080C000FF80C00000A0C00040A0C00080A0C000FFA0C00000C0C00040C0
+      C00080C0C000FFC0C00000FFC00040FFC00080FFC000FFFFC0000000FF004000
+      FF008000FF00FF00FF000020FF004020FF008020FF00FF20FF000040FF004040
+      FF008040FF00FF40FF000060FF004060FF008060FF00FF60FF000080FF004080
+      FF008080FF00FF80FF0000A0FF0040A0FF0080A0FF00FFA0FF0000C0FF0040C0
+      FF0080C0FF00FFC0FF0000FFFF0040FFFF0080FFFF00FFFFFF00E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E30000
+      00000000000000000000000000000000000000000000E3E3E3E3E3E3E3E300FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00E3E3E3E3E3E3E3E300FF
+      0000000000000000000000000000000000000000FF00E3E3E3E3E3E3E3E300FF
+      0000000000000000000000000000000000000000FF00E3E3E3E3E3E3E3E300FF
+      0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E30000
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D00FF00E3E3E3E3E3E3E3E300FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D00FF00E3E3E3E3E3E3E300FFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D00FF00E3E3E3E3E3E300FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D6D00FF00E3E3E3E3E3E300000000
+      000000000000000000000000006D6D6D6D6D6D00FF00E3E3E3E3E3E300FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D6D00FF00E3E3E3E3E3E3E300FFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D00FF00E3E3E3E3E3E3E300FFFF
+      FF000000000000000000FFFFFF006D6D6D6D6D00FF00E3E3E3E3E3E3E3E300FF
+      FF00E0E0E0E0E0E0E0E000FFFFFF006D6D6D6D00FF00E3E3E3E3E3E3E3E300FF
+      FFFF00E0E0E0E0E0E0E000FFFFFF006D6D6D6D00FF00E3E3E3E3E3E3E3E30000
+      FFFF00E0E0E0E0E0E0E0E000FFFFFF006D6D6D00FF00E3E3E3E3E3E3E3E30000
+      FFFFFF000000000000000000FFFFFF006D6D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00000000000000000000000000000000006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00000000000000000000000000000000006D6D00FF00E3E3E3E3E3E3E3E300FF
+      0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D00FF00E3E3E3E3E3E3E3E300FF
+      0000000000000000000000000000000000000000FF00E3E3E3E3E3E3E3E300FF
+      0000000000000000000000000000000000000000FF00E3E3E3E3E3E3E3E300FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00E3E3E3E3E3E3E3E30000
+      00000000000000000000000000000000000000000000E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3}
+    GlyphOn.Data = {
+      360A0000424D360A000000000000360400002800000020000000300000000100
+      08000000000000060000C40E0000C40E00000001000000000000000000004000
+      000080000000FF000000002000004020000080200000FF200000004000004040
+      000080400000FF400000006000004060000080600000FF600000008000004080
+      000080800000FF80000000A0000040A0000080A00000FFA0000000C0000040C0
+      000080C00000FFC0000000FF000040FF000080FF0000FFFF0000000020004000
+      200080002000FF002000002020004020200080202000FF202000004020004040
+      200080402000FF402000006020004060200080602000FF602000008020004080
+      200080802000FF80200000A0200040A0200080A02000FFA0200000C0200040C0
+      200080C02000FFC0200000FF200040FF200080FF2000FFFF2000000040004000
+      400080004000FF004000002040004020400080204000FF204000004040004040
+      400080404000FF404000006040004060400080604000FF604000008040004080
+      400080804000FF80400000A0400040A0400080A04000FFA0400000C0400040C0
+      400080C04000FFC0400000FF400040FF400080FF4000FFFF4000000060004000
+      600080006000FF006000002060004020600080206000FF206000004060004040
+      600080406000FF406000006060004060600080606000FF606000008060004080
+      600080806000FF80600000A0600040A0600080A06000FFA0600000C0600040C0
+      600080C06000FFC0600000FF600040FF600080FF6000FFFF6000000080004000
+      800080008000FF008000002080004020800080208000FF208000004080004040
+      800080408000FF408000006080004060800080608000FF608000008080004080
+      800080808000FF80800000A0800040A0800080A08000FFA0800000C0800040C0
+      800080C08000FFC0800000FF800040FF800080FF8000FFFF80000000A0004000
+      A0008000A000FF00A0000020A0004020A0008020A000FF20A0000040A0004040
+      A0008040A000FF40A0000060A0004060A0008060A000FF60A0000080A0004080
+      A0008080A000FF80A00000A0A00040A0A00080A0A000FFA0A00000C0A00040C0
+      A00080C0A000FFC0A00000FFA00040FFA00080FFA000FFFFA0000000C0004000
+      C0008000C000FF00C0000020C0004020C0008020C000FF20C0000040C0004040
+      C0008040C000FF40C0000060C0004060C0008060C000FF60C0000080C0004080
+      C0008080C000FF80C00000A0C00040A0C00080A0C000FFA0C00000C0C00040C0
+      C00080C0C000FFC0C00000FFC00040FFC00080FFC000FFFFC0000000FF004000
+      FF008000FF00FF00FF000020FF004020FF008020FF00FF20FF000040FF004040
+      FF008040FF00FF40FF000060FF004060FF008060FF00FF60FF000080FF004080
+      FF008080FF00FF80FF0000A0FF0040A0FF0080A0FF00FFA0FF0000C0FF0040C0
+      FF0080C0FF00FFC0FF0000FFFF0040FFFF0080FFFF00FFFFFF00E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E30000
+      00000000000000000000000000000000000000000000E3E3E3E3E3E3E3E300FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00E3E3E3E3E3E3E3E300FF
+      0000000000000000000000000000000000000000FF00E3E3E3E3E3E3E3E300FF
+      00006D6D6D6D6D6D6D6D6D6D6D6D6D6D6D6D0000FF00E3E3E3E3E3E3E3E300FF
+      006D6D6D6D6D6D6D6D6D6D6D6D6D6D6D6D006D00FF00E3E3E3E3E3E3E3E300FF
+      00000000000000000000000000000000006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFF000000000000000000FFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFF001C1C1C1C1C1C1C00FFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFF001C1C1C1C1C1C1C00FFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFF001C1C1C1C1C1C1C00FFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFF001C1C1C1C1C1C1C00FFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFF000000000000000000FFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00000000000000000000000000000000006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E30000
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D00FF00E3E3E3E3E3E3E3E30000
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D00FF00E3E3E3E3E3E3E3E300FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D00FF00E3E3E3E3E3E3E3E300FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D00FF00E3E3E3E3E3E3E300FFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D00FF00E3E3E3E3E3E3E300FFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D00FF00E3E3E3E3E3E300FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D6D00FF00E3E3E3E3E3E300000000
+      000000000000000000000000006D6D6D6D6D6D00FF00E3E3E3E3E3E300FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D6D00FF00E3E3E3E3E3E3E300FFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D00FF00E3E3E3E3E3E3E3E300FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D00FF00E3E3E3E3E3E3E3E30000
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D00FF00E3E3E3E3E3E3E3E300FF
+      0000000000000000000000000000000000000000FF00E3E3E3E3E3E3E3E300FF
+      0000000000000000000000000000000000000000FF00E3E3E3E3E3E3E3E300FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00E3E3E3E3E3E3E3E30000
+      00000000000000000000000000000000000000000000E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3}
+    StateOn = True
+    TabOrder = 4
+    Data = {03}
+  end
+  object swtTolDiag: TJvSwitch
+    Left = 631
+    Top = 560
+    Width = 30
+    Height = 46
+    Cursor = crHandPoint
+    Caption = 'JvSwitch1'
+    GlyphOff.Data = {
+      360A0000424D360A000000000000360400002800000020000000300000000100
+      08000000000000060000C40E0000C40E00000001000000000000000000004000
+      000080000000FF000000002000004020000080200000FF200000004000004040
+      000080400000FF400000006000004060000080600000FF600000008000004080
+      000080800000FF80000000A0000040A0000080A00000FFA0000000C0000040C0
+      000080C00000FFC0000000FF000040FF000080FF0000FFFF0000000020004000
+      200080002000FF002000002020004020200080202000FF202000004020004040
+      200080402000FF402000006020004060200080602000FF602000008020004080
+      200080802000FF80200000A0200040A0200080A02000FFA0200000C0200040C0
+      200080C02000FFC0200000FF200040FF200080FF2000FFFF2000000040004000
+      400080004000FF004000002040004020400080204000FF204000004040004040
+      400080404000FF404000006040004060400080604000FF604000008040004080
+      400080804000FF80400000A0400040A0400080A04000FFA0400000C0400040C0
+      400080C04000FFC0400000FF400040FF400080FF4000FFFF4000000060004000
+      600080006000FF006000002060004020600080206000FF206000004060004040
+      600080406000FF406000006060004060600080606000FF606000008060004080
+      600080806000FF80600000A0600040A0600080A06000FFA0600000C0600040C0
+      600080C06000FFC0600000FF600040FF600080FF6000FFFF6000000080004000
+      800080008000FF008000002080004020800080208000FF208000004080004040
+      800080408000FF408000006080004060800080608000FF608000008080004080
+      800080808000FF80800000A0800040A0800080A08000FFA0800000C0800040C0
+      800080C08000FFC0800000FF800040FF800080FF8000FFFF80000000A0004000
+      A0008000A000FF00A0000020A0004020A0008020A000FF20A0000040A0004040
+      A0008040A000FF40A0000060A0004060A0008060A000FF60A0000080A0004080
+      A0008080A000FF80A00000A0A00040A0A00080A0A000FFA0A00000C0A00040C0
+      A00080C0A000FFC0A00000FFA00040FFA00080FFA000FFFFA0000000C0004000
+      C0008000C000FF00C0000020C0004020C0008020C000FF20C0000040C0004040
+      C0008040C000FF40C0000060C0004060C0008060C000FF60C0000080C0004080
+      C0008080C000FF80C00000A0C00040A0C00080A0C000FFA0C00000C0C00040C0
+      C00080C0C000FFC0C00000FFC00040FFC00080FFC000FFFFC0000000FF004000
+      FF008000FF00FF00FF000020FF004020FF008020FF00FF20FF000040FF004040
+      FF008040FF00FF40FF000060FF004060FF008060FF00FF60FF000080FF004080
+      FF008080FF00FF80FF0000A0FF0040A0FF0080A0FF00FFA0FF0000C0FF0040C0
+      FF0080C0FF00FFC0FF0000FFFF0040FFFF0080FFFF00FFFFFF00E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E30000
+      00000000000000000000000000000000000000000000E3E3E3E3E3E3E3E300FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00E3E3E3E3E3E3E3E300FF
+      0000000000000000000000000000000000000000FF00E3E3E3E3E3E3E3E300FF
+      0000000000000000000000000000000000000000FF00E3E3E3E3E3E3E3E300FF
+      0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E30000
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D00FF00E3E3E3E3E3E3E3E300FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D00FF00E3E3E3E3E3E3E300FFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D00FF00E3E3E3E3E3E300FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D6D00FF00E3E3E3E3E3E300000000
+      000000000000000000000000006D6D6D6D6D6D00FF00E3E3E3E3E3E300FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D6D00FF00E3E3E3E3E3E3E300FFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D00FF00E3E3E3E3E3E3E300FFFF
+      FF000000000000000000FFFFFF006D6D6D6D6D00FF00E3E3E3E3E3E3E3E300FF
+      FF00E0E0E0E0E0E0E0E000FFFFFF006D6D6D6D00FF00E3E3E3E3E3E3E3E300FF
+      FFFF00E0E0E0E0E0E0E000FFFFFF006D6D6D6D00FF00E3E3E3E3E3E3E3E30000
+      FFFF00E0E0E0E0E0E0E0E000FFFFFF006D6D6D00FF00E3E3E3E3E3E3E3E30000
+      FFFFFF000000000000000000FFFFFF006D6D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00000000000000000000000000000000006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00000000000000000000000000000000006D6D00FF00E3E3E3E3E3E3E3E300FF
+      0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D00FF00E3E3E3E3E3E3E3E300FF
+      0000000000000000000000000000000000000000FF00E3E3E3E3E3E3E3E300FF
+      0000000000000000000000000000000000000000FF00E3E3E3E3E3E3E3E300FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00E3E3E3E3E3E3E3E30000
+      00000000000000000000000000000000000000000000E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3}
+    GlyphOn.Data = {
+      360A0000424D360A000000000000360400002800000020000000300000000100
+      08000000000000060000C40E0000C40E00000001000000000000000000004000
+      000080000000FF000000002000004020000080200000FF200000004000004040
+      000080400000FF400000006000004060000080600000FF600000008000004080
+      000080800000FF80000000A0000040A0000080A00000FFA0000000C0000040C0
+      000080C00000FFC0000000FF000040FF000080FF0000FFFF0000000020004000
+      200080002000FF002000002020004020200080202000FF202000004020004040
+      200080402000FF402000006020004060200080602000FF602000008020004080
+      200080802000FF80200000A0200040A0200080A02000FFA0200000C0200040C0
+      200080C02000FFC0200000FF200040FF200080FF2000FFFF2000000040004000
+      400080004000FF004000002040004020400080204000FF204000004040004040
+      400080404000FF404000006040004060400080604000FF604000008040004080
+      400080804000FF80400000A0400040A0400080A04000FFA0400000C0400040C0
+      400080C04000FFC0400000FF400040FF400080FF4000FFFF4000000060004000
+      600080006000FF006000002060004020600080206000FF206000004060004040
+      600080406000FF406000006060004060600080606000FF606000008060004080
+      600080806000FF80600000A0600040A0600080A06000FFA0600000C0600040C0
+      600080C06000FFC0600000FF600040FF600080FF6000FFFF6000000080004000
+      800080008000FF008000002080004020800080208000FF208000004080004040
+      800080408000FF408000006080004060800080608000FF608000008080004080
+      800080808000FF80800000A0800040A0800080A08000FFA0800000C0800040C0
+      800080C08000FFC0800000FF800040FF800080FF8000FFFF80000000A0004000
+      A0008000A000FF00A0000020A0004020A0008020A000FF20A0000040A0004040
+      A0008040A000FF40A0000060A0004060A0008060A000FF60A0000080A0004080
+      A0008080A000FF80A00000A0A00040A0A00080A0A000FFA0A00000C0A00040C0
+      A00080C0A000FFC0A00000FFA00040FFA00080FFA000FFFFA0000000C0004000
+      C0008000C000FF00C0000020C0004020C0008020C000FF20C0000040C0004040
+      C0008040C000FF40C0000060C0004060C0008060C000FF60C0000080C0004080
+      C0008080C000FF80C00000A0C00040A0C00080A0C000FFA0C00000C0C00040C0
+      C00080C0C000FFC0C00000FFC00040FFC00080FFC000FFFFC0000000FF004000
+      FF008000FF00FF00FF000020FF004020FF008020FF00FF20FF000040FF004040
+      FF008040FF00FF40FF000060FF004060FF008060FF00FF60FF000080FF004080
+      FF008080FF00FF80FF0000A0FF0040A0FF0080A0FF00FFA0FF0000C0FF0040C0
+      FF0080C0FF00FFC0FF0000FFFF0040FFFF0080FFFF00FFFFFF00E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E30000
+      00000000000000000000000000000000000000000000E3E3E3E3E3E3E3E300FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00E3E3E3E3E3E3E3E300FF
+      0000000000000000000000000000000000000000FF00E3E3E3E3E3E3E3E300FF
+      00006D6D6D6D6D6D6D6D6D6D6D6D6D6D6D6D0000FF00E3E3E3E3E3E3E3E300FF
+      006D6D6D6D6D6D6D6D6D6D6D6D6D6D6D6D006D00FF00E3E3E3E3E3E3E3E300FF
+      00000000000000000000000000000000006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFF000000000000000000FFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFF001C1C1C1C1C1C1C00FFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFF001C1C1C1C1C1C1C00FFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFF001C1C1C1C1C1C1C00FFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFF001C1C1C1C1C1C1C00FFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFF000000000000000000FFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00000000000000000000000000000000006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E30000
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D00FF00E3E3E3E3E3E3E3E30000
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D00FF00E3E3E3E3E3E3E3E300FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D00FF00E3E3E3E3E3E3E3E300FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D00FF00E3E3E3E3E3E3E300FFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D00FF00E3E3E3E3E3E3E300FFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D00FF00E3E3E3E3E3E300FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D6D00FF00E3E3E3E3E3E300000000
+      000000000000000000000000006D6D6D6D6D6D00FF00E3E3E3E3E3E300FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D6D00FF00E3E3E3E3E3E3E300FFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D00FF00E3E3E3E3E3E3E3E300FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D00FF00E3E3E3E3E3E3E3E30000
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D00FF00E3E3E3E3E3E3E3E300FF
+      0000000000000000000000000000000000000000FF00E3E3E3E3E3E3E3E300FF
+      0000000000000000000000000000000000000000FF00E3E3E3E3E3E3E3E300FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00E3E3E3E3E3E3E3E30000
+      00000000000000000000000000000000000000000000E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3}
+    StateOn = True
+    TabOrder = 5
+    Data = {03}
+  end
+  object swtAmplia: TJvSwitch
+    Left = 792
+    Top = 483
+    Width = 30
+    Height = 46
+    Cursor = crHandPoint
+    Caption = 'JvSwitch1'
+    GlyphOff.Data = {
+      360A0000424D360A000000000000360400002800000020000000300000000100
+      08000000000000060000C40E0000C40E00000001000000000000000000004000
+      000080000000FF000000002000004020000080200000FF200000004000004040
+      000080400000FF400000006000004060000080600000FF600000008000004080
+      000080800000FF80000000A0000040A0000080A00000FFA0000000C0000040C0
+      000080C00000FFC0000000FF000040FF000080FF0000FFFF0000000020004000
+      200080002000FF002000002020004020200080202000FF202000004020004040
+      200080402000FF402000006020004060200080602000FF602000008020004080
+      200080802000FF80200000A0200040A0200080A02000FFA0200000C0200040C0
+      200080C02000FFC0200000FF200040FF200080FF2000FFFF2000000040004000
+      400080004000FF004000002040004020400080204000FF204000004040004040
+      400080404000FF404000006040004060400080604000FF604000008040004080
+      400080804000FF80400000A0400040A0400080A04000FFA0400000C0400040C0
+      400080C04000FFC0400000FF400040FF400080FF4000FFFF4000000060004000
+      600080006000FF006000002060004020600080206000FF206000004060004040
+      600080406000FF406000006060004060600080606000FF606000008060004080
+      600080806000FF80600000A0600040A0600080A06000FFA0600000C0600040C0
+      600080C06000FFC0600000FF600040FF600080FF6000FFFF6000000080004000
+      800080008000FF008000002080004020800080208000FF208000004080004040
+      800080408000FF408000006080004060800080608000FF608000008080004080
+      800080808000FF80800000A0800040A0800080A08000FFA0800000C0800040C0
+      800080C08000FFC0800000FF800040FF800080FF8000FFFF80000000A0004000
+      A0008000A000FF00A0000020A0004020A0008020A000FF20A0000040A0004040
+      A0008040A000FF40A0000060A0004060A0008060A000FF60A0000080A0004080
+      A0008080A000FF80A00000A0A00040A0A00080A0A000FFA0A00000C0A00040C0
+      A00080C0A000FFC0A00000FFA00040FFA00080FFA000FFFFA0000000C0004000
+      C0008000C000FF00C0000020C0004020C0008020C000FF20C0000040C0004040
+      C0008040C000FF40C0000060C0004060C0008060C000FF60C0000080C0004080
+      C0008080C000FF80C00000A0C00040A0C00080A0C000FFA0C00000C0C00040C0
+      C00080C0C000FFC0C00000FFC00040FFC00080FFC000FFFFC0000000FF004000
+      FF008000FF00FF00FF000020FF004020FF008020FF00FF20FF000040FF004040
+      FF008040FF00FF40FF000060FF004060FF008060FF00FF60FF000080FF004080
+      FF008080FF00FF80FF0000A0FF0040A0FF0080A0FF00FFA0FF0000C0FF0040C0
+      FF0080C0FF00FFC0FF0000FFFF0040FFFF0080FFFF00FFFFFF00E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E30000
+      00000000000000000000000000000000000000000000E3E3E3E3E3E3E3E300FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00E3E3E3E3E3E3E3E300FF
+      0000000000000000000000000000000000000000FF00E3E3E3E3E3E3E3E300FF
+      0000000000000000000000000000000000000000FF00E3E3E3E3E3E3E3E300FF
+      0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E30000
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D00FF00E3E3E3E3E3E3E3E300FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D00FF00E3E3E3E3E3E3E300FFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D00FF00E3E3E3E3E3E300FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D6D00FF00E3E3E3E3E3E300000000
+      000000000000000000000000006D6D6D6D6D6D00FF00E3E3E3E3E3E300FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D6D00FF00E3E3E3E3E3E3E300FFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D00FF00E3E3E3E3E3E3E300FFFF
+      FF000000000000000000FFFFFF006D6D6D6D6D00FF00E3E3E3E3E3E3E3E300FF
+      FF00E0E0E0E0E0E0E0E000FFFFFF006D6D6D6D00FF00E3E3E3E3E3E3E3E300FF
+      FFFF00E0E0E0E0E0E0E000FFFFFF006D6D6D6D00FF00E3E3E3E3E3E3E3E30000
+      FFFF00E0E0E0E0E0E0E0E000FFFFFF006D6D6D00FF00E3E3E3E3E3E3E3E30000
+      FFFFFF000000000000000000FFFFFF006D6D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00000000000000000000000000000000006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00000000000000000000000000000000006D6D00FF00E3E3E3E3E3E3E3E300FF
+      0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D00FF00E3E3E3E3E3E3E3E300FF
+      0000000000000000000000000000000000000000FF00E3E3E3E3E3E3E3E300FF
+      0000000000000000000000000000000000000000FF00E3E3E3E3E3E3E3E300FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00E3E3E3E3E3E3E3E30000
+      00000000000000000000000000000000000000000000E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3}
+    GlyphOn.Data = {
+      360A0000424D360A000000000000360400002800000020000000300000000100
+      08000000000000060000C40E0000C40E00000001000000000000000000004000
+      000080000000FF000000002000004020000080200000FF200000004000004040
+      000080400000FF400000006000004060000080600000FF600000008000004080
+      000080800000FF80000000A0000040A0000080A00000FFA0000000C0000040C0
+      000080C00000FFC0000000FF000040FF000080FF0000FFFF0000000020004000
+      200080002000FF002000002020004020200080202000FF202000004020004040
+      200080402000FF402000006020004060200080602000FF602000008020004080
+      200080802000FF80200000A0200040A0200080A02000FFA0200000C0200040C0
+      200080C02000FFC0200000FF200040FF200080FF2000FFFF2000000040004000
+      400080004000FF004000002040004020400080204000FF204000004040004040
+      400080404000FF404000006040004060400080604000FF604000008040004080
+      400080804000FF80400000A0400040A0400080A04000FFA0400000C0400040C0
+      400080C04000FFC0400000FF400040FF400080FF4000FFFF4000000060004000
+      600080006000FF006000002060004020600080206000FF206000004060004040
+      600080406000FF406000006060004060600080606000FF606000008060004080
+      600080806000FF80600000A0600040A0600080A06000FFA0600000C0600040C0
+      600080C06000FFC0600000FF600040FF600080FF6000FFFF6000000080004000
+      800080008000FF008000002080004020800080208000FF208000004080004040
+      800080408000FF408000006080004060800080608000FF608000008080004080
+      800080808000FF80800000A0800040A0800080A08000FFA0800000C0800040C0
+      800080C08000FFC0800000FF800040FF800080FF8000FFFF80000000A0004000
+      A0008000A000FF00A0000020A0004020A0008020A000FF20A0000040A0004040
+      A0008040A000FF40A0000060A0004060A0008060A000FF60A0000080A0004080
+      A0008080A000FF80A00000A0A00040A0A00080A0A000FFA0A00000C0A00040C0
+      A00080C0A000FFC0A00000FFA00040FFA00080FFA000FFFFA0000000C0004000
+      C0008000C000FF00C0000020C0004020C0008020C000FF20C0000040C0004040
+      C0008040C000FF40C0000060C0004060C0008060C000FF60C0000080C0004080
+      C0008080C000FF80C00000A0C00040A0C00080A0C000FFA0C00000C0C00040C0
+      C00080C0C000FFC0C00000FFC00040FFC00080FFC000FFFFC0000000FF004000
+      FF008000FF00FF00FF000020FF004020FF008020FF00FF20FF000040FF004040
+      FF008040FF00FF40FF000060FF004060FF008060FF00FF60FF000080FF004080
+      FF008080FF00FF80FF0000A0FF0040A0FF0080A0FF00FFA0FF0000C0FF0040C0
+      FF0080C0FF00FFC0FF0000FFFF0040FFFF0080FFFF00FFFFFF00E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E30000
+      00000000000000000000000000000000000000000000E3E3E3E3E3E3E3E300FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00E3E3E3E3E3E3E3E300FF
+      0000000000000000000000000000000000000000FF00E3E3E3E3E3E3E3E300FF
+      00006D6D6D6D6D6D6D6D6D6D6D6D6D6D6D6D0000FF00E3E3E3E3E3E3E3E300FF
+      006D6D6D6D6D6D6D6D6D6D6D6D6D6D6D6D006D00FF00E3E3E3E3E3E3E3E300FF
+      00000000000000000000000000000000006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFF000000000000000000FFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFF001C1C1C1C1C1C1C00FFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFF001C1C1C1C1C1C1C00FFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFF001C1C1C1C1C1C1C00FFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFF001C1C1C1C1C1C1C00FFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFF000000000000000000FFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00000000000000000000000000000000006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E30000
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D00FF00E3E3E3E3E3E3E3E30000
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D00FF00E3E3E3E3E3E3E3E300FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D00FF00E3E3E3E3E3E3E3E300FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D00FF00E3E3E3E3E3E3E300FFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D00FF00E3E3E3E3E3E3E300FFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D00FF00E3E3E3E3E3E300FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D6D00FF00E3E3E3E3E3E300000000
+      000000000000000000000000006D6D6D6D6D6D00FF00E3E3E3E3E3E300FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D6D00FF00E3E3E3E3E3E3E300FFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D00FF00E3E3E3E3E3E3E3E300FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D00FF00E3E3E3E3E3E3E3E30000
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D00FF00E3E3E3E3E3E3E3E300FF
+      0000000000000000000000000000000000000000FF00E3E3E3E3E3E3E3E300FF
+      0000000000000000000000000000000000000000FF00E3E3E3E3E3E3E3E300FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00E3E3E3E3E3E3E3E30000
+      00000000000000000000000000000000000000000000E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3}
+    TabOrder = 6
+    OnOn = swtAmpliaOn
+    OnOff = swtAmpliaOff
+    Data = {03}
+  end
+  object swtBina: TJvSwitch
+    Left = 711
+    Top = 560
+    Width = 30
+    Height = 46
+    Cursor = crHandPoint
+    Caption = 'swtBina'
+    GlyphOff.Data = {
+      360A0000424D360A000000000000360400002800000020000000300000000100
+      08000000000000060000C40E0000C40E00000001000000000000000000004000
+      000080000000FF000000002000004020000080200000FF200000004000004040
+      000080400000FF400000006000004060000080600000FF600000008000004080
+      000080800000FF80000000A0000040A0000080A00000FFA0000000C0000040C0
+      000080C00000FFC0000000FF000040FF000080FF0000FFFF0000000020004000
+      200080002000FF002000002020004020200080202000FF202000004020004040
+      200080402000FF402000006020004060200080602000FF602000008020004080
+      200080802000FF80200000A0200040A0200080A02000FFA0200000C0200040C0
+      200080C02000FFC0200000FF200040FF200080FF2000FFFF2000000040004000
+      400080004000FF004000002040004020400080204000FF204000004040004040
+      400080404000FF404000006040004060400080604000FF604000008040004080
+      400080804000FF80400000A0400040A0400080A04000FFA0400000C0400040C0
+      400080C04000FFC0400000FF400040FF400080FF4000FFFF4000000060004000
+      600080006000FF006000002060004020600080206000FF206000004060004040
+      600080406000FF406000006060004060600080606000FF606000008060004080
+      600080806000FF80600000A0600040A0600080A06000FFA0600000C0600040C0
+      600080C06000FFC0600000FF600040FF600080FF6000FFFF6000000080004000
+      800080008000FF008000002080004020800080208000FF208000004080004040
+      800080408000FF408000006080004060800080608000FF608000008080004080
+      800080808000FF80800000A0800040A0800080A08000FFA0800000C0800040C0
+      800080C08000FFC0800000FF800040FF800080FF8000FFFF80000000A0004000
+      A0008000A000FF00A0000020A0004020A0008020A000FF20A0000040A0004040
+      A0008040A000FF40A0000060A0004060A0008060A000FF60A0000080A0004080
+      A0008080A000FF80A00000A0A00040A0A00080A0A000FFA0A00000C0A00040C0
+      A00080C0A000FFC0A00000FFA00040FFA00080FFA000FFFFA0000000C0004000
+      C0008000C000FF00C0000020C0004020C0008020C000FF20C0000040C0004040
+      C0008040C000FF40C0000060C0004060C0008060C000FF60C0000080C0004080
+      C0008080C000FF80C00000A0C00040A0C00080A0C000FFA0C00000C0C00040C0
+      C00080C0C000FFC0C00000FFC00040FFC00080FFC000FFFFC0000000FF004000
+      FF008000FF00FF00FF000020FF004020FF008020FF00FF20FF000040FF004040
+      FF008040FF00FF40FF000060FF004060FF008060FF00FF60FF000080FF004080
+      FF008080FF00FF80FF0000A0FF0040A0FF0080A0FF00FFA0FF0000C0FF0040C0
+      FF0080C0FF00FFC0FF0000FFFF0040FFFF0080FFFF00FFFFFF00E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E30000
+      00000000000000000000000000000000000000000000E3E3E3E3E3E3E3E300FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00E3E3E3E3E3E3E3E300FF
+      0000000000000000000000000000000000000000FF00E3E3E3E3E3E3E3E300FF
+      0000000000000000000000000000000000000000FF00E3E3E3E3E3E3E3E300FF
+      0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E30000
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D00FF00E3E3E3E3E3E3E3E300FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D00FF00E3E3E3E3E3E3E300FFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D00FF00E3E3E3E3E3E300FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D6D00FF00E3E3E3E3E3E300000000
+      000000000000000000000000006D6D6D6D6D6D00FF00E3E3E3E3E3E300FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D6D00FF00E3E3E3E3E3E3E300FFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D00FF00E3E3E3E3E3E3E300FFFF
+      FF000000000000000000FFFFFF006D6D6D6D6D00FF00E3E3E3E3E3E3E3E300FF
+      FF00E0E0E0E0E0E0E0E000FFFFFF006D6D6D6D00FF00E3E3E3E3E3E3E3E300FF
+      FFFF00E0E0E0E0E0E0E000FFFFFF006D6D6D6D00FF00E3E3E3E3E3E3E3E30000
+      FFFF00E0E0E0E0E0E0E0E000FFFFFF006D6D6D00FF00E3E3E3E3E3E3E3E30000
+      FFFFFF000000000000000000FFFFFF006D6D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00000000000000000000000000000000006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00000000000000000000000000000000006D6D00FF00E3E3E3E3E3E3E3E300FF
+      0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D00FF00E3E3E3E3E3E3E3E300FF
+      0000000000000000000000000000000000000000FF00E3E3E3E3E3E3E3E300FF
+      0000000000000000000000000000000000000000FF00E3E3E3E3E3E3E3E300FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00E3E3E3E3E3E3E3E30000
+      00000000000000000000000000000000000000000000E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3}
+    GlyphOn.Data = {
+      360A0000424D360A000000000000360400002800000020000000300000000100
+      08000000000000060000C40E0000C40E00000001000000000000000000004000
+      000080000000FF000000002000004020000080200000FF200000004000004040
+      000080400000FF400000006000004060000080600000FF600000008000004080
+      000080800000FF80000000A0000040A0000080A00000FFA0000000C0000040C0
+      000080C00000FFC0000000FF000040FF000080FF0000FFFF0000000020004000
+      200080002000FF002000002020004020200080202000FF202000004020004040
+      200080402000FF402000006020004060200080602000FF602000008020004080
+      200080802000FF80200000A0200040A0200080A02000FFA0200000C0200040C0
+      200080C02000FFC0200000FF200040FF200080FF2000FFFF2000000040004000
+      400080004000FF004000002040004020400080204000FF204000004040004040
+      400080404000FF404000006040004060400080604000FF604000008040004080
+      400080804000FF80400000A0400040A0400080A04000FFA0400000C0400040C0
+      400080C04000FFC0400000FF400040FF400080FF4000FFFF4000000060004000
+      600080006000FF006000002060004020600080206000FF206000004060004040
+      600080406000FF406000006060004060600080606000FF606000008060004080
+      600080806000FF80600000A0600040A0600080A06000FFA0600000C0600040C0
+      600080C06000FFC0600000FF600040FF600080FF6000FFFF6000000080004000
+      800080008000FF008000002080004020800080208000FF208000004080004040
+      800080408000FF408000006080004060800080608000FF608000008080004080
+      800080808000FF80800000A0800040A0800080A08000FFA0800000C0800040C0
+      800080C08000FFC0800000FF800040FF800080FF8000FFFF80000000A0004000
+      A0008000A000FF00A0000020A0004020A0008020A000FF20A0000040A0004040
+      A0008040A000FF40A0000060A0004060A0008060A000FF60A0000080A0004080
+      A0008080A000FF80A00000A0A00040A0A00080A0A000FFA0A00000C0A00040C0
+      A00080C0A000FFC0A00000FFA00040FFA00080FFA000FFFFA0000000C0004000
+      C0008000C000FF00C0000020C0004020C0008020C000FF20C0000040C0004040
+      C0008040C000FF40C0000060C0004060C0008060C000FF60C0000080C0004080
+      C0008080C000FF80C00000A0C00040A0C00080A0C000FFA0C00000C0C00040C0
+      C00080C0C000FFC0C00000FFC00040FFC00080FFC000FFFFC0000000FF004000
+      FF008000FF00FF00FF000020FF004020FF008020FF00FF20FF000040FF004040
+      FF008040FF00FF40FF000060FF004060FF008060FF00FF60FF000080FF004080
+      FF008080FF00FF80FF0000A0FF0040A0FF0080A0FF00FFA0FF0000C0FF0040C0
+      FF0080C0FF00FFC0FF0000FFFF0040FFFF0080FFFF00FFFFFF00E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E30000
+      00000000000000000000000000000000000000000000E3E3E3E3E3E3E3E300FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00E3E3E3E3E3E3E3E300FF
+      0000000000000000000000000000000000000000FF00E3E3E3E3E3E3E3E300FF
+      00006D6D6D6D6D6D6D6D6D6D6D6D6D6D6D6D0000FF00E3E3E3E3E3E3E3E300FF
+      006D6D6D6D6D6D6D6D6D6D6D6D6D6D6D6D006D00FF00E3E3E3E3E3E3E3E300FF
+      00000000000000000000000000000000006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFF000000000000000000FFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFF001C1C1C1C1C1C1C00FFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFF001C1C1C1C1C1C1C00FFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFF001C1C1C1C1C1C1C00FFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFF001C1C1C1C1C1C1C00FFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFF000000000000000000FFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00000000000000000000000000000000006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E30000
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D00FF00E3E3E3E3E3E3E3E30000
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D00FF00E3E3E3E3E3E3E3E300FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D00FF00E3E3E3E3E3E3E3E300FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D00FF00E3E3E3E3E3E3E300FFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D00FF00E3E3E3E3E3E3E300FFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D00FF00E3E3E3E3E3E300FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D6D00FF00E3E3E3E3E3E300000000
+      000000000000000000000000006D6D6D6D6D6D00FF00E3E3E3E3E3E300FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D6D00FF00E3E3E3E3E3E3E300FFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D00FF00E3E3E3E3E3E3E3E300FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D00FF00E3E3E3E3E3E3E3E30000
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D00FF00E3E3E3E3E3E3E3E300FF
+      0000000000000000000000000000000000000000FF00E3E3E3E3E3E3E3E300FF
+      0000000000000000000000000000000000000000FF00E3E3E3E3E3E3E3E300FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00E3E3E3E3E3E3E3E30000
+      00000000000000000000000000000000000000000000E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3}
+    TabOrder = 7
+    Data = {03}
+  end
+  object swtLivre2: TJvSwitch
+    Left = 792
+    Top = 560
+    Width = 30
+    Height = 46
+    Cursor = crHandPoint
+    Caption = 'JvSwitch1'
+    GlyphOff.Data = {
+      360A0000424D360A000000000000360400002800000020000000300000000100
+      08000000000000060000C40E0000C40E00000001000000000000000000004000
+      000080000000FF000000002000004020000080200000FF200000004000004040
+      000080400000FF400000006000004060000080600000FF600000008000004080
+      000080800000FF80000000A0000040A0000080A00000FFA0000000C0000040C0
+      000080C00000FFC0000000FF000040FF000080FF0000FFFF0000000020004000
+      200080002000FF002000002020004020200080202000FF202000004020004040
+      200080402000FF402000006020004060200080602000FF602000008020004080
+      200080802000FF80200000A0200040A0200080A02000FFA0200000C0200040C0
+      200080C02000FFC0200000FF200040FF200080FF2000FFFF2000000040004000
+      400080004000FF004000002040004020400080204000FF204000004040004040
+      400080404000FF404000006040004060400080604000FF604000008040004080
+      400080804000FF80400000A0400040A0400080A04000FFA0400000C0400040C0
+      400080C04000FFC0400000FF400040FF400080FF4000FFFF4000000060004000
+      600080006000FF006000002060004020600080206000FF206000004060004040
+      600080406000FF406000006060004060600080606000FF606000008060004080
+      600080806000FF80600000A0600040A0600080A06000FFA0600000C0600040C0
+      600080C06000FFC0600000FF600040FF600080FF6000FFFF6000000080004000
+      800080008000FF008000002080004020800080208000FF208000004080004040
+      800080408000FF408000006080004060800080608000FF608000008080004080
+      800080808000FF80800000A0800040A0800080A08000FFA0800000C0800040C0
+      800080C08000FFC0800000FF800040FF800080FF8000FFFF80000000A0004000
+      A0008000A000FF00A0000020A0004020A0008020A000FF20A0000040A0004040
+      A0008040A000FF40A0000060A0004060A0008060A000FF60A0000080A0004080
+      A0008080A000FF80A00000A0A00040A0A00080A0A000FFA0A00000C0A00040C0
+      A00080C0A000FFC0A00000FFA00040FFA00080FFA000FFFFA0000000C0004000
+      C0008000C000FF00C0000020C0004020C0008020C000FF20C0000040C0004040
+      C0008040C000FF40C0000060C0004060C0008060C000FF60C0000080C0004080
+      C0008080C000FF80C00000A0C00040A0C00080A0C000FFA0C00000C0C00040C0
+      C00080C0C000FFC0C00000FFC00040FFC00080FFC000FFFFC0000000FF004000
+      FF008000FF00FF00FF000020FF004020FF008020FF00FF20FF000040FF004040
+      FF008040FF00FF40FF000060FF004060FF008060FF00FF60FF000080FF004080
+      FF008080FF00FF80FF0000A0FF0040A0FF0080A0FF00FFA0FF0000C0FF0040C0
+      FF0080C0FF00FFC0FF0000FFFF0040FFFF0080FFFF00FFFFFF00E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E30000
+      00000000000000000000000000000000000000000000E3E3E3E3E3E3E3E300FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00E3E3E3E3E3E3E3E300FF
+      0000000000000000000000000000000000000000FF00E3E3E3E3E3E3E3E300FF
+      0000000000000000000000000000000000000000FF00E3E3E3E3E3E3E3E300FF
+      0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E30000
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D00FF00E3E3E3E3E3E3E3E300FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D00FF00E3E3E3E3E3E3E300FFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D00FF00E3E3E3E3E3E300FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D6D00FF00E3E3E3E3E3E300000000
+      000000000000000000000000006D6D6D6D6D6D00FF00E3E3E3E3E3E300FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D6D00FF00E3E3E3E3E3E3E300FFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D00FF00E3E3E3E3E3E3E300FFFF
+      FF000000000000000000FFFFFF006D6D6D6D6D00FF00E3E3E3E3E3E3E3E300FF
+      FF00E0E0E0E0E0E0E0E000FFFFFF006D6D6D6D00FF00E3E3E3E3E3E3E3E300FF
+      FFFF00E0E0E0E0E0E0E000FFFFFF006D6D6D6D00FF00E3E3E3E3E3E3E3E30000
+      FFFF00E0E0E0E0E0E0E0E000FFFFFF006D6D6D00FF00E3E3E3E3E3E3E3E30000
+      FFFFFF000000000000000000FFFFFF006D6D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00000000000000000000000000000000006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00000000000000000000000000000000006D6D00FF00E3E3E3E3E3E3E3E300FF
+      0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D00FF00E3E3E3E3E3E3E3E300FF
+      0000000000000000000000000000000000000000FF00E3E3E3E3E3E3E3E300FF
+      0000000000000000000000000000000000000000FF00E3E3E3E3E3E3E3E300FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00E3E3E3E3E3E3E3E30000
+      00000000000000000000000000000000000000000000E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3}
+    GlyphOn.Data = {
+      360A0000424D360A000000000000360400002800000020000000300000000100
+      08000000000000060000C40E0000C40E00000001000000000000000000004000
+      000080000000FF000000002000004020000080200000FF200000004000004040
+      000080400000FF400000006000004060000080600000FF600000008000004080
+      000080800000FF80000000A0000040A0000080A00000FFA0000000C0000040C0
+      000080C00000FFC0000000FF000040FF000080FF0000FFFF0000000020004000
+      200080002000FF002000002020004020200080202000FF202000004020004040
+      200080402000FF402000006020004060200080602000FF602000008020004080
+      200080802000FF80200000A0200040A0200080A02000FFA0200000C0200040C0
+      200080C02000FFC0200000FF200040FF200080FF2000FFFF2000000040004000
+      400080004000FF004000002040004020400080204000FF204000004040004040
+      400080404000FF404000006040004060400080604000FF604000008040004080
+      400080804000FF80400000A0400040A0400080A04000FFA0400000C0400040C0
+      400080C04000FFC0400000FF400040FF400080FF4000FFFF4000000060004000
+      600080006000FF006000002060004020600080206000FF206000004060004040
+      600080406000FF406000006060004060600080606000FF606000008060004080
+      600080806000FF80600000A0600040A0600080A06000FFA0600000C0600040C0
+      600080C06000FFC0600000FF600040FF600080FF6000FFFF6000000080004000
+      800080008000FF008000002080004020800080208000FF208000004080004040
+      800080408000FF408000006080004060800080608000FF608000008080004080
+      800080808000FF80800000A0800040A0800080A08000FFA0800000C0800040C0
+      800080C08000FFC0800000FF800040FF800080FF8000FFFF80000000A0004000
+      A0008000A000FF00A0000020A0004020A0008020A000FF20A0000040A0004040
+      A0008040A000FF40A0000060A0004060A0008060A000FF60A0000080A0004080
+      A0008080A000FF80A00000A0A00040A0A00080A0A000FFA0A00000C0A00040C0
+      A00080C0A000FFC0A00000FFA00040FFA00080FFA000FFFFA0000000C0004000
+      C0008000C000FF00C0000020C0004020C0008020C000FF20C0000040C0004040
+      C0008040C000FF40C0000060C0004060C0008060C000FF60C0000080C0004080
+      C0008080C000FF80C00000A0C00040A0C00080A0C000FFA0C00000C0C00040C0
+      C00080C0C000FFC0C00000FFC00040FFC00080FFC000FFFFC0000000FF004000
+      FF008000FF00FF00FF000020FF004020FF008020FF00FF20FF000040FF004040
+      FF008040FF00FF40FF000060FF004060FF008060FF00FF60FF000080FF004080
+      FF008080FF00FF80FF0000A0FF0040A0FF0080A0FF00FFA0FF0000C0FF0040C0
+      FF0080C0FF00FFC0FF0000FFFF0040FFFF0080FFFF00FFFFFF00E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E30000
+      00000000000000000000000000000000000000000000E3E3E3E3E3E3E3E300FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00E3E3E3E3E3E3E3E300FF
+      0000000000000000000000000000000000000000FF00E3E3E3E3E3E3E3E300FF
+      00006D6D6D6D6D6D6D6D6D6D6D6D6D6D6D6D0000FF00E3E3E3E3E3E3E3E300FF
+      006D6D6D6D6D6D6D6D6D6D6D6D6D6D6D6D006D00FF00E3E3E3E3E3E3E3E300FF
+      00000000000000000000000000000000006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFF000000000000000000FFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFF001C1C1C1C1C1C1C00FFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFF001C1C1C1C1C1C1C00FFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFF001C1C1C1C1C1C1C00FFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFF001C1C1C1C1C1C1C00FFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFF000000000000000000FFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00000000000000000000000000000000006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E30000
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D00FF00E3E3E3E3E3E3E3E30000
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D00FF00E3E3E3E3E3E3E3E300FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D00FF00E3E3E3E3E3E3E3E300FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D00FF00E3E3E3E3E3E3E300FFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D00FF00E3E3E3E3E3E3E300FFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D00FF00E3E3E3E3E3E300FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D6D00FF00E3E3E3E3E3E300000000
+      000000000000000000000000006D6D6D6D6D6D00FF00E3E3E3E3E3E300FFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D6D00FF00E3E3E3E3E3E3E300FFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D6D00FF00E3E3E3E3E3E3E3E300FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D6D00FF00E3E3E3E3E3E3E3E30000
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D6D00FF00E3E3E3E3E3E3E3E300FF
+      00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D6D00FF00E3E3E3E3E3E3E3E300FF
+      0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF006D00FF00E3E3E3E3E3E3E3E300FF
+      0000000000000000000000000000000000000000FF00E3E3E3E3E3E3E3E300FF
+      0000000000000000000000000000000000000000FF00E3E3E3E3E3E3E3E300FF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00E3E3E3E3E3E3E3E30000
+      00000000000000000000000000000000000000000000E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3
+      E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3E3}
+    TabOrder = 8
+    Data = {03}
+  end
+  object MenuImagem: TMainMenu
+    Left = 806
+    Top = 59
+    object Imagem1: TMenuItem
+      Caption = '&Imagem'
+      Enabled = False
+      object Histograma1: TMenuItem
+        Caption = '&Histograma'
+        OnClick = Histograma1Click
+      end
+      object Equalizar1: TMenuItem
+        Caption = '&Equalizar'
+        OnClick = Equalizar1Click
+      end
+      object Brilho1: TMenuItem
+        Caption = 'B&rilho'
+        ImageIndex = 1
+        OnClick = Brilho1Click
+      end
+      object Gamma1: TMenuItem
+        Caption = '&Gamma'
+        ImageIndex = 0
+        OnClick = Gamma1Click
+      end
+      object Binarizar1: TMenuItem
+        Caption = 'B&inarizar'
+        OnClick = Binarizar1Click
+      end
+      object N3: TMenuItem
+        Caption = '-'
+      end
+      object Salvar1: TMenuItem
+        Caption = 'Salvar'
+        OnClick = Salvar1Click
+      end
+    end
+    object Filtros1: TMenuItem
+      Caption = '&Filtros'
+      Enabled = False
+      object Outline1: TMenuItem
+        Caption = '&Outline'
+        OnClick = Outline1Click
+      end
+      object RemoverRuido1: TMenuItem
+        Caption = '&Remover Ruido'
+        OnClick = RemoverRuido1Click
+      end
+      object Blur1: TMenuItem
+        Caption = 'B&lur'
+        OnClick = Blur1Click
+      end
+      object Sharpen1: TMenuItem
+        Caption = '&Sharpen'
+        OnClick = Sharpen1Click
+      end
+      object Pixellize1: TMenuItem
+        Caption = '&Pixellize'
+        OnClick = Pixellize1Click
+      end
+      object MatrizConvoluo1: TMenuItem
+        Caption = '&Matriz Convolu'#231#227'o'
+        OnClick = MatrizConvoluo1Click
+      end
+    end
+    object Relatrios1: TMenuItem
+      Caption = 'Relat'#243'rios'
+      object Completo1: TMenuItem
+        Caption = 'Completo'
+      end
+      object Aprovados1: TMenuItem
+        Caption = 'Aprovados'
+      end
+      object Rejeitados1: TMenuItem
+        Caption = 'Rejeitados'
+      end
+    end
+    object Ajuda1: TMenuItem
+      Caption = 'Sobre...'
+    end
+  end
+  object DlgSalvar: TSaveDialog
+    DefaultExt = 'jpg'
+    Filter = 'Imagens JPG|*.jpg|Imagens BMP|*.bmp'
+    Left = 871
+    Top = 60
+  end
+  object ImageList1: TImageList
+    Height = 24
+    ShareImages = True
+    Width = 24
+    Left = 838
+    Top = 61
+    Bitmap = {
+      494C01011F002200040018001800FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      000000000000360000002800000060000000D800000001002000000000000044
+      0100000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000080808000C0C0C0008080800080808000C0C0
+      C0008080800080808000C0C0C0008080800080808000C0C0C000808080008080
+      80008080800000000000C0C0C000FFFFFF000000000000000000000000000000
+      0000000000000000000000000000847E80006E6B6C005D5D5D00595959005959
+      590059595900656565007A7A7A00000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000008080800080808000C0C0C000C0C0C000C0C0
+      C000C0C0C000C0C0C000C0C0C000C0C0C000C0C0C000C0C0C000C0C0C0008080
+      80000000000080808000FFFFFF00FFFF00000000000000000000000000000000
+      000000000000957B7B007C616100B3949500C0A5A500C6ADAD00C5A9AA00C29F
+      A000B78D8D00765B5300524E4E005D5D5D000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000080000000
+      8000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000008080800080808000C0C0C000C0C0C000C0C0
+      C000C0C0C000C0C0C000C0C0C000C0C0C000C0C0C00080808000808080008080
+      8000C0C0C000FFFFFF0080808000C0C0C0000000000000000000000000000000
+      0000D3CACA00ECF5F500E4E9E900DFDEDE00DDD9DA00DED2D200D4BCBC00D4BC
+      BC00DBD7D700BC9B9C00C49C9C00D0A4A400524E4E007A7A7A00000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000000080000000FF000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000080808000C0C0C0008080800080808000C0C0
+      C0008080800080808000C0C0C00080808000808080008080800000000000C0C0
+      C000FFFFFF00FFFFFF00C0C0C00000000000000000000000000000000000C5A5
+      A300F3FDFC00E9EAEA00E9EAEA00E4E4E400DEE2E200DDD9DA00CEB5B500E3CD
+      CE00DBD2D100D1C0C200BCA2A500C49193008964640065656500000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000080000000FF00000080000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000008080800080808000C0C0C000C0C0C000C0C0
+      C000C0C0C000C0C0C000C0C0C000C0C0C000808080000000000080808000FFFF
+      FF00FFFF00008080800000000000C0C0C000000000000000000000000000C5A5
+      A300ECECEC00F1F1F100F1F1F100ECECEC00E4E4E400DFDEDE00D4BCBC00E3CD
+      CE00D1B1B100CEADAD00C9A9A900B4838400B48384006E6B6C00000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000080000000800000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000008080800080808000C0C0C000C0C0C0008080
+      8000C0C0C000C0C0C000808080008080800080808000C0C0C000FFFFFF008080
+      8000C0C0C0000000000080808000C0C0C000000000000000000000000000C5A5
+      A300FBFFFF00F7F5F600E3CDCE00F3FDFC00ECF5F500E4E9E900CFABAB00D6AA
+      AA00CD8B8B00CD8B8B00BF858000C1959B009B84830000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000000000000000FF000000
+      FF000000FF0000000000000080000000FF000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000C0C0C00080808000C0C0C0008080800080808000C0C0
+      C0008080800080808000808080000000000000000000FFFFFF00FFFFFF00C0C0
+      C00000000000C0C0C000C0C0C000808080000000000000000000000000000000
+      0000EDE4E500D1B1B100B05D6A00C1959B00D1C0C200DEE2E200D1B1B100CF90
+      9100CC7B7D00CC7B7D00BF737300BE9290000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000008000808080008080
+      8000808080000000FF0000000000000080000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000C0C0C000C0C0C000C0C0C000808080008080800080808000808080008080
+      8000808080008080800000000000808080000000000000000000808080000000
+      0000C0C0C0008080800080808000C0C0C0000000000000000000000000000000
+      000000000000B8A9B700C9785F00E3CDCE00C3849E00B7819900C2888A00CC6D
+      6D00CC6D6D00D06E6E00B7686700A58385000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000000000000000000C0C0
+      C000808080008080800080808000000000000000800000000000000000000000
+      000000000000000000000000FF00000000008080800080808000808080008080
+      800080808000000000000000000000000000000000000000000000000000C0C0
+      C000808080000000000000000000000000000000000000000000000000000000
+      000000000000808080000000000000000000FFFFFF0000000000000000008080
+      8000C0C0C0008080800080808000C0C0C0000000000000000000000000000000
+      0000BBABB800C39DB300D5944200FFA71100FFA10000FFAE0700F7CC8700DFB9
+      BE00BD809300AB3D46009C5B5B00626262000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000000000000000000FFFF
+      FF00C0C0C000C0C0C000C0C0C00000008000FFFF00008080000080800000FFFF
+      00008080000080800000FFFF00000000FF00C0C0C000C0C0C000C0C0C000C0C0
+      C000808080000000000000000000000000000000000000000000C0C0C000C0C0
+      C000000000000000000000000000FFFFFF00C0C0C000FFFFFF00FFFFFF00C0C0
+      C000000000000000000000000000000000000000000000000000C0C0C000C0C0
+      C000C0C0C000C0C0C000C0C0C000808080000000000000000000000000000000
+      0000CAC7C800BB899C00F09A3000FFB12E00FFB12E00FEAD2400FFB61800FFBB
+      2600F9D07200D2909700B76B83004B4748006565650000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000000000000000000FFFF
+      FF000000000000000000000000000000800080800000FFFF0000FFFF00008080
+      0000FFFF0000FFFF0000808000000000FF00000000000000000000000000C0C0
+      C0008080800000000000000000000000000000000000C0C0C000C0C0C0000000
+      000000000000C0C0C000FFFFFF00808000008080000080800000C0C0C0008080
+      0000808000000000000000000000C0C0C00000000000C0C0C000808080008080
+      8000C0C0C0008080800080808000C0C0C0000000000000000000000000000000
+      0000CAC2C700BD809300FEAD2400FFB73A00FFB73A00FFBA3C00FFBA3C00FFB9
+      3400FFBB2600FFC95100EAB26B00D68C8400895C66005A555500000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000000000000000000FFFF
+      FF0000000000FF000000FFFF00000000000000008000FFFF0000FFFFFF00FFFF
+      FF00FFFFFF00FFFF00000000FF0000000000FFFF0000FF000000FFFF0000C0C0
+      C000808080000000000000000000000000000000000000000000000000000000
+      0000C0C0C000C0C0C000FFFFFF00FFFFFF00C0C0C000FFFFFF00FFFFFF00C0C0
+      C000FFFFFF00FFFFFF00C0C0C0000000000080808000C0C0C000808080008080
+      8000C0C0C0008080800080808000C0C0C0000000000000000000000000000000
+      0000C2AEC000CF926800FFC33500FFC94E00FFC94E00FFC94E00FFC95100FFCF
+      5600FFCF5600FFC64F00FFC04900FFBC4300FFCD1D00D87A47008B6B75000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000000000000000000FFFF
+      FF0000000000FFFF0000FF00000000000000000080008080000080800000FFFF
+      000080800000808000000000800000000000FF000000FFFF0000FF000000C0C0
+      C000808080000000000000000000000000000000000000000000000000000000
+      0000C0C0C000C0C0C000C0C0C000808000008080000080800000C0C0C0008080
+      0000808000008080000080800000808000000000000080808000C0C0C000C0C0
+      C000C0C0C000C0C0C000C0C0C000808080000000000000000000000000000000
+      0000BFA2BC00DB9F5300FFD14200B78D3A009974360087653300876533008E6D
+      2E00A77D3500FFD35A00FFCC5700FFC55100FFC33500CF6A5700907780000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000000000000000000FFFF
+      FF0000000000FF000000FFFF0000FFFF00000000000000008000FFFF00008080
+      0000FFFF00000000800000000000FFFF0000FFFF0000FF000000FFFF0000C0C0
+      C000808080000000000000000000000000000000000000000000808080000000
+      0000C0C0C000C0C0C000C0C0C000808000008080000080800000C0C0C0008080
+      00008080000080800000808000008080000000000000C0C0C000808080008080
+      8000C0C0C0008080800080808000C0C0C0000000000000000000000000000000
+      0000BFA2BC00F5B54600E0B03800BCA2A500DBCDDC00F3EAF700F0E0F300D3C7
+      CF00A99594008E6D2E00FCC95A00FFD35A00FFC64900CF6A57006E6B6C000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000000000000000000FFFF
+      FF0000000000FF000000FFFF0000FFFF0000FF000000FFFF0000000000000000
+      000000000000FFFF0000FF000000FFFF0000FFFF0000FF000000FFFF0000C0C0
+      C000808080000000000000000000000000000000000000000000000000000000
+      0000C0C0C000C0C0C000C0C0C000808000008080000080800000C0C0C0008080
+      0000808000008080000080800000808000000000000000000000808080008080
+      8000C0C0C0008080800080808000C0C0C000000000000000000000000000BBAB
+      B800B5978700CBA76F00F0E0F300917C9B00B48B8500B78D8D00C9A9A900C9A9
+      A900C4919300EDA8AF00EDA8AF00AF999D00A77D3500CC7B7D00767676000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000000000000000000FFFF
+      FF0000000000FFFF0000FF000000FF000000FFFF0000FF000000FF000000FFFF
+      0000FF000000FF000000FFFF0000FF000000FF000000FFFF0000FF000000C0C0
+      C000808080000000000000000000000000000000000000000000000000000000
+      0000C0C0C000C0C0C000FFFFFF00808000008080000080800000C0C0C0008080
+      0000808000008080000080800000808000000000000000000000808080008080
+      800080808000808080008080800080808000000000000000000000000000CAC7
+      C800C39A6F00FFD35A00AF9F76009E93B800CF926800C8978900AE878E00B48D
+      95009B848300B5798200BD8A9500D39DB100DB9F5300AA6C7D00797476000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000000000000000000FFFF
+      FF0000000000FF000000FFFF0000FFFF0000FF000000FFFF0000FFFF0000FF00
+      0000FFFF0000FFFF0000FF000000FFFF0000FFFF0000FFFFFF00FFFF0000C0C0
+      C000808080000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000FFFFFF00FFFFFF00C0C0
+      C000FFFFFF00FFFFFF00C0C0C000FFFFFF000000000000000000000000000000
+      000000000000000000000000000000000000000000000000000000000000CBC7
+      C700CBA76F00F9D072008D806400998F69009A968900BBB4AB00C5A5A300BE92
+      9000A2938300B4838400A3737600C39A6F00EAB26B00AB788200917F83000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000000000000000000FFFF
+      FF0000000000FF000000FFFF0000FFFF0000FF000000FFFF0000FFFF0000FF00
+      0000FFFF0000FFFF0000FF000000FFFF0000FFFF0000FFFFFF00FFFF0000C0C0
+      C000808080000000000000000000000000000000000000000000000000000000
+      000080808000FFFFFF00FFFFFF00FFFFFF0080808000C0C0C000C0C0C000C0C0
+      C000C0C0C000C0C0C000C0C0C000C0C0C0000000000000000000000000000000
+      000000000000000000000000000000000000000000000000000000000000DBD9
+      DE00F9D07200FEE37300FFE98B00C7BAA200BBB4AB00BBB39700FFFAB300FFFA
+      B300FFFAB300FFF5A200FFEE9C00FFE99400C9785F00BD8A95009F9E9E000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000000000000000000FFFF
+      FF0000000000FFFF0000FF000000FF000000FFFF0000FF000000FF000000FFFF
+      0000FF000000FF000000FFFF0000FFFFFF00FFFFFF00FFFF0000FF000000C0C0
+      C000808080000000000000000000000000000000000000000000808080000000
+      00000000000080808000FFFFFF00FFFFFF0080808000C0C0C000C0C0C000C0C0
+      C000C0C0C000C0C0C000C0C0C000C0C0C0000000000080808000000000000000
+      0000000000000000000000000000000000000000000000000000BBABB800DBD9
+      DE00FEE37300FFF28800FFF79200FCEEAC00FFF4B300FFFCB900FFFBBD00FFFB
+      BD00FFF8B900FCEEAC00FEEBA200FFE99400B7686700917F83009F9E9E000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000000000000000000FFFF
+      FF0000000000FF000000FFFF0000FFFF0000FF000000FFFF0000FFFF0000FF00
+      0000FFFF0000FFFF0000FFFFFF00FFFF0000FFFF0000FF000000FFFF0000C0C0
+      C000808080000000000000000000000000000000000000000000000000000000
+      0000000000000000000080808000FFFFFF0080808000C0C0C000C0C0C000C0C0
+      C000C0C0C000C0C0C000C0C0C000C0C0C0000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000CCC8C800DDD9
+      DA00A2938300B9A09100D1B08B00FFF6AD00FFFEBE00FFFFD000FFFFD600FFFF
+      D000FBF9CA00FFF4B300FEEBA200FFEE9C00B05D6A00797476009F9E9E000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000000000000000000FFFF
+      FF00000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000000000000000000C0C0
+      C000808080000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000808080008080800080808000808080008080
+      8000808080008080800000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000BBABB800CFCC
+      CD00D6D2D200D3CACA00CDC6C700AF999D00957B83008B6B75008B6B7500A583
+      8500B9A09100E9CCA900F9E5A900FFFDA500B5798200847E80009F9E9E000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000000000000000000FFFF
+      FF00808080008080800080808000808080008080800080808000808080008080
+      800080808000808080008080800080808000808080008080800080808000C0C0
+      C000808080000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000CCC8C800CCC8C800CCC8C800CCC8C800DBD2D100E3CDCE00B3949500A583
+      85009E727C0098667300A3737600B4838400A37376008F8F8F009F9E9E000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000000000000000000FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00C0C0C0000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000BBABB800CCC8C800CDC6C700DED2
+      D200D1C0C200BC9B9C00C1959B00B3818C009C797900B9B9B9009F9E9E000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000080808000000000000000000080808000000000000000
+      0000808080000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000B9B9B900CCC8C800BBABB80000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000187300082163000018730008185A000021
+      5200002152000010420000104200001031000010310000082900001021000000
+      0800000008000000080000000800000008000000000080808000808080008080
+      8000808080008080800080808000808080008080800080808000808080008080
+      8000808080008080800080808000808080008080800080808000808080008080
+      8000808080008080800080808000000000008686860086868600868686008686
+      8600868686008686860086868600868686008686860086868600868686008686
+      8600868686000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000CCCCCC00CCCC
+      CC00BBBBBB00BBBBBB00CCCCCC00BBBBBB000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000052D6F700105A9C0010639C00105A8C00105A
+      9C00105A8C00084A8C00084A8C0010528C00084A8C00084A8C0008398C001039
+      840008398C0008398C0008317B000800000000000000C0C0C000C0C0C000C0C0
+      C000C0C0C000C0C0C000C0C0C00000000000FFFFFF00C0C0C000C0C0C000C0C0
+      C000C0C0C000C0C0C000C0C0C000C0C0C000C0C0C000C0C0C000C0C0C000C0C0
+      C000C0C0C0000000FF00808080000000000086868600B2B2B200868686008686
+      8600868686008686860086868600868686008686860086868600868686008686
+      8600F0FBFF000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000AAAAAA00AAAAAA00999999007777
+      7700777777007777770077777700666666006666660000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000052CEF7007BDEF70018B5F700001873000008
+      42000018310018B5F70018B5F70021ADEF00189CEF00189CEF00084A8C000010
+      420000103100084A8C0008398C000800100000000000C0C0C000C0C0C000C0C0
+      C000C0C0C000C0C0C000808080000000000000000000FFFFFF00C0C0C000C0C0
+      C000C0C0C000C0C0C000C0C0C000C0C0C000C0C0C000C0C0C000C0C0C000C0C0
+      C0000000FF00C0C0C000808080000000000086868600B2B2B2000808080090A9
+      AD0090A9AD006699CC0090A9AD0090A9AD00669999006699CC0090A9AD008686
+      8600F0FBFF000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000DDDDDD00DDDDDD00CCCCCC00CCCC
+      CC00DDDDDD00DDDDDD00CCCCCC00CCCCCC00CCCCCC0077777700000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000052CEF70084E7F70021ADEF0000183100189C
+      EF0000219C0029C6F70018B5F70018B5F70021ADEF001894E70000298400189C
+      EF0000219C000008290008398C000800000000000000C0C0C000C0C0C000C0C0
+      C000C0C0C000C0C0C000808080000000000000000000FFFFFF00C0C0C000C0C0
+      C000C0C0C000C0C0C000C0C0C000C0C0C000C0C0C000C0C0C000C0C0C0000000
+      FF00C0C0C000C0C0C000808080000000000086868600B2B2B200330000006699
+      CC006699CC00669999006699CC006699CC0090A9AD00669999006699CC008686
+      8600F8F8F8000000000086868600868686008686860086868600868686008686
+      8600868686008686860086868600000000000000000000000000000000000000
+      0000000000000000000000000000EEEEEE002222660011119900222266001111
+      550011115500004444001111550022226600CCCCCC00CCCCCC00777777000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000052CEF70084E7F70021ADEF000063CE000018
+      310018B5F70029C6F70018B5F70029C6F700189CEF0021A5E700004AC6000010
+      310018B5F7000008420008398C000800000000000000C0C0C000C0C0C000C0C0
+      C000C0C0C0008080800000000000000000000000000000000000C0C0C000C0C0
+      C000C0C0C000C0C0C000C0C0C000C0C0C000C0C0C000C0C0C0000000FF00C0C0
+      C000C0C0C000C0C0C000808080000000000086868600B2B2B200000000006699
+      990090A9AD0066CCCC0090A9AD00669999006699CC0066999900669999008686
+      8600F8F8F8000000000086868600868686008686860086868600868686008686
+      8600868686008686860086868600000000000000000000000000000000000000
+      00000000000000000000DDDDDD00EEEEEE002222660000444400222266000000
+      88001111550011115500111155001111550022226600DDDDDD00CCCCCC006666
+      6600000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000005AC6EF0094E7FF0021B5EF00006BCE00004A
+      C6000031840031D6FF0029C6F70029C6F70021B5EF0021ADEF001894E700004A
+      C60008217B001073C60008398C000800100000000000C0C0C000C0C0C000C0C0
+      C000808080000000000000000000000000000000000000000000FFFFFF00C0C0
+      C000C0C0C000C0C0C000C0C0C000C0C0C000C0C0C0000000FF00C0C0C000C0C0
+      C000C0C0C000C0C0C000808080000000000086868600B2B2B200000000003939
+      3900336633003366660033666600336666005F5F5F0033666600336666008686
+      8600F8F8F8000000000066333300333300002929290066333300292929006600
+      3300660033008686860086868600000000000000000000000000000000000000
+      000000000000DDDDDD00DDDDDD00004488000044880022226600004488002222
+      AA00111199001111550000448800222266001111550000448800CCCCCC00CCCC
+      CC0088888800000000000000000000000000000000007B7B7B00848484007B7B
+      7B007B7B7B00848484007B7B7B00398CA500639CA500107BA5001873A5001884
+      A5001884A5001884A5001884A5001884A500107BA500107BA500189CEF001894
+      E700107BD6001073D60008398C000800000000000000C0C0C000C0C0C000C0C0
+      C00080808000000000000000000000000000FFFFFF0000000000FFFFFF00C0C0
+      C000C0C0C000C0C0C000C0C0C000C0C0C0000000FF00C0C0C000C0C0C000C0C0
+      C000C0C0C000C0C0C000808080000000000086868600B2B2B200000000003333
+      33003939390033663300424242004D4D4D005555550033666600006633008686
+      8600F8F8F8000000000029292900663333006600330066003300660033006600
+      3300660033008686860086868600000000000000000000000000000000000000
+      0000EEEEEE00EEEEEE0000448800004488000044880000448800004488000044
+      880000448800333377000044880000448800222266001111550011555500DDDD
+      DD00AAAAAA0077777700000000000000000000000000848484007B7B7B008484
+      840084848400848484008484840018526B004A636B0010426B0010526B001052
+      730010526B001052730018636B001052730010526B00106B9C0021ADEF00108C
+      DE00107BD600107BD600084A84000800000000000000C0C0C000C0C0C000C0C0
+      C000C0C0C000C0C0C000C0C0C00000000000FFFFFF00C0C0C000C0C0C000C0C0
+      C000C0C0C000C0C0C000C0C0C0000000FF00C0C0C000C0C0C000C0C0C000C0C0
+      C000C0C0C000C0C0C000808080000000000086868600B2B2B200000000003939
+      390039393900336633003366330042424200006633004D4D4D00999966008686
+      8600F8F8F8000000000066003300660033006600330066003300660033006600
+      330066003300868686008686860000000000000000000000000000000000EEEE
+      EE00EEEEEE0033337700004488002222AA00337777003333BB00444488003333
+      BB00115599000044880022226600004488001111550022226600111155002222
+      AA00DDDDDD00AAAAAA00000000000000000052D6F70010639C0010639C00105A
+      9C00105A8C00105A9C00084A8C0010528C00084A8C00084A8C0010428C000839
+      8C001039840008398C0008398C0008398C0010526B00107BA50021ADEF001894
+      E7001884DE00107BD60008398C000800000000000000C0C0C000C0C0C000C0C0
+      C000C0C0C000C0C0C000C0C0C00000000000FFFFFF00C0C0C000C0C0C000C0C0
+      C000C0C0C000C0C0C0000000FF00C0C0C000C0C0C000C0C0C000C0C0C000C0C0
+      C000C0C0C000C0C0C000808080000000000086868600B2B2B200000000008686
+      8600336666002929290055555500424242004D4D4D00424242004D4D4D008686
+      8600F8F8F80008080800660033005F5F5F005F5F5F0066003300660033006600
+      330066003300868686008686860000000000000000000000000000000000EEEE
+      EE001155990044448800EEEEEE00EEEEEE003333770044448800DDDDDD004444
+      8800CCCCCC00CCCCCC00DDDDDD0011115500CCCCCC0011115500222266002222
+      6600DDDDDD00BBBBBB00000000000000000052CEF70021ADEF0021B5EF0018B5
+      F70021B5F70021B5EF0021ADEF00189CEF00189CEF001894E700107BD6001073
+      D6001063C6001052A5001052A50008398C0010526B00107BA50018B5F7001894
+      E7001884DE00107BD60008398C000800000000000000C0C0C000C0C0C000C0C0
+      C000C0C0C000C0C0C000C0C0C00000000000FFFFFF00C0C0C000C0C0C000C0C0
+      C000C0C0C0000000FF00C0C0C000C0C0C000C0C0C000C0C0C000C0C0C000C0C0
+      C000C0C0C000C0C0C000808080000000000086868600B2B2B200000000009999
+      66004D4D4D000033330000333300999966005555550000663300999966008686
+      8600F8F8F800000000005F5F5F0066003300660033005F5F5F00660033006600
+      330066003300868686008686860000000000000000000000000000000000DDDD
+      DD003333770044448800CCCCCC00555599004444880011559900EEEEEE004444
+      8800DDDDDD0000448800EEEEEE0022226600DDDDDD0011115500222266002222
+      6600CCCCCC00BBBBBB00000000000000000052D6F70018B5F70021B5EF00FFFF
+      FF00FFFFFF00108CDE001894E700000000000000000000000000000000000000
+      000000000000000000001063BD0008317B0010526B00106B9C0021ADEF001894
+      E700108CDE00107BD600084A84000800000000000000C0C0C000C0C0C000C0C0
+      C000C0C0C000C0C0C000C0C0C00000000000FFFFFF00C0C0C000C0C0C000C0C0
+      C0000000FF00C0C0C000C0C0C000C0C0C000C0C0C000C0C0C000C0C0C000C0C0
+      C000C0C0C000C0C0C000808080000000000086868600B2B2B20000000000F0CA
+      A60033663300393939003333330086868600999966004D4D4D00F0CAA6008686
+      8600F8F8F800000000006633660066336600660033005F5F5F00660033006600
+      330066003300868686008686860000000000000000000000000000000000DDDD
+      DD0033337700444488003333BB00EEEEEE00337777002266AA00EEEEEE001155
+      9900DDDDDD0011559900EEEEEE0022226600DDDDDD0022226600333377004444
+      8800CCCCCC00AAAAAA0000000000000000005AC6EF0021B5EF0018B5F700105A
+      7B00FFFFFF001894E700108CDE00ADADAD00ADADAD00ADADAD00ADADAD00ADAD
+      AD00ADADAD00000000001063AD0008398C0010526B00106B9C0000298400189C
+      EF0000219C000010310008398C000000000000000000C0C0C000C0C0C000C0C0
+      C000C0C0C000C0C0C000C0C0C00000000000FFFFFF00C0C0C000C0C0C0000000
+      FF00C0C0C000C0C0C000C0C0C000C0C0C000C0C0C000C0C0C000C0C0C000C0C0
+      C000C0C0C000C0C0C000808080000000000086868600B2B2B200000000009999
+      6600868686003333330099996600999966008686860099996600999966008686
+      8600F8F8F8000808080066336600663366005F5F5F00660033005F5F5F006600
+      330066003300868686008686860000000000000000000000000000000000EEEE
+      EE00004488003333BB00EEEEEE00FFFFFF00444488004444CC00FFFFFF004444
+      8800DDDDDD0011559900DDDDDD0033337700DDDDDD00DDDDDD008888CC003333
+      7700CCCCCC00BBBBBB00000000000000000052CEF70018B5F70021B5EF001052
+      7300FFFFFF0021A5E70021A5E700ADADAD00ADADAD00ADADAD00ADADAD00ADAD
+      AD00ADADAD00000000001063C60008398C0010526B00106B9C00004AC6000010
+      310018B5F70000084200084A84000000000000000000C0C0C000C0C0C000C0C0
+      C000C0C0C000C0C0C000C0C0C00000000000FFFFFF00C0C0C0000000FF00C0C0
+      C000C0C0C000C0C0C000C0C0C000C0C0C000C0C0C000FFFFFF00FFFFFF00C0C0
+      C000C0C0C000C0C0C000808080000000000086868600B2B2B20000000000F0CA
+      A600F0CAA60099996600F0CAA600F0CAA60099996600F0CAA600F0CAA6008686
+      8600F8F8F8000000000066336600663366006633660099339900660033006633
+      660099339900868686008686860000000000000000000000000000000000EEEE
+      EE001155990055559900FFFFFF0011559900555599002266AA00EEEEEE003333
+      7700DDDDDD0022666600EEEEEE0044448800DDDDDD0000448800AAAAAA002222
+      6600CCCCCC00BBBBBB00000000000000000052D6F70021B5EF0018B5F700106B
+      8400FFFFFF001894E7001894E700ADADAD00ADADAD00ADADAD00ADADAD00ADAD
+      AD00ADADAD00000000001063C60008398C00084A7300106B9C00005ACE000063
+      CE00001031000018730008398C000000000000000000C0C0C000C0C0C000C0C0
+      C000C0C0C000C0C0C000C0C0C00000000000FFFFFF000000FF00C0C0C000C0C0
+      C000C0C0C000C0C0C000C0C0C000C0C0C000C0C0C00000000000000000000000
+      0000FFFFFF00FFFFFF00808080000000000086868600B2B2B200B2B2B200B2B2
+      B200B2B2B200B2B2B200B2B2B200B2B2B200B2B2B200B2B2B200B2B2B200B2B2
+      B200F8F8F8000000000099339900663366006633660066336600663366006633
+      660099339900868686008686860000000000000000000000000000000000FFFF
+      FF003333BB004444CC00FFFFFF002266AA00115599002266AA00FFFFFF003333
+      7700EEEEEE0044448800DDDDDD002266AA00DDDDDD002266AA00AAAAAA003333
+      7700DDDDDD00DDDDDD0000000000000000005AC6EF0021B5EF00000000000000
+      0000000000000000000021A5E700FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00000000001063C60008398C00084A730010639C001894E700107B
+      D6001073D600106BCE0008398C000000000000000000FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF0000000000FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00C0C0C000000000000000
+      00000000000000000000FFFFFF000000000086868600F8F8F800F8F8F800F8F8
+      F800F8F8F800F8F8F800F8F8F800F8F8F800F8F8F800F8F8F800F8F8F800F8F8
+      F800F8F8F8000000000066336600993399006633660066336600663366006633
+      660066336600868686008686860000000000000000000000000000000000EEEE
+      EE001155990055559900CCCCCC00FFFFFF00BBBBFF00FFFFFF00FFFFFF00EEEE
+      EE00CCCCCC00DDDDDD00BBBBBB003333BB00DDDDDD00BBBBBB002222AA004444
+      8800DDDDDD00DDDDDD00000000000000000052CEF70018B5F700FFFFFF007B7B
+      7B007B7B7B00000000001884DE001894E7001894E7001894E700108CDE00107B
+      D600107BD600106BCE00106BCE0008398C004A636B00639CA50094E7FF0084E7
+      F70084E7F70084E7F70008398C00000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000008686860086868600868686008686
+      8600868686008686860086868600868686008686860086868600868686008686
+      8600868686008686860066336600663366006633660066336600993399006633
+      660066336600868686008686860000000000000000000000000000000000FFFF
+      FF00EEEEEE002266AA005555DD007777BB008888CC008888CC005599DD005599
+      DD0066AAAA006666AA005555DD003377BB00555599004444880033337700DDDD
+      DD00DDDDDD000000000000000000000000005AC6EF0021ADEF00FFFFFF00ADAD
+      AD008484840000000000108CDE001894E7001894E700108CDE00108CDE00107B
+      DE00107BD600106BCE001063C600084A840018526B0029849C0039C6EF0039C6
+      EF0039C6EF0031B5EF0031B5EF0000000000000000000000FF000000FF000000
+      FF000000FF000000FF000000FF0000000000FFFFFF00C0C0C000C0C0C000C0C0
+      C000C0C0C000C0C0C000C0C0C000C0C0C000C0C0C00000000000000000000000
+      000080808000C0C0C00080808000000000000000000000000000000000008686
+      8600B2B2B20000000000CC66CC00CC66CC00CC66CC00CC66CC00CC66CC00CC66
+      CC00CC66CC00663366006633660066336600CC66CC00CC66CC00CC66CC00CC66
+      CC00993399008686860086868600000000000000000000000000000000000000
+      0000EEEEEE00EEEEEE00115599003377BB006666EE005599DD005599DD008888
+      CC004488CC007777BB006666AA003377BB00555599003333BB00DDDDDD00DDDD
+      DD000000000000000000000000000000000052CEF70021A5E70018B5F700105A
+      7B00FFFFFF00108CDE0021A5E700ADADAD00ADADAD00ADADAD00ADADAD00ADAD
+      AD00ADADAD00FFFFFF00106BCE0008398C007B7B7B0084848400000000000000
+      000000000000000000000000000000000000000000000000FF000000FF000000
+      FF000000FF000000FF000000FF0000000000FFFFFF00C0C0C000C0C0C000C0C0
+      C000C0C0C000C0C0C000C0C0C000C0C0C000C0C0C00000000000000000008080
+      8000C0C0C000C0C0C00080808000000000000000000000000000000000008686
+      8600B2B2B20000000000CC66CC00CC66CC00CC99CC00CC66CC00CC66CC00CC99
+      CC00CC66CC00CC66CC0099669900CC999900CC66CC009999CC00CC66CC00CC66
+      CC00CC66CC008686860086868600000000000000000000000000000000000000
+      000000000000FFFFFF00EEEEEE002266AA003377BB004488CC005555DD008888
+      CC00559999003377BB006666AA003333BB0044448800EEEEEE00DDDDDD000000
+      0000000000000000000000000000000000005AC6EF00189CEF0021ADEF00084A
+      7300FFFFFF001894E7001894E70000000000FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00106BCE0008398C00848484007B7B7B00000000000000
+      000000000000000000000000000000000000000000000000FF000000FF000000
+      FF000000FF000000FF000000FF0000000000FFFFFF00C0C0C000C0C0C000C0C0
+      C000C0C0C000C0C0C000C0C0C000C0C0C000C0C0C0008080800080808000C0C0
+      C000C0C0C000C0C0C00080808000000000000000000000000000000000008686
+      8600B2B2B20000000000CC99CC00FF99CC00CCCCFF00CC99CC00CC99CC00CC66
+      CC00CC99CC00CC99CC00CCCCFF00CC99CC00CC99CC00CCCCFF009999CC00CC99
+      CC00CC99CC008686860086868600000000000000000000000000000000000000
+      00000000000000000000EEEEEE00EEEEEE002266AA00448888003377BB006666
+      AA002266AA002266AA003377770011559900EEEEEE00DDDDDD00000000000000
+      00000000000000000000000000000000000052CEF700108CDE001894E700084A
+      7300FFFFFF001894E7001894E70000000000FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00106BCE00084A84007B7B7B0084848400000000000000
+      000000000000000000000000000000000000000000000000FF000000FF000000
+      FF000000FF000000FF000000FF0000000000FFFFFF00C0C0C000C0C0C000C0C0
+      C000C0C0C000C0C0C000C0C0C000C0C0C000C0C0C000C0C0C000C0C0C000C0C0
+      C000C0C0C000C0C0C00080808000000000000000000000000000000000008686
+      8600B2B2B20000000000CC99CC00CC99CC00CCCCFF00CC99CC00CC99CC00CCCC
+      FF00CC99CC00CC99CC00CCCCFF00CC99CC00CC99CC00CCCCFF00CC99CC00CC99
+      CC00CCCCFF008686860086868600000000000000000000000000000000000000
+      0000000000000000000000000000EEEEEE00EEEEEE00EEEEEE00EEEEEE00EEEE
+      EE00EEEEEE00DDDDDD00DDDDDD00DDDDDD00DDDDDD0000000000000000000000
+      0000000000000000000000000000000000005AC6EF00108CDE001894E700084A
+      7300FFFFFF001894E7001894E700000000000000000000000000000000000000
+      000000000000FFFFFF00106BCE0008398C007B7B7B007B7B7B00000000000000
+      000000000000000000000000000000000000000000000000FF000000FF000000
+      FF000000FF000000FF000000FF0000000000FFFFFF00C0C0C000C0C0C000C0C0
+      C000C0C0C000C0C0C000C0C0C000C0C0C000C0C0C000C0C0C000C0C0C000C0C0
+      C000C0C0C000C0C0C00080808000000000000000000000000000000000008686
+      8600B2B2B2000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000008686860086868600000000000000000000000000000000000000
+      000000000000000000000000000000000000FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00EEEEEE000000000000000000000000000000
+      00000000000000000000000000000000000052CEF7001884DE001884DE00084A
+      7300FFFFFF00108CDE00108CDE00105A7B00084A7300084A7300084A73001042
+      6B0008395A00FFFFFF001063C60008398C008484840084848400000000000000
+      000000000000000000000000000000000000000000000000FF000000FF000000
+      FF000000FF000000FF000000FF0000000000FFFFFF00C0C0C000C0C0C000C0C0
+      C000C0C0C000C0C0C000C0C0C000C0C0C000C0C0C000C0C0C000C0C0C000C0C0
+      C000C0C0C000C0C0C00080808000000000000000000000000000000000008686
+      8600B2B2B200B2B2B200B2B2B200B2B2B200B2B2B200B2B2B200B2B2B200B2B2
+      B200B2B2B200B2B2B200B2B2B200B2B2B200B2B2B200B2B2B200B2B2B200B2B2
+      B200B2B2B200B2B2B20086868600000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000005AC6EF001073D600107BDE001894
+      E7001894E700189CEF0021A5E70021A5E70021A5E7001894E7001884DE00107B
+      D6001073D6001063C6001063C60008398C00848484007B7B7B00000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000008686
+      8600868686008686860086868600868686008686860086868600868686008686
+      8600868686008686860086868600868686008686860086868600868686008686
+      8600868686008686860086868600868686000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000005AC6EF005AC6EF0052CEF7005AC6
+      EF0052CEF7004ABDEF004ABDEF004ABDEF004ABDEF0039C6EF0039C6EF0039C6
+      EF0042BDE70039C6EF0039C6EF0039C6EF000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000C0C0C000FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00C0C0
+      C000C0C0C00000000000C0C0C000FFFFFF000000000000000000000000000080
+      8000008080000000FF0000808000008080000000FF0000808000008080000000
+      FF000000FF00000000000000000000000000008080000000FF00008080000080
+      80000000FF0000808000008080000000FF000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000808080008080
+      8000808080008080800080808000808080000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000C0C0C000FFFFFF00FFFFFF000000FF000000
+      FF00FFFFFF000000FF000000FF000000FF000000FF000000FF00C0C0C000C0C0
+      C0000000000000000000C0C0C000FFFFFF000000000000000000008080000000
+      FF000000FF00008080000000FF000000FF00008080000000FF000000FF000000
+      FF000000FF0000000000008080000000FF000000FF00008080000000FF000000
+      FF00008080000000FF000000FF00008080000000000000000000000000000000
+      0000000000000000000000000000808080008080800080808000808080008080
+      8000808080008080800080808000808080008080800080808000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000C0C0C000FFFFFF00FFFFFF000000FF000000
+      FF00FFFFFF000000FF000000FF000000FF00C0C0C000C0C0C000C0C0C0000000
+      0000C0C0C000C0C0C00000000000000000000000000000000000000000000000
+      FF000000FF00FFFFFF000000FF000000FF00008080000000FF000000FF000080
+      80000000FF0000000000008080000000FF000000000000000000000000000000
+      000000000000000000000000FF00008080000000000000000000000000000000
+      0000000000008080800000008000000080000000FF000000FF000000FF000000
+      FF000000FF000000FF0000008000000080008080800080808000808080008080
+      8000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000C0C0C000FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00C0C0C000C0C0C00000000000C0C0
+      C000C0C0C000FFFFFF00000000000000000000000000000000000000FF0000FF
+      FF0000FFFF000000FF0000FFFF0000FFFF000000FF0000FFFF0000FFFF000000
+      FF0000808000000000000000FF0000808000008080000000FF00008080000080
+      80000000000000000000000000000000FF000000000000000000000000000000
+      000080808000000080000000FF000000FF000000FF000000FF000000FF000000
+      FF000000FF000000FF000000FF000000FF000000800080808000808080008080
+      8000808080000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000C0C0C000FFFFFF00FFFFFF000000FF000000
+      FF00FFFFFF000000FF000000FF00C0C0C000C0C0C0000000000000000000C0C0
+      C000FFFFFF000000000000000000FFFFFF000000000000000000008080000000
+      FF000000FF00FFFFFF000000FF000000FF00FFFFFF000000FF000000FF000080
+      80000000FF0000000000008080000000FF000000FF00008080000000FF000000
+      FF0000FFFF000000FF000000FF00008080000000000000000000000000000000
+      0000000080000000FF000000FF000000FF000000FF000000FF000000FF000000
+      FF000000FF000000FF000000FF000000FF000000FF0000008000000080008080
+      8000808080008080800000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000C0C0C000C0C0C000C0C0C000C0C0C000C0C0
+      C000C0C0C000C0C0C000C0C0C000C0C0C00000000000C0C0C000C0C0C0000000
+      00000000000000000000FFFFFF00FFFFFF000000000000000000000000000000
+      FF000000FF000080800000000000000000000000000000000000000000000000
+      0000000000000000FF000000FF000000000000000000000000000000FF000000
+      FF0000FFFF000000FF000000FF00008080000000000000000000000080000000
+      FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF000000
+      FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF000000
+      8000808080008080800000000000000000000000000000000000000000000000
+      0000000000000000FF000000FF000000FF000000FF000000FF000000FF000000
+      FF000000FF000000FF000000FF000000FF000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000C0C0C000C0C0C000C0C0C000C0C0C000C0C0C000C0C0
+      C000C0C0C000C0C0C000C0C0C000000000000000000000000000FFFFFF000000
+      0000000000000000FF00FFFFFF00FFFFFF000000000000000000000000000000
+      000000FFFF000000FF000000000000000000FFFFFF00FFC0C000000000000000
+      FF00008080000000FF000000000000808000008080000000FF00000000000080
+      80000000FF00FFFFFF00008080000000FF000000000000000000000080000000
+      FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF000000
+      FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF000000
+      8000808080008080800080808000000000000000000000000000000000000000
+      00000000FF000000FF000000FF00000000000000000000000000000000000000
+      00000000000000000000000000000000FF000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000C0C0C000C0C0C000C0C0C000C0C0C000C0C0C000C0C0C000C0C0C000C0C0
+      C000C0C0C000C0C0C00000000000000000000000000000000000000000000000
+      0000FFFFFF00FFFFFF00FFFFFF00FFFFFF000000000000000000000000000000
+      00000000FF0000FFFF000000FF00000000000000000000000000000000000000
+      FF000000000000000000008080000000FF000000FF0000FFFF000000FF000000
+      FF00008080000000FF000000FF000080800000000000000080000000FF000000
+      FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF000000
+      FF000000FF000000FF000000FF00FFFFFF000000FF000000FF000000FF000000
+      FF00000080008080800080808000000000000000000000000000000000000000
+      00000000FF000000FF000000FF0000FFFF00FFFFFF0000FFFF0000FFFF00FFFF
+      FF0000FFFF0000FFFF00000000000000FF000000FF0000000000000000000000
+      0000000000000000000000000000000000000000000000000000C0C0C000C0C0
+      C000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000FFFFFF000000000000000000FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF000000000000000000000000000000
+      00000000000080808000FFC0C000FFFFFF00FFFFFF00FFFFFF00FFC0C0008080
+      8000000000000000FF00008080000000FF000000FF00008080000000FF000000
+      FF00008080000000FF000000FF0000808000000000000000FF000000FF000000
+      FF000000FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF000000FF000000FF000000
+      FF000000FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF000000FF000000FF000000
+      FF000000FF0000008000808080008080800000000000000000000000FF000000
+      FF000000FF00000000000000000000FFFF00FFFFFF0000FFFF0000FFFF00FFFF
+      FF0000FFFF0000FFFF00FFFFFF00000000000000FF000000FF000000FF000000
+      00000000000000000000000000000000000000000000C0C0C000C0C0C000C0C0
+      C000000000000000000000000000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00000000000000000000000000000000000000000000000000FFFFFF000000
+      FF000000FF000000FF00FFFFFF00FFFFFF000000000000000000000000000000
+      0000FFFFFF00FFFFFF0000FFFF0000FFFF000000FF0000808000FFFFFF00FFFF
+      FF00FFC0C000000000000000FF00FFFFFF00FFFFFF000000FF00008080000080
+      80000000FF00FFFFFF00008080000000FF00000000000000FF000000FF000000
+      FF000000FF000000FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF000000FF000000
+      FF000000FF00FFFFFF00FFFFFF00FFFFFF000000FF000000FF000000FF000000
+      FF000000FF00000080008080800080808000000000000000FF000000FF000000
+      FF000000FF0000000000FFFFFF00FFFFFF0000FFFF00FFFFFF00FFFFFF0000FF
+      FF00FFFFFF00FFFFFF0000FFFF00FFFFFF000000FF000000FF000000FF000000
+      00000000000000000000000000000000000000000000C0C0C000000000000000
+      000000000000FFFFFF00FFFFFF000000FF000000FF000000FF00FFFFFF000000
+      FF000000FF000000000000000000000000000000000000000000FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF000000000000000000000000000000
+      00000000FF0000FFFF00008080000000FF0000FFFF000000FF000000FF00FFFF
+      FF00FFFFFF0000000000000000000000FF000000FF00008080000000FF000000
+      FF0000FFFF000000FF000000FF0000808000000080000000FF000000FF000000
+      FF000000FF000000FF000000FF00FFFFFF00FFFFFF00FFFFFF000000FF000000
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF000000FF000000FF000000FF000000
+      FF000000FF000000FF008080800080808000000000000000FF000000FF000000
+      FF00000000000000000000FFFF0000FFFF00FFFFFF0000FFFF0000FFFF00FFFF
+      FF0000FFFF0000FFFF00FFFFFF0000FFFF00000000000000FF000000FF000000
+      FF0000000000000000000000000000000000C0C0C00000000000000000000000
+      0000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF000000000000000000FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFC0C00000000000008080000000
+      FF000000FF000000000000000000000000000000000000000000000000000080
+      80000000FF00FFFFFF00FFC0C000000000000000FF00008080000000FF000000
+      FF0000FFFF000000FF000000FF0000808000000080000000FF000000FF000000
+      FF000000FF000000FF000000FF000000FF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF000000FF000000FF000000FF000000FF000000FF000000
+      FF000000FF000000FF008080800080808000000000000000FF000000FF000000
+      FF0000000000FFFFFF0000FFFF0000FFFF00FFFFFF0000FFFF0000FFFF00FFFF
+      FF0000FFFF0000FFFF00FFFFFF0000FFFF0000FFFF00FFFFFF00000000000000
+      FF000000FF00000000000000000000000000C0C0C0000000000000000000C0C0
+      C000FFFFFF00FFFFFF00FFFFFF000000FF000000FF000000FF00FFFFFF000000
+      FF000000FF000000FF000000FF000000FF000000000000000000FFFFFF000000
+      FF000000FF000000FF00FFFFFF00FFFFFF0080808000008080000000FF000080
+      8000000000000000000000000000000000000000000000000000000000000000
+      00000000000000808000FFFFFF00808080000000FF000000FF000000FF00FFFF
+      FF000000FF00FFFFFF00008080000000FF00000080000000FF000000FF000000
+      FF000000FF000000FF000000FF000000FF000000FF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF000000FF000000FF000000FF000000FF000000FF000000FF000000
+      FF000000FF000000FF008080800080808000000000000000FF000000FF000000
+      FF000000000000FFFF00FFFFFF00FFFFFF0000FFFF00FFFFFF00FFFFFF0000FF
+      FF00FFFFFF000000000000000000FFFFFF00FFFFFF0000FFFF00000000000000
+      FF000000FF00000000000000000000000000C0C0C0000000000000000000C0C0
+      C000FFFFFF00FFFFFF00FFFFFF000000FF000000FF000000FF00FFFFFF000000
+      FF000000FF000000FF000000FF000000FF000000000000000000FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00000000000000FF00008080000000
+      0000FFC0C000FFC0C00000000000FFFF0000FFFF0000FFFF0000FFFF00000000
+      0000000000000000FF00FFFFFF00FFC0C00000000000008080000000FF000000
+      FF0000FFFF000000FF000000FF0000808000000080000000FF000000FF000000
+      FF000000FF000000FF000000FF000000FF000000FF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF000000FF000000FF000000FF000000FF000000FF000000FF000000
+      FF000000FF000000FF008080800080808000000000000000FF000000FF000000
+      FF0000000000FFFFFF0000FFFF0000FFFF00FFFFFF0000FFFF0000FFFF00FFFF
+      FF0000FFFF0000FFFF00000000000000000000FFFF00FFFFFF00000000000000
+      FF000000FF00000000000000000000000000000000000000000000000000C0C0
+      C000FFFFFF00FFFFFF00FFFFFF000000FF000000FF000000FF00FFFFFF000000
+      FF000000FF000000FF000000FF000000FF00000000000000000000000000FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00000000000000000000000000FFFF
+      FF008080800000000000FFFF0000808000000000000080800000808000000000
+      0000FFFF00000000000000000000FFFFFF0000000000008080000000FF000000
+      FF00008080000000FF000000FF0000808000000080000000FF000000FF000000
+      FF000000FF000000FF000000FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF000000FF000000FF000000FF000000FF000000
+      FF000000FF000000FF008080800000000000000000000000FF000000FF000000
+      FF0000000000FFFFFF0000FFFF0000FFFF00FFFFFF000000000000FFFF00FFFF
+      FF000000000000FFFF00FFFFFF000000000000FFFF00FFFFFF00000000000000
+      FF000000FF00000000000000000000000000000000000000000000000000C0C0
+      C000FFFFFF00FFFFFF00FFFFFF000000FF000000FF000000FF00FFFFFF000000
+      FF000000FF000000FF000000FF000000FF00000000000000000000000000C0C0
+      C000C0C0C000C0C0C000C0C0C000C0C0C0000000000000000000FFC0C000FFFF
+      FF000000000080800000FFFF0000000000008080000000000000000000008080
+      0000808000000000000000000000008080000000000000000000000000000000
+      00000000000000000000000000000000FF00000080000000FF000000FF000000
+      FF000000FF000000FF000000FF00FFFFFF00FFFFFF00FFFFFF000000FF000000
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF000000FF000000FF000000FF000000
+      FF000000FF000000FF008080800000000000000000000000FF000000FF000000
+      FF000000000000FFFF00FFFFFF00FFFFFF0000FFFF0000000000FFFFFF0000FF
+      FF0000000000FFFFFF0000FFFF0000000000FFFFFF0000FFFF00000000000000
+      FF000000FF00000000000000000000000000000000000000000000000000C0C0
+      C000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000FFC0C000FFC0
+      C0000000000080800000FFFF0000808000000000000080800000808000000000
+      00008080000000000000000000000000FF000000000000808000000000000000
+      000000000000000000000000000000000000000000000000FF000000FF000000
+      FF000000FF000000FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF000000FF000000
+      FF000000FF00FFFFFF00FFFFFF00FFFFFF000000FF000000FF000000FF000000
+      FF000000FF00000080008080800000000000000000000000FF000000FF000000
+      FF0000000000FFFFFF0000FFFF0000FFFF00FFFFFF000000000000FFFF00FFFF
+      FF000000000000FFFF00FFFFFF00000000000000000000000000000000000000
+      FF000000FF000000000000000000000000000000000000000000000000000000
+      0000FFFFFF00FFFFFF00FFFFFF00C0C0C000FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF000000000000000000000000000000
+      00000000000000000000000000000000000000000000FFC0C000000000000000
+      0000FFC0C0000000000000000000808000000000000080800000808000000000
+      00000000000000000000008080000000FF0000000000008080000000FF000000
+      FF0000FFFF000000FF000000FF0000808000000000000000FF000000FF000000
+      FF000000FF000000FF00FFFFFF00FFFFFF000000FF000000FF000000FF000000
+      FF000000FF000000FF00FFFFFF00FFFFFF000000FF000000FF000000FF000000
+      FF000000FF00000080000000000000000000000000000000FF000000FF000000
+      FF0000000000FFFFFF0000FFFF0000FFFF00FFFFFF000000000000FFFF00FFFF
+      FF000000000000FFFF00FFFFFF00000000000000FF000000FF000000FF000000
+      FF000000FF000000000000000000000000000000000000000000000000000000
+      0000C0C0C000FFFFFF00FFFFFF00C0C0C000FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF000000000000000000000000000000
+      00000000000000000000000000000000000000000000FFC0C000808080000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000008080000000FF00808080000000000000000000000000000080
+      80000000FF00FFFFFF00008080000000FF0000000000000080000000FF000000
+      FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF000000
+      FF000000FF000000FF000000FF00FFFFFF000000FF000000FF000000FF000000
+      FF0000008000808080000000000000000000000000000000FF000000FF000000
+      FF000000FF000000000000000000FFFFFF0000FFFF0000000000FFFFFF0000FF
+      FF0000000000FFFFFF0000FFFF00000000000000FF000000FF000000FF000000
+      FF00000000000000000000000000000000000000000000000000000000000000
+      000000000000C0C0C000FFFFFF00C0C0C000FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF000000000000000000000000000000
+      0000000000000000000000000000000000000000000080808000FFC0C0000000
+      FF00000000000000000000000000000000000000000000000000000000000000
+      0000000000000000FF0000808000000000000000000000000000000000000000
+      0000008080000000FF000000FF00008080000000000000000000000080000000
+      FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF000000
+      FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF000000
+      800080808000000000000000000000000000000000000000FF000000FF000000
+      FF000000FF000000FF000000FF0000FFFF00FFFFFF000000000000FFFF00FFFF
+      FF000000000000FFFF00FFFFFF00000000000000FF000000FF000000FF000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000C0C0C000FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF0000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000000000000000000FFFF
+      FF000000FF00FFC0C000000000000000000080808000000000000000FF000080
+      80000000FF000000000000000000000000000000FF00008080000000FF000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      80000000FF000000FF000000FF000000FF000000FF000000FF000000FF000000
+      FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      FF000000FF000000FF000000FF0000000000000000000000000000FFFF00FFFF
+      FF000000000000000000000000000000FF000000FF000000FF00000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000C0C0C000C0C0C000C0C0C000C0C0C000C0C0
+      C000C0C0C0000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000FFC0C000000000000000
+      000000FFFF000000FF0000FFFF0000FFFF000000FF0000FFFF0000FFFF000000
+      FF0000FFFF00000000000000000000808000008080000000FF00008080000080
+      80000000FF0000808000008080000000FF000000000000000000000000000000
+      0000000080000000FF000000FF000000FF000000FF000000FF000000FF000000
+      FF000000FF000000FF000000FF000000FF000000FF0000008000000080000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000FF000000FF000000FF000000FF000000FF000000FF00000000000000
+      00000000FF000000FF000000FF000000FF000000FF0000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000FFC0C0000000
+      000080808000FFC0C0000000FF000000FF00FFFFFF000000FF000000FF008080
+      80000000000000000000FFFFFF000000FF000000FF00FFFFFF000000FF000000
+      FF00FFFFFF000000FF000000FF00008080000000000000000000000000000000
+      000000000000000080000000FF000000FF000000FF000000FF000000FF000000
+      FF000000FF000000FF000000FF000000FF000000800000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000FF000000FF000000FF000000FF000000FF000000FF000000FF000000
+      FF000000FF000000FF000000FF000000FF000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000C0C0C000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000008080800000000000000000000000000000000000000000008080
+      8000FFC0C0000000FF00FFFFFF000000FF000000FF00FFFFFF000000FF000000
+      FF00FFFFFF000000FF000000FF00008080000000000000000000000000000000
+      0000000000000000000000000000000000000000800000008000000080000000
+      8000000080000000800000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000808080008080
+      8000808080008080800080808000808080000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000008080800080808000808080008080
+      8000808080008080800080808000808080008080800080808000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000808080000000000000000000FF000000FF000000FF00
+      0000FF000000FF000000FF000000000000000000000080808000808080008080
+      8000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000FF000000FF000000FF000000FF000000FF000000FF00
+      0000FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF00
+      0000FF0000000000000000000000000000000000000000000000000000000000
+      000000000000FF0000000000000000000000FF0000000000000000000000FF00
+      00000000000000000000FF0000000000000000000000FF000000000000000000
+      0000FF0000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000808080008080800000000000FF000000FF000000FF000000FF000000FF00
+      0000FF000000FF000000FF000000FF000000FF00000000000000000000008080
+      8000808080000000000000000000000000000000000000000000000000000000
+      00000000000000000000FF000000FF000000FF000000FF000000FF000000FF00
+      0000FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF00
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000FF0000000000000000000000FF0000000000000000000000FF00
+      00000000000000000000FF0000000000000000000000FF000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000000000007B7B7B007B7B
+      7B007B7B7B007B7B7B007B7B7B00000000000000000000000000000000000000
+      00000000000000000000FF000000FF000000FF000000FF000000FF000000FF00
+      0000FF000000FF000000FF000000FF000000FF000000FF000000FF0000008080
+      8000808080008080800080808000808080000000000000000000000000000000
+      00000000000000000000FF000000FF000000FF000000FF000000FF000000FF00
+      0000FF000000FF000000FF000000FF000000FF000000FF000000FF0000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000FF0000000000000000000000FF0000000000000000000000FF00
+      00000000000000000000FF0000000000000000000000FF000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000007B7B7B007B7B7B007B7B
+      7B007B7B7B007B7B7B000000000000000000000000007B7B7B00000000000000
+      0000000000000000000000000000000000000000000000000000808080000000
+      0000FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF00
+      0000FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF00
+      0000000000008080800080000000FF0000000000000000000000000000000000
+      0000000000000000000000000000FF000000FF000000FF000000FF000000FF00
+      0000FF000000FF000000FF000000FF000000FF000000FF000000FF0000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000FF0000000000000000000000FF00
+      00000000000000000000FF0000000000000000000000FF000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000007B7B7B007B7B7B00000000007B7B7B00000000000000
+      0000000000000000000000000000000000000000000080808000000000008000
+      000080000000FF000000FF000000FF000000FF000000FF000000FF000000FF00
+      0000FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF00
+      00008000000080000000FF000000FFFF00000000000000000000000000000000
+      0000000000000000000000000000FF000000FF000000FF000000FF000000FF00
+      0000FF00000000000000FF000000FF000000FF000000FF000000FF0000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000FF0000000000000000000000FF00
+      00000000000000000000FF0000000000000000000000FF000000000000000000
+      000000000000000000000000000000000000000000007B7B7B007B7B7B000000
+      00007B7B7B007B7B7B00000000007B7B7B007B7B7B0000000000000000000000
+      0000000000000000000000000000000000007B7B7B007B7B7B00000000000000
+      00007B7B7B00000000000000000000000000000000008080800000000000FF00
+      0000FF00000080000000FF000000FF000000FF000000FF000000000000000000
+      00000000000000000000FF000000FF000000FF000000FF000000FF000000FF00
+      0000FF00000080000000FF000000FFFF00000000000000000000000000000000
+      0000000000000000000000000000FF000000FF000000FF000000FF000000FF00
+      0000FF00000000000000FF000000FF000000FF000000FF000000FF0000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000FF0000000000000000000000FF00
+      00000000000000000000FF0000000000000000000000FF000000000000000000
+      000000000000000000000000000000000000000000007B7B7B007B7B7B000000
+      00007B7B7B007B7B7B00000000007B7B7B007B7B7B00000000007B7B7B007B7B
+      7B007B7B7B007B7B7B007B7B7B00000000007B7B7B007B7B7B00000000000000
+      0000000000000000000000000000000000000000000080000000800000008000
+      0000FF00000080000000FF000000000000008080800000000000000000000000
+      000000000000000000008000000080000000FF000000FF000000FF000000FF00
+      0000FF000000FF000000FFFF0000808080000000000000000000000000000000
+      0000000000000000000000000000FF000000FF000000FF000000FF000000FF00
+      0000FF0000000000000000000000FF000000FF000000FF000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000FF0000000000000000000000FF00
+      00000000000000000000000000000000000000000000FF000000000000000000
+      00000000000000000000000000000000000000000000BDBDBD007B7B7B000000
+      0000BDBDBD007B7B7B0000000000BDBDBD00BDBDBD00000000007B7B7B00BDBD
+      BD00BDBDBD00BDBDBD00BDBDBD00000000007B7B7B007B7B7B00000000000000
+      00007B7B7B000000000000000000000000000000000080000000800000008000
+      0000800000008000000080000000000000008080800000000000000000000000
+      00000000000080000000FF000000FF000000FF000000FF000000FF000000FF00
+      0000FF000000FF00000000000000808080000000000000000000000000000000
+      0000000000000000000000000000FF000000FF000000FF000000FF000000FF00
+      0000FF0000000000000000000000FF000000FF000000FF000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000FF0000000000000000000000FF00
+      00000000000000000000000000000000000000000000FF000000000000000000
+      00000000000000000000000000000000000000000000BDBDBD00000000000000
+      0000000000000000000000000000BDBDBD00BDBDBD00000000007B7B7B000000
+      000000000000000000007B7B7B007B7B7B00000000007B7B7B00000000000000
+      0000000000000000000000000000000000000000000080000000800000008000
+      0000800000008000000080000000808080008080800000000000000000000000
+      000000000000FF000000FF000000FF000000FF000000FF000000FF000000FF00
+      0000FF000000FF00000000000000808080000000000000000000000000000000
+      0000000000000000000000000000FF000000FF000000FF000000FF000000FF00
+      0000FF0000000000000000000000FF000000FF000000FF000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000FF0000000000000000000000FF00
+      00000000000000000000000000000000000000000000FF000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000BDBDBD000000
+      000000000000000000000000000000000000000000007B7B7B00000000000000
+      000000000000000000000000000000000000000000008000000080000000FFFF
+      FF00FFFFFF00FFFFFF0080000000808080008080800080808000000000000000
+      000000000000000000000000000000000000FFFF0000FFFF0000FF000000FF00
+      0000FF000000FFFF000000000000808080000000000000000000000000000000
+      0000000000000000000000000000FF000000FF000000FF000000FF000000FF00
+      0000FF000000000000000000000000000000FF000000FF000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000FF0000000000000000000000FF00
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000007B7B
+      7B00000000000000FF00000000000000000000000000000000007B7B7B007B7B
+      7B007B7B7B007B7B7B007B7B7B00000000000000000080000000FFFFFF00FF00
+      FF00FF00FF00FF00FF00FFFFFF00FFFFFF008080800080808000808080008080
+      8000000000000000000000000000000000000000000080008000FFFF0000FF00
+      0000FFFF00008000800000000000808080000000000000000000000000000000
+      0000000000000000000000000000FF000000FF000000FF000000FF000000FF00
+      000000000000000000000000000000000000FF000000FF000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000FF0000000000000000000000FF00
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000007B7B7B00000000007B7B7B00000000000000
+      0000BDBDBD007B7B7B007B7B7B007B7B7B007B7B7B007B7B7B007B7B7B007B7B
+      7B007B7B7B007B7B7B007B7B7B00000000000000000080000000FFFFFF00FF00
+      FF00FF00FF00FF00FF00FF00FF00FF00FF00FFFFFF00FFFFFF00808080008080
+      800000000000000000000000000000000000000000008000800080008000FFFF
+      0000FFFF00008000800000000000808080000000000000000000000000000000
+      0000000000000000000000000000FF000000FF000000FF000000FF000000FF00
+      000000000000000000000000000000000000FF00000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000FF0000000000000000000000FF00
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000007B7B7B007B7B7B007B7B7B007B7B7B0000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000FFFFFF00FF00FF00FF00
+      FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00800080000000
+      000000000000000000000000000080808000FF00FF0080008000FF00FF008000
+      8000800080008000800000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000FF000000FF000000FF000000FF00
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000FF0000000000000000000000FF00
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000FF00FF00FF00FF00FF00
+      FF00FF00FF00FF00FF00FF00FF00800080008000800080008000808080008080
+      80008080800080808000808080008080800080008000FF00FF00800080008000
+      8000FF00FF008000800000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000FF000000FF000000FF0000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000FF00000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000007B7B7B00000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000FF00FF00FF00FF00FF00
+      FF00FF00FF00FF00FF00FF00FF00FF00FF000000000000000000808080008080
+      800080808000808080000000000000000000FF00FF0080008000FF00FF00FF00
+      FF0080008000FF00FF0000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000FF000000FF000000FF0000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000FF00000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000BDBDBD007B7B7B00000000007B7B7B00000000007B7B
+      7B0000000000000000007B7B7B000000000000000000FF00FF0080008000FF00
+      FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00
+      FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00
+      FF00800080000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000FF000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000BDBDBD007B7B7B00000000007B7B7B000000
+      00007B7B7B00000000007B7B7B0000000000FF00FF0080008000800080000000
+      0000FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00
+      FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF008000
+      8000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000FF000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000008000800000000000000000000000
+      0000FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00
+      FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000FF000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000FF00FF00FF00FF00FF00FF00FF00FF00FF00
+      FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF0000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000FF00FF00FF00FF00FF00
+      FF00FF00FF00FF00FF00FF00FF00000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000BDBDBD000000000000000000000000000000
+      00000000000000000000000000000000000000000000BDBDBD00BDBDBD00BDBD
+      BD00000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000007BB500007BB500000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000BDBDBD00BDBDBD00BDBDBD0000000000000000000000
+      00000000000000000000000000000000000000000000BDBDBD0000000000BDBD
+      BD00BDBDBD000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000094DE0021ADFF00007BB500000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000BDBDBD00BDBDBD00BDBDBD00BDBDBD00000000000000
+      000000000000000000000000000000000000BDBDBD0000000000000000000000
+      0000BDBDBD00BDBDBD0000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000094DE000094DE00000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000007B7B7B007B7B7B007B7B
+      7B007B7B7B007B7B7B007B7B7B007B7B7B007B7B7B0000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000BDBDBD00BDBDBD000000000000000000BDBDBD00BDBDBD000000
+      00000000000000000000BDBDBD00BDBDBD0000000000BDBDBD00000000007B7B
+      000000000000BDBDBD00BDBDBD00000000000000000000000000003931000063
+      9400000084000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000007B7B7B007B7B7B00BDBDBD00BDBDBD00BDBDBD00BDBDBD000000
+      7B000000FF000000FF0000007B0000007B00BDBDBD00BDBDBD00BDBDBD007B7B
+      7B00000000000000000000000000000000000000000000000000000000000000
+      0000FF0000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000000000000000000FF00
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000BDBDBD0000000000BDBDBD000000000000000000BDBDBD00BDBD
+      BD0000000000BDBDBD00BDBDBD000000000000000000BDBDBD00000000007B7B
+      00000000000000000000BDBDBD00BDBDBD000000000000000000007BB500007B
+      B500002994000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000039B500000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000BDBDBD00BDBDBD00007B0000BDBDBD00BDBDBD00BDBDBD000000
+      FF000000FF000000FF000000FF0000007B00BDBDBD00BDBDBD00BDBDBD007B7B
+      7B00000000000000000000000000000000000000000000000000000000000000
+      000000000000FF00000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000FF0000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000BDBDBD0000000000BDBDBD000000000000000000BDBDBD00BDBD
+      BD00BDBDBD00BDBDBD000000000000000000BDBDBD00BDBDBD00000000007B7B
+      00007B7B00000000000000000000BDBDBD00000000000000000000A5FF000021
+      B500002194000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      9400006394000000000000000000000000000000000000000000000000007B7B
+      7B007B7B7B00007B0000007B000000FF0000007B0000BDBDBD00BDBDBD000000
+      FF000000FF000000FF000000FF00BDBDBD00BDBDBD00BDBDBD00BDBDBD00BDBD
+      BD00000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000FF000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000FF000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000BDBDBD0000000000BDBDBD00BDBDBD000000000000000000000000000000
+      00000000000000000000BDBDBD00BDBDBD00BDBDBD00BDBDBD00000000000000
+      00007B7B00007B7B00007B7B0000BDBDBD000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000052
+      B50000A5FF0000299400000000000000000000000000000000007B7B7B00BDBD
+      BD00BDBDBD0000FF000000FF000000FF000000FF000000FF0000BDBDBD00BDBD
+      BD00BDBDBD00BDBDBD00BDBDBD00BDBDBD00BDBDBD00BDBDBD00000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000FF000000FF000000FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FF000000FF000000000000000000
+      000000000000000000000000000000000000000000000000000000000000BDBD
+      BD00BDBDBD00BDBDBD00BDBDBD00BDBDBD000000000000000000000000000000
+      0000BDBDBD00BDBDBD00BDBDBD00BDBDBD00BDBDBD0000000000FFFF0000FFFF
+      00007B7B00007B7B00007B7B0000BDBDBD000000000000000000000000000000
+      0000000000000000000000000000002994000000000000000000000000000000
+      0000000000000000000000000000000000000029940000000000000000000000
+      00000094DE000000000000000000000000000000000000000000BDBDBD00BDBD
+      BD00BDBDBD0000FF000000FF000000FF000000FF000000FF0000BDBDBD00BDBD
+      BD00BDBDBD00BDBDBD00BDBDBD00BDBDBD00BDBDBD00BDBDBD00000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000FF000000FF000000FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FF000000FF00000000000000000000000000
+      000000000000000000000000000000000000000000000000000000000000BDBD
+      BD00BDBDBD00BDBDBD00BDBDBD0000000000000000000000000000000000BDBD
+      BD00BDBDBD00BDBDBD00BDBDBD00BDBDBD00BDBDBD00FFFF0000FFFF0000FFFF
+      0000000000007B7B00007B7B0000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000001094000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000094000000000000000000000000000000000000000000BDBDBD00BDBD
+      BD00BDBDBD00BDBDBD0000FF000000FF000000FF0000BDBDBD00BDBDBD00BDBD
+      BD00BDBDBD00BDBDBD000000000000000000BDBDBD00BDBDBD00000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000FFFFFF00FF000000FF000000FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FF000000FF000000FFFFFF0000000000000000000000
+      0000000000000000000000000000000000000000000000000000BDBDBD00BDBD
+      BD0000000000BDBDBD0000000000FFFF0000FFFF00000000000000000000BDBD
+      BD00BDBDBD00BDBDBD0000000000FFFF0000FFFF0000FFFF0000FFFF0000FFFF
+      0000FFFF0000FFFF000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000084DE0042B5FF000042
+      B500000000000000000000000000000000000000000000000000000000000000
+      00000000940000000000000000000000000000000000BDBDBD00BDBDBD007B00
+      00007B0000007B0000007B000000BDBDBD00BDBDBD00BDBDBD00BDBDBD00BDBD
+      BD000000000000000000000000000000000000000000BDBDBD007B7B7B000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000FFFFFF00FFFFFF00FF000000FF000000FFFF
+      FF00FFFFFF00FF000000FF000000FFFFFF00FFFFFF0000000000000000000000
+      0000000000000000000000000000000000000000000000000000BDBDBD000000
+      0000BDBDBD0000000000FFFF0000FFFF0000FFFF00000000000000000000BDBD
+      BD000000000000000000FFFF0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF
+      0000FFFF0000FFFF0000FFFF0000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000007BB5000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000006B0000000000000000000000000000000000BDBDBD007B000000FF00
+      0000FF000000FF000000FF0000007B000000BDBDBD00BDBDBD00BDBDBD00BDBD
+      BD000000000000000000000000000000000000000000BDBDBD00BDBDBD007B7B
+      7B00000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000FFFFFF00FFFFFF00FFFFFF00FF000000FF00
+      0000FF000000FF000000FFFFFF00FFFFFF00FFFFFF0000000000000000000000
+      0000000000000000000000000000000000000000000000000000BDBDBD000000
+      0000BDBDBD00FFFF0000FFFF0000FFFF0000FFFF0000FFFF0000000000000000
+      0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000848CFF000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000BDBDBD007B000000FF00
+      0000FF000000FF000000FF0000007B000000BDBDBD00BDBDBD00BDBDBD00BDBD
+      BD00BDBDBD0000000000000000000000000000000000BDBDBD00BDBDBD00BDBD
+      BD007B7B7B000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000FFFFFF00FFFFFF00FFFFFF00FF000000FF00
+      0000FF000000FF000000FFFFFF00FFFFFF00FFFFFF0000000000000000000000
+      00000000000000000000000000000000000000000000BDBDBD0000000000BDBD
+      BD0000000000FFFF0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF
+      0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000000000007B7B7B000000
+      0000000000000029940000210000000000000000000000000000000000000000
+      00000029940000000000000000000000000000000000BDBDBD00BDBDBD00FF00
+      0000FF000000FF000000FF000000BDBDBD00BDBDBD00BDBDBD00BDBDBD00BDBD
+      BD00BDBDBD00BDBDBD00BDBDBD00BDBDBD00BDBDBD00BDBDBD007B7B00007B7B
+      00007B7B0000BDBDBD00BDBDBD00000000000000000000000000000000000000
+      0000000000000000000000000000FFFFFF00FFFFFF00FF000000FF000000FF00
+      0000FF000000FF000000FF000000FFFFFF00FFFFFF0000000000000000000000
+      00000000000000000000000000000000000000000000BDBDBD00BDBDBD000000
+      0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF
+      0000FFFF0000FFFF0000FFFF0000FFFF00000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000000000008C8CFF000000
+      00000010940021ADFF0000639400000000000000000000000000000000000000
+      00000039B5000000000000000000000000000000000000000000BDBDBD00BDBD
+      BD00FF000000FF000000BDBDBD00BDBDBD00BDBDBD00BDBDBD00BDBDBD00BDBD
+      BD00BDBDBD00BDBDBD00BDBDBD00BDBDBD00BDBDBD007B7B0000FFFF0000FFFF
+      0000FFFF00007B7B0000BDBDBD00000000000000000000000000000000000000
+      0000000000000000000000000000FFFFFF00FF000000FF000000FF000000FFFF
+      FF00FFFFFF00FF000000FF000000FF000000FFFFFF0000000000000000000000
+      00000000000000000000000000000000000000000000BDBDBD0000000000FFFF
+      0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF
+      0000FFFF0000FFFF000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000094000000
+      00000000940000D6DE0000109400000000000000000000000000000000000000
+      0000001010000000000000000000000000000000000000000000BDBDBD00BDBD
+      BD00BDBDBD00BDBDBD00BDBDBD00BDBDBD007B007B00BDBDBD00BDBDBD00BDBD
+      BD00BDBDBD00BDBDBD00BDBDBD00BDBDBD00BDBDBD00FFFF0000FFFF0000FFFF
+      0000FFFF00007B7B0000BDBDBD00000000000000000000000000000000000000
+      0000000000000000000000000000FF000000FF000000FF000000FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FF000000FF000000FF00000000000000000000000000
+      000000000000000000000000000000000000BDBDBD0000000000FFFF0000FFFF
+      0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF
+      0000FFFF0000FFFF000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000002194000000
+      00000000000000000000000000000000000000000000000000000008FF000000
+      0000000000000000000000000000000000000000000000007B00000000000000
+      0000218C9C00000000000000000000000000000000000000000000000000BDBD
+      BD00BDBDBD007B007B00FF00FF00FF00FF00FF00FF00FF00FF007B007B00BDBD
+      BD00007B7B0000FFFF0000FFFF00007B7B00BDBDBD00FFFF0000FFFF0000FFFF
+      0000FFFF0000FFFF0000BDBDBD00000000000000000000000000000000000000
+      00000000000000000000FF000000FF000000FF000000FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FF000000FF000000FF000000000000000000
+      0000000000000000000000000000000000000000000000000000FFFF0000FFFF
+      0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF
+      0000FFFF0000FFFF0000FFFF0000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000639400007BB5000000
+      31004242FF0000000000000000000000000000000000000000004273FF000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      7B00007BB5000021940000000000000000000000000000000000000000000000
+      0000BDBDBD00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF007B007B00BDBD
+      BD00007B7B0000FFFF0000FFFF0000FFFF00007B7B00BDBDBD00FFFF0000FFFF
+      0000FFFF0000BDBDBD0000000000000000000000000000000000000000000000
+      000000000000FF000000FF000000FF0000000000000000000000000000000000
+      000000000000000000000000000000000000FF000000FF000000FF0000000000
+      00000000000000000000000000000000000000000000FFFF0000FFFF0000FFFF
+      0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF
+      0000FFFF0000FFFF0000FFFF0000FFFF00000000000000000000000000000000
+      000000000000000000000000000000000000000000000010940000A5FF000000
+      94000000000000000000000000000000000000000000000000000031B5000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000001094000021000000212100000000000000000000000000000000000000
+      000000000000BDBDBD00FF00FF00FF00FF00FF00FF00FF00FF007B007B00007B
+      7B0000FFFF0000FFFF0000FFFF0000FFFF00007B7B00BDBDBD00BDBDBD00BDBD
+      BD00BDBDBD000000000000000000000000000000000000000000000000000000
+      0000FF000000FF000000FF000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000FF000000FF000000FF00
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000029B5000000000000000000004294000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000C6DE000094DE0000000000000000000000000000000000000000000000
+      0000000000000000000000000000BDBDBD00BDBDBD00BDBDBD00BDBDBD0000FF
+      FF0000FFFF0000FFFF0000FFFF0000FFFF00BDBDBD00BDBDBD00BDBDBD000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000FF000000FF00000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000FF000000FF00
+      0000FF0000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000009400000031000094DE000000
+      000000000000002994008CADFF00000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000BDBDBD00BDBDBD00BDBDBD00BDBD
+      BD0000FFFF0000FFFF0000FFFF00BDBDBD00BDBDBD0000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000000000000000000FF00
+      0000FF0000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000000940000B5B5000000
+      B500000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000000000000000000BDBD
+      BD00BDBDBD00FFFFFF00FFFFFF00BDBDBD00FFFFFF00FFFFFF00FFFFFF00BDBD
+      BD00FFFFFF00FFFFFF00000000000000000000000000FFFFFF00BDBDBD00BDBD
+      BD00FFFFFF000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000181800001818000018
+      1800001818000018180000181800000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000FFFFFF00BDBDBD00BDBD
+      BD00FFFFFF00FFFFFF00BDBDBD00BDBDBD00FFFFFF00FFFFFF00BDBDBD00FFFF
+      FF00FFFFFF00FFFFFF0000000000FFFF0000FFFF000000000000BDBDBD00FFFF
+      FF00FFFFFF00BDBDBD00BDBDBD00000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000181800001818000018
+      1800001818000018180000181800000000000000000000000000000000000000
+      0000000000000018180000181800001818000018180000181800001818000018
+      1800001818000018180000000000000000000000000000000000001818000018
+      1800001818000018180000181800001818000018180000181800001818000018
+      1800001818000018180000181800001818000000000000000000000000000000
+      000000000000000000000000000000000000BDBDBD00BDBDBD00FFFFFF00FFFF
+      FF00BDBDBD00FFFFFF00FFFFFF00FFFFFF00BDBDBD00FFFFFF00FFFFFF00BDBD
+      BD00BDBDBD00FFFFFF0000000000FFFF0000FFFF00007B7B000000000000BDBD
+      BD00FFFFFF00FFFFFF00FFFFFF00BDBDBD000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000181800001818000018
+      1800001818000018180000181800000000000000000000000000000000000000
+      00000000000000181800FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00001818000000000000000000000000000000000000181800FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00001818000000000000000000000000000000
+      000000000000000000000000000000000000FFFFFF00FFFFFF00BDBDBD00FFFF
+      FF00FFFFFF00BDBDBD00BDBDBD00FFFFFF00FFFFFF00BDBDBD00BDBDBD00FFFF
+      FF00FFFFFF00BDBDBD0000000000FFFF0000FFFF00007B7B00007B7B00000000
+      0000BDBDBD00BDBDBD00FFFFFF00FFFFFF000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000181800393939003939
+      3900393939000018180000181800000000000000000000000000000000000000
+      00000000000000181800FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00001818000000000000000000000000000000000039393900FFFF
+      FF007B3918007B3918007B5A00007B5A00007B5A00007B5A00007B3918007B39
+      18007B3918007B391800FFFFFF00393939000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000FFFFFF00FFFF
+      FF00BDBDBD00BDBDBD0000000000FFFF0000FFFF00007B7B00007B7B00007B7B
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000007B7B00007B7B00000000000000
+      000000000000007B7B00007B7B000000000000000000007B7B00007B7B00007B
+      7B00000000000000000000000000000000000000000039393900393939003939
+      3900393939003939390039183900000000000000000000000000000000000000
+      00000000000000181800FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00001818000000000000000000000000000000000039393900FFFF
+      FF007B5A18007B5A00007B5A18007B5A18007B5A18007B5A18007B5A00007B39
+      18007B391800FF7B5A00FFFFFF00393939000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000BDBDBD00FFFF
+      FF00FFFFFF00FFFFFF0000000000FFFF0000FFFF00007B7B00007B7B00007B7B
+      0000000000007B7B7B00BDBDBD00000000000000000000000000000000000000
+      000000000000000000000000000000000000007B7B0000FFFF00007B7B000000
+      000000000000007B7B00007B7B000000000000000000007B7B00007B7B0000FF
+      FF00000000000000000000000000000000000000000039393900395A5A00395A
+      5A00395A5A003939390039183900000000000000000000000000000000000000
+      00000000000000181800FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00001818000000000000000000000000000000000039393900FFFF
+      FF00FFFFFF00FF7B5A00FF7B18007B5A390039395A007B5A39007B5A18007B5A
+      0000FF7B5A00FFFFFF00FFFFFF00393939000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000FFFFFF00BDBD
+      BD00BDBDBD00FFFFFF0000000000FFFF0000FFFF00007B7B00007B7B00007B7B
+      0000000000007B7B7B00BDBDBD00000000000000000000000000000000000000
+      000000000000007B7B00007B7B00007B7B00007B7B0000FFFF0000FFFF0000FF
+      FF0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF00007B7B000000
+      00000000000000000000000000000000000000000000395A5A00395A5A00395A
+      5A00395A5A0039395A0039183900000000000000000000000000000000000000
+      00000000000000181800FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF000018180000000000000000000000000000000000395A5A00FFFF
+      FF00FFFFFF00FFFFFF007B9C7B00395A7B0000397B0039397B007B7B3900FFBD
+      9C00FFFFFF00FFFFFF00FFFFFF00395A5A000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000BDBDBD00000000007B7B7B007B7B
+      7B007B7B7B007B7B7B0000000000FFFF0000FFFF00007B7B00007B7B00007B7B
+      0000000000007B7B7B00BDBDBD00000000000000000000000000000000000000
+      000000000000BDBDBD00000000000000000000000000007B7B0000FFFF0000FF
+      FF00007B7B00007B7B000000000000FFFF0000FFFF00007B7B00000000000000
+      00000000000000000000000000000000000000000000395A5A007B7B7B007B7B
+      7B007B7B7B00395A5A0039183900000000000000000000000000000000000000
+      00000000000000181800FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF000018180000000000000000000000000000000000395A5A00FFFF
+      FF00FFFFFF00FFFFFF0039397B0000397B00397BBD00397BBD007B9CBD00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00395A5A000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000BDBDBD00000000007B7B7B007B7B
+      7B007B7B7B007B7B7B0000000000FFFF0000FFFF00007B7B00007B7B00007B7B
+      0000000000007B7B7B00BDBDBD00000000000000000000000000000000000000
+      000000000000BDBDBD0000FFFF00007B7B00007B7B00007B7B0000FFFF0000FF
+      FF0000FFFF00007B7B00007B7B00007B7B0000FFFF0000FFFF0000FFFF0000FF
+      FF00007B7B0000000000000000000000000000000000395A5A007B7B7B007B7B
+      7B007B7B7B007B7B7B0000181800000000000000000000000000000000000000
+      0000000000000018180000181800001818000018180000181800001818000018
+      1800001818000018180000000000000000000000000000000000395A5A00FFFF
+      FF00FFFFFF007B9CBD00397BBD00397BBD007B9CBD00397BBD00397BBD00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00395A5A000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000000000007B7B7B007B7B
+      7B007B7B7B007B7B7B0000000000FFFF0000FFFF00007B7B00007B7B00007B7B
+      0000000000007B7B7B00BDBDBD00000000000000000000000000000000000000
+      000000000000BDBDBD00BDBDBD0000FFFF0000FFFF0000FFFF0000FFFF0000FF
+      FF0000FFFF00007B7B00007B7B0000000000007B7B0000FFFF00007B7B00007B
+      7B0000000000000000000000000000000000000000007B7B7B007B7B7B007B7B
+      7B007B7B7B00395A5A0000181800000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000395A5A00FFFF
+      FF00FFFFFF00FFBDFF00397B9C007B7B7B007BBDFF007B9CBD00005A5A003939
+      7B00FFFFFF00FFFFFF00FFFFFF007B5A5A000000000000000000000000000000
+      000000000000000000000000000000000000000000000000000000000000BDBD
+      BD00BDBDBD00BDBDBD00BDBDBD00000000007B7B00007B7B0000000000007B7B
+      7B007B7B7B007B7B7B0000000000FFFF0000FFFF00007B7B7B00000000007B7B
+      0000000000007B7B7B00BDBDBD00000000000000000000000000000000000000
+      00000000000000000000007B7B00FFFFFF00007B7B00007B7B0000FFFF0000FF
+      FF0000FFFF00007B7B00007B7B000000000000FFFF00007B7B00000000000000
+      000000000000000000000000000000000000000000007B7B7B007B7B7B007B7B
+      7B007B7B7B007B7B7B0000181800000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000000000007B7B7B00FFFF
+      FF00FFFFFF00FFFFFF007BBDFF007B9CBD00397BBD00005A5A00009C7B00005A
+      5A00FFFFFF00FFFFFF00FFFFFF007B7B7B000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000BDBDBD00BDBD
+      BD00BDBDBD00BDBDBD00BDBDBD0000000000FFFF00007B7B00007B7B00007B7B
+      7B007B7B7B007B7B7B0000000000FFFF0000FFFF0000FFFFFF00000000007B7B
+      0000000000007B7B7B00BDBDBD00000000000000000000000000000000000000
+      00000000000000000000007B7B00FFFFFF0000FFFF0000FFFF0000FFFF0000FF
+      FF0000FFFF00007B7B00007B7B000000000000FFFF0000FFFF0000FFFF00007B
+      7B0000000000000000000000000000000000000000007B7B7B007B7B7B007B7B
+      7B007B7B7B007B7B7B0000181800000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000000000007B7B7B00FFFF
+      FF00FFFFFF007B9CBD00005A5A00005A5A00003939000039390000393900005A
+      5A00FFFFFF00FFFFFF00FFFFFF007B7B7B000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000FFFF0000FFFF00007B7B00000000
+      00007B7B7B007B7B7B0000000000FFFF0000FFFF000000000000000000007B7B
+      0000000000007B7B7B00BDBDBD00000000000000000000000000000000000000
+      00000000000000000000007B7B00FFFFFF00BDBDBD0000FFFF00BDBDBD0000FF
+      FF0000FFFF00007B7B00007B7B00000000000000000000FFFF00007B7B000000
+      000000000000000000000000000000000000000000007B7B7B007B7B7B007B7B
+      7B007B7B7B007B7B7B0000181800000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000000000007B7B7B00FFFF
+      FF00FFFFFF00FFFFFF00005A5A00003939000039390000393900005A5A00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF007B7B7B000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000FFFF0000FFFF
+      0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF00007B7B
+      00007B7B00000000000000000000FFFF0000FFFF00007B7B00007B7B00007B7B
+      0000000000007B7B7B00BDBDBD00000000000000000000000000000000000000
+      000000000000BDBDBD00BDBDBD00BDBDBD00BDBDBD00BDBDBD00BDBDBD00BDBD
+      BD0000FFFF0000FFFF00007B7B00007B7B000000000000000000000000000000
+      000000000000000000000000000000000000000000007B7B7B007B7B7B007B9C
+      9C007B9C9C007B7B7B0000181800000000000000000000000000000000000000
+      0000000000000018180000181800001818000018180000181800001818000018
+      18000018180000181800000000000000000000000000000000007B7B7B00FFFF
+      FF00FFFFFF00FFFFFF007B9CBD00005A5A00009C7B00005A5A007B9CBD00FFFF
+      FF00FFFFFF0000181800FFFFFF007B7B7B000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000FFFF0000FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      00007B7B00000000000000000000FFFF0000FFFF00007B7B00007B7B00007B7B
+      0000000000007B7B7B00BDBDBD00000000000000000000000000000000000000
+      000000000000BDBDBD00BDBDBD00BDBDBD00BDBDBD00BDBDBD00BDBDBD00BDBD
+      BD00BDBDBD00007B7B00007B7B00BDBDBD000000000000000000000000000000
+      000000000000000000000000000000000000000000007B7B7B007B9C9C007B9C
+      9C007B9C9C007B7B7B0000181800000000000000000000000000000000000000
+      00000000000000181800395A5A00395A5A00395A5A00395A5A00395A5A00395A
+      5A00395A5A0000181800000000000000000000000000000000007B7B7B00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF0000181800001818000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000FFFF0000FFFF
+      0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF0000FFFFFF00FFFF00007B7B
+      0000000000007B7B7B0000000000FFFF0000FFFF00007B7B00007B7B00007B7B
+      0000000000007B7B7B00BDBDBD00000000000000000000000000000000000000
+      00000000000000000000BDBDBD00FFFFFF00BDBDBD00FFFFFF00BDBDBD00BDBD
+      BD00BDBDBD00BDBDBD00BDBDBD00BDBDBD000000000000000000000000000000
+      000000000000000000000000000000000000000000007B7B7B007B9C9C007B9C
+      9C007B9C9C007B7B7B0000181800000000000000000000000000000000000000
+      00000000000000181800395A5A00395A5A00395A5A00395A5A00395A5A00395A
+      5A00395A5A0000181800000000000000000000000000000000007B7B7B007B7B
+      7B007B7B7B007B7B7B007B7B7B007B7B7B007B7B7B007B7B7B007B7B7B007B7B
+      7B007B7B7B007B7B7B0000181800FFFFFF000018180000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000FFFF0000FFFF00007B7B00007B7B
+      7B007B7B7B007B7B7B0000000000FFFF0000FFFF00007B7B00007B7B00007B7B
+      0000000000007B7B7B00BDBDBD00000000000000000000000000000000000000
+      00000000000000000000007B7B00007B7B00007B7B00FFFFFF00BDBDBD00BDBD
+      BD00BDBDBD00BDBDBD00BDBDBD00BDBDBD000000000000000000000000000000
+      000000000000000000000000000000000000000000007B7B7B007B9C9C007B9C
+      9C007B9C9C007B9C9C0000181800000000000000000000000000000000000000
+      00000000000000181800395A5A00395A5A00395A5A00395A5A00395A5A00395A
+      5A00395A5A000018180000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000181800FFFFFF0000181800000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000FFFF00007B7B0000000000007B7B
+      7B007B7B7B007B7B7B0000000000FFFF0000FFFF00007B7B00007B7B00007B7B
+      0000000000007B7B7B00BDBDBD00000000000000000000000000000000000000
+      00000000000000000000007B7B00BDBDBD00BDBDBD00FFFFFF00BDBDBD00007B
+      7B00007B7B00007B7B00007B7B00BDBDBD000000000000000000000000000000
+      000000000000000000000000000000000000000000007B7B7B00FFBDBD00FFBD
+      BD00FFBDBD007B9C9C0000181800000000000000000000000000000000000000
+      00000000000000181800395A5A00395A5A00395A5A00395A5A00395A5A00395A
+      5A00395A5A000018180000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000181800FFFFFF00001818000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000007B7B0000000000007B7B7B007B7B
+      7B007B7B7B007B7B7B0000000000FFFF0000FFFF00007B7B00007B7B00007B7B
+      0000000000007B7B7B00BDBDBD00000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000007B7B00BDBDBD00BDBD
+      BD00BDBDBD00BDBDBD00BDBDBD00BDBDBD000000000000000000000000000000
+      000000000000000000000000000000000000000000007B7B7B00FFBDBD00FFFF
+      FF00FFFFFF00FFBDBD0000181800000000000000000000000000000000000000
+      00000000000000181800395A5A00395A5A00395A5A00395A5A00395A5A00395A
+      5A00395A5A000018180000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000181800FFFFFF000018
+      1800001818000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000000000007B7B7B007B7B
+      7B007B7B7B007B7B7B007B7B7B007B7B7B0000000000FFFF00007B7B00007B7B
+      0000000000007B7B7B00BDBDBD00000000000000000000000000000000000000
+      000000000000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00BDBDBD0000000000000000000000
+      000000000000000000000000000000000000000000007B7B7B00FFFFFF00FFFF
+      FF00FFFFFF00FFBDBD0000181800000000000000000000000000000000000000
+      00000000000000181800395A5A00395A5A00395A5A00395A5A00395A5A00395A
+      5A00395A5A000018180000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000001818000018
+      1800001818000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000000000007B7B7B007B7B
+      7B007B7B7B007B7B7B007B7B7B007B7B7B007B7B7B00FFFF0000FFFF00007B7B
+      0000000000007B7B7B00BDBDBD00000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000007B7B7B00FFBDBD00FFFF
+      FF00FFFFFF00FFBDBD0000181800000000000000000000000000000000000000
+      0000000000000018180000181800001818000018180000181800001818000018
+      1800001818000018180000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000001818000018
+      1800001818000018180000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000000000007B7B7B007B7B
+      7B007B7B7B007B7B7B007B7B7B007B7B7B007B7B7B0000000000FFFF0000FFFF
+      0000000000007B7B7B00BDBDBD00000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000007B7B7B007B7B7B007B7B
+      7B007B7B7B007B7B7B007B7B7B00000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000001818000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000000000009C5A52008439
+      39008431310084393900843131008C5A5A00A5A5A500A5A5A500A5A5A500ADA5
+      A500ADA5A500A5A5A500A5A5A500A5A5A500A5A5A5008C5A5A007B2929008431
+      3100843131008431310084313100000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000008C2900008C2900008C29000000000000000000000000
+      00000000000000000000000000000000000000000000A56B5A00B5525200B54A
+      4A00B54A4A00C64A4A00A539390084525200A5A5A500C6C6C600E7E7D600EFEF
+      EF00F7F7EF00F7F7EF00EFE7E700E7D6D600D6D6D600A55A5A007B1010007B18
+      180084212100AD424200B54A4A00843131000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000104A1000104A1000104A
+      1000104A10000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000008C290000A5390000AD4200008C29000084210000000000000000
+      00000000000000000000000000000000000000000000A56B5A00B5525200C64A
+      4A00C64A4A00C64A4A00AD424200845252008C737300A56B6B00C69C9C00D6C6
+      C600F7F7EF00FFFFF700F7F7F700EFEFE700E7E7E700A55A5A007B1010007B18
+      180084212100B5424200B54A4A00843131000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000000000005A5A5A007373
+      7300000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000104A1000108C180039CE390039CE
+      390063AD6300428C420000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000008C210000AD420000CE520000AD4200008C2900008C2900000000
+      00000000000000000000000000000000000000000000A56B5A00B5525200C64A
+      4A00C64A4A00C64A4A00AD424200845A5A008C63630084212100A55A5200B584
+      8400EFE7E700F7F7F700FFF7F700F7F7EF00EFEFEF00AD6363007B1010007B18
+      180084212100B5424200B54A4A00843131000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000006B6B6B0084848400D6D6
+      D600737373000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000108C1800108C180039CE390039CE390039CE
+      390063AD6300108C180000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000008C2900008C290000B5420000CE520000AD4200008C2900008C29
+      00000000000000000000000000000000000000000000A56B5A00B5525200C64A
+      4A00C64A4A00C64A4A00AD4242008C5A5A008C6B6B007B18180084292900A55A
+      5A00D6D6CE00EFEFEF00F7F7F700FFF7F700F7F7F700AD6363007B1010007B18
+      180084212100B5424200B54A4A00843131000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000001010100021212100B5B5B500FFFF
+      FF00EFEFEF000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000108C180039CE390042CE420042CE420039CE
+      390063AD6300108C180000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000842100008C290000B54A0000C6520000A53900008421
+      00008421000000000000000000000000000000000000A56B5A00B5525200C64A
+      4A00C64A4A00C64A4A00AD4242008C5A5A009C7373007B1818007B1818008431
+      3100B5B5B500E7E7D600EFEFEF00FFF7F700FFFFFF00B56363007B1010007B18
+      180084212100B5424200B54A4A00843131000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000001010100018181800292929008C8C8C00D6D6
+      D600000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000108C180039CE390073DE730063DE63005AD65A004AD6
+      4A0042C6420063AD6300108C1800000000000000000000000000000000000000
+      0000000000000000000000000000000000008C29000084210000842100008421
+      0000842100008421000084210000842100008421000084210000842100008421
+      00008C2900000000000000000000842100009C310000C64A0000C65200009C31
+      00008421000084210000000000000000000000000000A56B5A00B5525200C64A
+      4A00C64A4A00C64A4A00A53939009C636300A57373007B1010007B1010007B18
+      18009C8C8C00C6C6C600E7E7D600F7EFEF00FFFFFF00B56B6B007B1010007B18
+      180084212100B5424200B54A4A00843131000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000001010100018181800292929004A4A5A00737373000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000428C4200108C180073DE730073DE730073DE730073DE730063DE
+      63005AD65A0039CE3900108C1800000000000000000000000000000000000000
+      0000000000000000000000000000000000008C290000A5420000A5420000A539
+      00009C3100009C3100009C3100009C3100009C3100009C310000A53100009C31
+      00008C2900008C2900000000000000000000842100009C310000C6520000B54A
+      00008C29000084210000000000000000000000000000A56B5A00B5525200C64A
+      4A00C64A4A00C64A4A00A53939009C636300B59C9C008C4A4A008C4A4A00844A
+      4A0084848400A5A5A500CECECE00EFEFEF00FFFFFF00B56B6B007B1010007B18
+      180084212100AD424200B54A4A00843131000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000001010100018181800292929004A4A5A006B6B6B00000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000428C4200108C180073DE730073DE7B0073DE730073DE730039CE390073DE
+      730073DE730073DE730039CE3900108C18000000000000000000000000000000
+      0000000000000000000000000000000000009C310000EF7B1800E7731000D663
+      0000C6520000C6520000C6520000C6520000C6520000C6520000C6520000CE52
+      0000A53900008421000000000000000000000000000084210000A5390000C652
+      0000AD42000084210000842100000000000000000000A56B5A00B5525200C64A
+      4A00C64A4A00C64A4A00AD424200A55A5A00CE8C8C00B5848400AD848400AD7B
+      7B009C7373009C737300B5848400CE9C9C00E7B5B500B55A5A008C2929009C29
+      29009C313100B54A4A00B54A4A00843131000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00001010100018181800292929004A4A5A006B6B6B0000000000000000000000
+      000000000000000000000000000000000000000000000000000000000000108C
+      1800428C420094F79C0094F79C0084EF8C0073DE730039CE3900108C180039CE
+      390073DE730073DE730073DE7300108C18000000000000000000000000000000
+      0000000000000000000000000000000000009C310000F78C2900F78C2100E773
+      1000D66B0800C64A0000A5390000A5390000A5390000A5390000A5390000A539
+      00008C2900008C2900000000000000000000000000000000000084210000AD42
+      0000C65200009C310000842100000000000000000000A56B5A00B5525200C64A
+      4A00C64A4A00C64A4A00C64A4A00C64A4A00C64A4A00C64A4A00C64A4A00C64A
+      4A00C64A4A00C64A4A00B54A4A00B54A4A00B54A4A00C64A4A00C64A4A00C64A
+      4A00C64A4A00C64A4A00B54A4A00843131000000000000000000000000000000
+      000000000000000000005AEFFF00000000000000000000000000000000001010
+      100018181800292929004A4A5A006B6B6B000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000108C180073DE
+      730094F79C0094F79C0094F79C0094F79C0039CE3900108C180000000000108C
+      180073DE730073DE730073DE730073DE7300108C180000000000000000000000
+      0000000000000000000000000000000000009C310000F79C3100FF9C3100E77B
+      2100EF7B1800D66308008C290000842100008421000084210000842100008421
+      00008C2900000000000000000000000000000000000000000000842100009C31
+      0000C6520000AD420000842100008421000000000000A56B5A00B5525200B54A
+      4A00AD424200B54A4A00B5525200C65A5A00C65A5A00C65A5A00C65A5A00C65A
+      5A00C65A5A00C65A5A00C65A5A00C65A5A00C65A5A00C65A5A00C65A5A00C663
+      6300C6525200C64A4A00B54A4A00843131000000000000000000000000000000
+      00000000000000000000525AD6004252CE007B7B9C0000000000101010001818
+      1800292929004A4A5A006B6B6B00000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000000000063AD630073DE
+      730094F79C0094F79C0073DE7300108C1800428C42000000000000000000428C
+      420039CE390073DE7B0084EF8C0073DE730039CE3900428C4200000000000000
+      0000000000000000000000000000000000009C310000F78C2900FFA53900B552
+      1000D6731800F7841800CE5A08008C2900008421000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000008C29
+      0000C64A0000B54A00008C2900008421000000000000A56B5A00B55252009C31
+      31008C312900A5525200B5737300C69C9C00CEADAD00CEADAD00CEADAD00CEAD
+      AD00CEADAD00CEADAD00CEADAD00CEADAD00CEADAD00CEADAD00CEADAD00D6B5
+      B500C6737300C64A4A00B54A4A008431310000000000000000005AEFFF00005A
+      CE00000000000000000031319C001029E70021296B0010000000181818002929
+      29004A4A5A006B6B6B0000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000000000063AD630039CE
+      390073DE730039CE3900108C1800000000000000000000000000000000000000
+      0000108C180073DE730094F79C0094F79C0073DE730063AD6300000000000000
+      0000000000000000000000000000000000009C310000F78C2900FFAD3900AD42
+      08009C310000F78C2900F78C2100C65A08008C21000084210000000000000000
+      0000000000000000000000000000000000000000000000000000000000008C29
+      0000B54A0000B54A00008C2900008421000000000000A56B5A00B55252009C29
+      2900C6848400F7F7EF00F7EFEF00F7EFEF00F7EFEF00F7EFEF00F7EFEF00F7EF
+      EF00F7EFEF00F7EFEF00F7EFEF00F7EFEF00F7EFEF00F7EFEF00F7EFEF00EFE7
+      E700C6737300B5424200B54A4A008431310000000000000000005AEFFF0031C6
+      FF0031398C00635AA5001863D6000029D60008006B000000210008105A004A4A
+      5A006B6B6B000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000000000000000000063AD
+      630063AD630063AD630000000000000000000000000000000000000000000000
+      000000000000108C180094F79C0094F79C0094F79C0073DE7300108C18000000
+      0000000000000000000000000000000000009C310000F78C2900FFAD3900AD4A
+      08007B100000AD4A0800F79C3100F78C2100C65A08008C290000842100000000
+      0000000000000000000000000000000000000000000000000000000000008C29
+      0000B54A0000B54A00008C2900008421000000000000A56B5A00B55252009C29
+      2900C68C8C00FFFFFF00F7F7F700F7F7F700F7F7F700F7F7F700F7F7F700F7F7
+      F700F7F7F700F7F7F700F7F7F700F7F7F700F7F7F700F7F7F700FFF7F700EFE7
+      E700C6737300AD424200B54A4A0084313100000000000000000000000000847B
+      C6000010C600316BFF00A5FFFF001084EF000839C6000031C6001829C600635A
+      6300000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000063AD630094F79C0094F79C0094F79C0073DE7300428C
+      4200000000000000000000000000000000009C310000F78C2900FFA53900AD4A
+      08008421000084210000B5521000FF9C3100F78C2100CE6310008C2900008421
+      0000000000000000000000000000000000000000000000000000842100009C31
+      0000C6520000B54A00008C2900008421000000000000A56B5A00B55252009C29
+      2900C68C8C00FFFFFF00F7EFEF00F7EFEF00F7EFEF00F7EFEF00F7EFEF00F7EF
+      EF00F7EFEF00F7EFEF00F7EFEF00F7EFEF00F7EFEF00F7EFEF00F7F7F700EFE7
+      E700C6737300AD424200B54A4A00843131000000000000000000000000005A6B
+      B5000839C600108CF700A5FFFF005AEFFF0021B5FF005AEFFF00214AA5003939
+      5200000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000063AD630094F79C0094F79C0084EF8C0039CE
+      390063AD63000000000000000000000000009C310000F78C2900FFA53900AD4A
+      0800842100000000000084210000B54A1000F79C3100FF9C2900D66B10009C31
+      000084210000000000000000000000000000000000008C29000084210000AD42
+      0000C6520000AD420000842100000000000000000000A56B5A00B55252009C29
+      2900C68C8C00FFFFFF00E7E7E700C6B5B500C6C6C600C6C6C600C6C6C600C6C6
+      C600C6C6C600C6C6C600C6C6C600C6C6C600C6C6C600B5B5B500E7D6D600EFE7
+      E700C6737300AD424200B54A4A008431310000000000525AC600104ACE00005A
+      CE00A5FFFF00A5FFFF008CF7FF00C6FFFF0073EFFF00109CF7000073FF002952
+      E7003939A5003142730000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000039CE390094F79C00A5F7A50094F7
+      9C0039CE390063AD630000000000000000009C310000F78C2900FFA53900AD4A
+      080084210000000000000000000084180000AD420800F78C2900FF9C2900E773
+      1000A53900008421000084210000842100008421000084210000A5390000C652
+      0000C65200009C290000842100000000000000000000A56B5A00B55252009C29
+      2900C68C8C00FFFFFF00F7EFEF00EFE7E700EFE7E700EFE7E700EFE7E700EFE7
+      E700EFE7E700EFE7E700EFE7E700EFE7E700EFE7E700EFE7E700F7EFEF00EFE7
+      E700C6737300AD424200B54A4A0084313100000000005AEFFF002139E700004A
+      E70010A5FF004AE7FF00A5FFFF00EFFFFF00A5FFFF00A5FFFF005AEFFF00104A
+      EF003142E7004252B50000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000039CE3900BDFFBD00BDFF
+      BD0094F79C0039CE390063AD6300000000009C310000F78C2900FFA53900AD4A
+      080084210000000000000000000000000000842100009C310000E77B2100FF9C
+      2900F7841800C65A0800A54200009C3100009C310000AD420000C6520000C652
+      0000A539000084210000000000000000000000000000A56B5A00B55252009C29
+      2900C68C8C00FFFFFF00EFE7E700CEC6C600CEC6C600CEC6C600CEC6C600CEC6
+      C600CEC6C600CEC6C600CEC6C600CEC6C600CEC6C600C6C6C600E7E7E700EFE7
+      E700C6737300AD424200B54A4A00843131005AEFFF008CADEF008C9CEF004A5A
+      CE00084AE70010ADFF005AEFFF00A5FFFF004AD6FF000884FF004284E700637B
+      D6005AEFFF006B84CE0000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000000000039CE3900BDFF
+      BD00BDFFBD0094F79C0063AD6300000000009C310000F79C3100FFAD3900AD4A
+      080084210000000000000000000000000000000000008421000084210000B552
+      1000E77B2100F7841800EF7B1000D6630000CE5A0000C6520000B54200009C31
+      00008421000000000000000000000000000000000000A56B5A00B55252009C29
+      2900C68C8C00FFFFFF00EFEFE700E7D6D600E7D6D600E7D6D600E7D6D600E7D6
+      D600E7D6D600E7D6D600E7D6D600E7D6D600E7D6D600E7D6D600EFEFEF00EFE7
+      E700C6737300AD424200B54A4A00843131000000000000000000000000006B63
+      7B000018B500105AA50029B5EF00A5FFFF00108CE7001052B5006363A5000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000000000000000000039CE
+      3900BDFFBD0073DE730063AD6300000000008C290000CE6B1000E77B21009C31
+      0000842100000000000000000000000000000000000000000000842100008421
+      00008C290000A5420000B54A0800AD4A0800A53900008C2900008C2900008421
+      00000000000000000000000000000000000000000000A56B5A00B55252009C29
+      2900C68C8C00FFFFFF00EFEFE700E7D6D600E7D6D600E7D6D600E7D6D600E7D6
+      D600E7D6D600E7D6D600E7D6D600E7D6D600E7D6D600E7D6D600EFEFEF00EFE7
+      E700C6737300AD424200B54A4A00843131000000000000000000000000000000
+      0000005AB50000000000429CC6005AEFFF00315A7B0000000000525A73000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000039CE390063AD630000000000000000000000000084210000842100008421
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000842100008421000084210000842100008421000084210000000000000000
+      00000000000000000000000000000000000000000000A56B5A00B55252009C29
+      2900C68C8C00FFFFFF00E7E7E700C6C6C600CEC6C600CEC6C600CEC6C600CEC6
+      C600CEC6C600CEC6C600CEC6C600CEC6C600CEC6C600C6C6C600E7E7E700EFE7
+      E700C6737300AD424200B54A4A00843131000000000000000000000000000000
+      000000000000000000002184E7001063F7000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000A56B5A00B55252009C29
+      2900C68C8C00FFFFFF00FFF7F700FFF7F700FFF7F700FFF7F700FFF7F700FFF7
+      F700FFF7F700FFF7F700FFF7F700FFF7F700FFF7F700FFF7F700FFF7F700EFE7
+      E700C6737300B5424200B54A4A00843131000000000000000000000000000000
+      0000000000000000000031C6FF005AEFFF000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000A56B5A00AD5252009C29
+      2900C6848400EFEFEF00EFE7E700EFE7E700EFE7E700EFE7E700EFE7E700EFE7
+      E700EFE7E700EFE7E700EFE7E700EFE7E700EFE7E700EFE7E700EFEFE700E7D6
+      D600B5737300A5393900AD424200843131000000000000000000000000000000
+      0000000000000000000073B5B5007BA5AD000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000000000009C5A52008C29
+      2900A5736B00B5C6C600B5B5B500B5B5B500B5B5B500B5B5B500B5B5B500B5B5
+      B500B5B5B500B5B5B500B5B5B500B5B5B500B5B5B500B5B5B500B5B5B500C6B5
+      B500A56B6B007B29290084313100000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000042424200313131003131
+      3100313131003131310031313100000000000000000042424200424242004242
+      4200424242004242420042424200424242004242420042424200424242004242
+      4200424242004242420042424200000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000042424200424242004242
+      4200424242004242420042424200424242004242420042424200424242004242
+      4200424242004242420042424200000000000000000000000000000000000000
+      00000000000000000000AD632900000000000000000000000000000000000000
+      0000AD632900000000000000000000000000000000000000000000000000AD63
+      2900000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000031DE000031DE00000000000000000042424200424242004242
+      4200424242004242420031313100000000000000000042424200FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF0042424200000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000042424200FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF0042424200000000000000000000000000AD632900AD63
+      2900AD632900AD632900AD632900AD632900AD632900AD632900AD632900AD63
+      2900AD632900AD632900AD632900AD632900AD632900AD632900AD632900AD63
+      2900AD632900AD632900AD632900000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000031DE000031DE000031DE00000000000000000042424200424242004242
+      420042424200424242003131310000000000000000004A4A4A00FFFFFF00A55A
+      2900A55A2900B56B1800B56B1800B56B1800B56B1800A55A2900A55A2900A55A
+      2900A55A2900FFFFFF004A4A4A00000000000000000000000000000000000000
+      000000000000000000000000000000000000000000004A4A4A00FFFFFF00A55A
+      2900A55A2900B56B1800B56B1800B56B1800B56B1800A55A2900A55A2900A55A
+      2900A55A2900FFFFFF004A4A4A00000000000000000000000000C67B39000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000000000000031DE000031
+      DE000031DE000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000031
+      DE000031DE000031DE00000000000000000000000000424242004A4A4A004A4A
+      4A004A4A4A00424242003131310000000000000000005A5A5A00FFFFFF00C673
+      3900B56B1800C6733900C6733900C6733900C6733900B56B1800A55A2900A55A
+      2900F79C6B00FFFFFF005A5A5A00000000000000000000000000000000000000
+      000000000000000000000000000000000000000000005A5A5A00FFFFFF00C673
+      3900B56B1800C6733900C6733900C6733900C6733900B56B1800A55A2900A55A
+      2900F79C6B00FFFFFF005A5A5A00000000000000000000000000C67B39000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000000000000031DE000031
+      DE000031DE000031DE0000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000031DE000031DE000031
+      DE000031DE00000000000000000000000000000000005A636300525A5A00525A
+      5A00525252004A5252004A294A0000000000000000005A636300FFFFFF00FFFF
+      EF00FFA56B00FF8C39008C6B63004A636B00AD734A00C6733900B56B1800F79C
+      6B00FFFFFF00FFFFFF005A636300000000000000000000000000000000000000
+      000000000000000000000000000000000000000000005A636300FFFFFF00FFFF
+      EF00FFA56B00FF8C39008C6B63004A636B00AD734A00C6733900B56B1800F79C
+      6B00FFFFFF00FFFFFF005A636300000000000000000000000000C67B39000000
+      000000000000B56B3100B56B3100B56B31005A42310000000000000000005A8C
+      AD005A8CAD005A8CAD005A8CAD0000000000000000004A319C004A319C004A31
+      9C004A319C0000000000000000000000000000000000000000000031DE000031
+      DE000031DE000031DE000031DE00000000000000000000000000000000000000
+      0000000000000000000000000000000000000031DE000031DE000031DE000031
+      DE0000000000000000000000000000000000000000005A636300636B6B00636B
+      6B00636B6B0052525A004A294A000000000000000000636B6B00FFFFFF00FFFF
+      FF00FFFFFF00C6ADA500637B840039639C0063638400B58C6300FFE7B500FFFF
+      FF00FFFFFF00FFFFFF00636B6B00000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000636B6B00FFFFFF00FFFF
+      FF00FFFFFF00C6ADA500637B840039639C0063638400B58C6300FFE7B500FFFF
+      FF00FFFFFF00FFFFFF00636B6B000000000000000000AD632900C67B39000000
+      000000000000C6733100C6733100C67331005A423100000000000000000052D6
+      FF0052D6FF0052D6FF005A8CAD0000000000000000005A4AB5005A4AB5005A4A
+      B5004A319C000000000000000000000000000000000000000000000000000031
+      DE000031DE000031DE000031DE000031DE000000000000000000000000000000
+      00000000000000000000000000000031DE000031DE000031DE000031DE000000
+      00000000000000000000000000000000000000000000737373007B7B7B007B7B
+      7B007B7B7B0063636B005231520000000000000000006B6B6B00F7F7F700FFFF
+      FF00EFEFEF006363840039639C00738CD600738CD60084B5D600FFFFFF00FFFF
+      FF00FFFFFF00F7F7F7006B6B6B00000000000000000000000000000000006B6B
+      6B00000000000000000000000000000000006B6B6B006B6B6B00F7F7F700FFFF
+      FF00EFEFEF006363840039639C00738CD600738CD60084B5D600FFFFFF00FFFF
+      FF00FFFFFF00F7F7F7006B6B6B00000000000000000000000000C67B39000000
+      000000000000C6733100C6733100C67331005A423100000000000000000052D6
+      FF0052D6FF0052D6FF005A8CAD0000000000000000005A4AB5005A4AB5005A4A
+      B5004A319C000000000000000000000000000000000000000000000000000000
+      00000031FF000031DE000031DE000031DE000031DE0000000000000000000000
+      000000000000000000000031DE000031DE000031DE000031DE00000000000000
+      00000000000000000000000000000000000000000000737373008C8C8C008C8C
+      8C00848484007B737B0052315200000000000000000073737300F7F7F700FFFF
+      FF00ADB5E700738CD600738CD60084B5D600738CD600738CD600F7F7F700FFFF
+      FF00FFFFFF00F7F7F7007373730000000000000000006B6B6B00000000000000
+      0000B5B5B500FFFFFF00000000000000000000000000000000008C8C8C00FFFF
+      FF00ADB5E700738CD600738CD60084B5D600738CD600738CD600F7F7F700FFFF
+      FF00FFFFFF00F7F7F70073737300000000000000000000000000C67B39000000
+      000000000000C6733100C6733100C67331005A423100000000000000000052D6
+      FF0052D6FF0052D6FF005A8CAD0000000000000000005A4AB5005A4AB5005A4A
+      B5004A319C000000000000000000000000000000000000000000000000000000
+      000000000000000000000031DE000031DE000031DE000031DE00000000000000
+      00000031DE000031DE000031DE000031DE000031DE0000000000000000000000
+      00000000000000000000000000000000000000000000737373008C8C8C008C8C
+      8C008C8C8C00848484003131310000000000000000007B7B7B00F7F7F700FFFF
+      FF00E7E7F7006B9CAD008C9C9C00ADE7FF00ADB5E700007B7B0063638400FFFF
+      FF00FFFFFF00F7F7F7009C7B7B00000000000000000000000000B5B5B500FFFF
+      FF00FFFFFF00FFFFFF000000000000000000000000000000000000000000FFFF
+      FF00E7E7F7006B9CAD008C9C9C00ADE7FF00ADB5E700007B7B0063638400FFFF
+      FF00FFFFFF00F7F7F7009C7B7B00000000000000000000000000C67B39000000
+      000000000000D68C4A00C6733100D68C4A00AD63290000000000000000005AEF
+      FF005AEFFF0052D6FF005A8CAD000000000000000000846BE7005A4AB500846B
+      E7004A319C000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000031DE000031DE000031DE000031DE000031
+      DE000031DE000031DE000031DE000031DE000000000000000000000000000000
+      00000000000000000000000000000000000000000000848484008C8C8C009C9C
+      9C009C9C9C007B7B7B0031313100000000000000000084848400EFEFEF00FFFF
+      FF00F7F7F700ADE7FF00ADB5E700738CD600007B7B0000ADA500007B7B00FFFF
+      FF00FFFFFF00EFEFEF0084848400000000006B6B6B0000000000FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF0000000000000000000000000000000000000000008C8C
+      8C00F7F7F700ADE7FF00ADB5E700738CD600007B7B0000ADA500007B7B00FFFF
+      FF00FFFFFF00EFEFEF0084848400000000000000000000000000C67B39000000
+      000000000000D68C4A00D68C4A00D68C4A00AD63290000000000000000005AEF
+      FF005AEFFF005AEFFF005A8CAD000000000000000000846BE700846BE700846B
+      E7004A319C000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000031DE000031DE000031FF000031
+      DE000031FF000031DE000031DE00000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000848484009C9C9C009C9C
+      9C009C9C9C008C8C8C0031313100000000000000000084848400EFEFEF00FFFF
+      FF00ADB5E700007B7B00007B7B00006363000063630000636300007B7B00FFFF
+      FF00FFFFFF00EFEFEF00848484000000000000000000B5B5B500FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF0000000000000000000000000000000000000000000000
+      0000ADB5E700007B7B00007B7B00006363000063630000636300007B7B00FFFF
+      FF00FFFFFF00EFEFEF00848484000000000000000000AD632900C67B39000000
+      000000000000D68C4A00D68C4A00D68C4A00AD63290000000000000000005AEF
+      FF005AEFFF005AEFFF005A9CA5000000000000000000846BE700846BE700846B
+      E7005A4AB5000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000031DE000031DE000031
+      DE000031FF000031DE0000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000848484009C9C9C00A5A5
+      A500A5A5A5008C8C8C0031313100000000000000000084848400EFEFEF00FFFF
+      FF00E7F7FF00007B7B00006363000063630000636300007B7B00FFFFFF00FFFF
+      FF00FFFFFF00EFEFEF00848484000000000000000000FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF0000000000000000000000000000000000000000000000
+      0000E7F7FF00007B7B00006363000063630000636300007B7B00FFFFFF00FFFF
+      FF00FFFFFF00EFEFEF0084848400000000000000000000000000C67B39000000
+      000000000000D68C4A00FFC67300D68C4A00AD63290000000000000000005AF7
+      F7005AF7F7005AEFFF0073A5AD000000000000000000846BE700846BE700846B
+      E7005A4AB5000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000031DE000031DE000031FF000031
+      DE000031DE000031FF000031FF00000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000084848400A5A5A500A5A5
+      A500A5A5A5008C8C8C0031313100000000000000000084848400EFEFEF00FFFF
+      FF00FFFFFF00ADB5E700007B7B0000ADA500007B7B00ADB5E700FFFFFF00FFFF
+      FF00FFFFFF00EFEFEF00AD8484000000000000000000FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF0000000000000000000000000000000000000000000000
+      0000FFFFFF00ADB5E700007B7B0000ADA500007B7B00ADB5E700FFFFFF00FFFF
+      FF00FFFFFF00EFEFEF00AD848400000000000000000000000000C67B39000000
+      000000000000FFC67300FFC67300FFC67300AD63290000000000000000005AF7
+      F7005AF7F7005AF7F70073A5AD000000000000000000846BE700846BE700846B
+      E7005A4AB5000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000031DE000031DE000031FF000031DE000031
+      FF000031FF000031FF000031DE000031FF000000000000000000000000000000
+      0000000000000000000000000000000000000000000084848400A5A5A500ADAD
+      AD00ADADAD009C9C9C003131310000000000000000008C8C8C00EFEFEF00EFEF
+      EF00EFEFEF00EFEFEF00EFEFEF00EFEFEF00EFEFEF00EFEFEF00EFEFEF00EFEF
+      EF00EFEFEF00EFEFEF008C8C8C000000000000000000B5B5B500FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF0000000000000000000000000000000000000000000000
+      0000EFEFEF00EFEFEF00EFEFEF00EFEFEF00EFEFEF00EFEFEF00EFEFEF00EFEF
+      EF00EFEFEF00EFEFEF008C8C8C00000000000000000000000000C67B39000000
+      000000000000FFC67300FFC67300FFC67300AD632900000000000000000063F7
+      FF0063F7FF0063F7FF0073A5AD0000000000000000008473EF00846BE7008473
+      EF005A4AB5000000000000000000000000000000000000000000000000000000
+      000000000000000000000031FF000031FF000031FF000031DE000031FF000000
+      0000000000000031FF000031FF000031FF000031FF0000000000000000000000
+      0000000000000000000000000000000000000000000084848400ADADAD00ADAD
+      AD00ADADAD009C9C9C003131310000000000000000008C8C8C008C8C8C008C8C
+      8C008C8C8C008C8C8C008C8C8C008C8C8C008C8C8C008C8C8C008C8C8C008C8C
+      8C008C8C8C008C8C8C008C8C8C00000000006B6B6B0000000000FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF0000000000000000000000000000000000000000006B6B
+      6B008C8C8C008C8C8C008C8C8C008C8C8C008C8C8C008C8C8C008C8C8C008C8C
+      8C008C8C8C008C8C8C008C8C8C00000000000000000000000000C67B39000000
+      000000000000FFC67300FFD69C00FFC67300B56B3100000000000000000063F7
+      FF0063F7FF0063F7FF0073A5AD0000000000000000008473EF008473EF008473
+      EF005A4AB5000000000000000000000000000000000000000000000000000000
+      0000000000000031FF000031FF000031DE000031FF000031FF00000000000000
+      000000000000000000000031FF000031FF000031FF000031FF00000000000000
+      0000000000000000000000000000000000000000000084848400ADADAD00B5B5
+      B500B5B5B500A5A5A50031313100000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000B5B5B500FFFF
+      FF00FFFFFF00FFFFFF0000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000AD632900C67B39000000
+      000000000000FFD69C00FFD69C00FFD69C00B56B3100000000000000000052D6
+      FF0073A5AD0073A5AD0073A5AD0000000000000000008473EF008473EF008473
+      EF005A4AB5000000000000000000000000000000000000000000000000000000
+      00000031FF000031FF000031FF000031FF000031FF0000000000000000000000
+      0000000000000000000000000000000000000031FF000031FF000031FF000000
+      0000000000000000000000000000000000000000000084848400B5B5B500C6C6
+      C600C6C6C600ADADAD0031313100000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000006B6B6B00000000000000
+      0000B5B5B500FFFFFF00000000000000000000000000000000006B6B6B000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000C67B39000000
+      000000000000FFD69C00F7E7A500FFD69C00B56B310000000000000000000000
+      000000000000000000000000000000000000000000008473EF008473EF008473
+      EF005A4AB5000000000000000000000000000000000000000000000000000031
+      FF000031FF000031FF000031FF000031FF000000000000000000000000000000
+      000000000000000000000000000000000000000000000031FF000031FF000031
+      FF00000000000000000000000000000000000000000084848400CECECE00D6D6
+      D600D6D6D600C6C6C60031313100000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000006B6B
+      6B00000000000000000000000000000000006B6B6B0000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000C67B39000000
+      000000000000F7E7A500F7E7A500F7E7A500D68C4A0000000000000000000000
+      000000000000000000000000000000000000000000008473EF008473EF008473
+      EF005A4AB50000000000000000000000000000000000000000000031FF000031
+      FF000031FF000031FF000031FF00000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000031
+      FF00000000000000000000000000000000000000000084848400E7E7E700E7EF
+      EF00E7EFEF00CECECE0031313100000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000C67B39000000
+      000000000000D68C4A00D68C4A00D68C4A00D68C4A0000000000000000000000
+      000000000000000000000000000000000000000000005A4AB5005A4AB5005A4A
+      B5005A4AB500000000000000000000000000000000000031FF000031FF000031
+      FF000031FF000031FF0000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000084848400E7EFEF00F7F7
+      F700F7F7F700D6D6D60031313100000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000C67B39000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000031FF000031FF000031
+      FF000031FF000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000084848400E7E7E700EFEF
+      EF00EFEFEF00D6E7E70031313100000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000AD632900C67B39000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000031FF000031FF000031
+      FF00000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000008C8C8C008C8C8C008C8C
+      8C008C8C8C008C8C8C008C8C8C00000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000C67B39000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000424D3E000000000000003E000000
+      2800000060000000D80000000100010000000000200A00000000000000000000
+      000000000000000000000000FFFFFF0000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000FFFFFFFE0000FE01FF000000FFFFEFFE
+      0000F800FF000000FFFF87FE0000F0003F000000FFFF0FFE0000E0003F000000
+      FFFF1FFE0000E0003F000000FFC43FFE0000E0007F000000FF807FFC0000F000
+      FF000000FF00FFF00000F800FF000000C00003E00000F000FF000000C00003C0
+      0000F0007F000000C00003800000F0003F000000C00003800000F0001F000000
+      C00003900000F0001F000000C00003900000F0001F000000C00003B00000E000
+      1F000000C00003B00000E0001F000000C00003B0003FE0001F000000C00003B0
+      003FE0001F000000C0000398003FC0001F000000C000039C007FC0001F000000
+      C00003CE00FFC0001F000000C00003E7F8FFF0001F000000C00003F1F1FFFF00
+      1F000000FFFFFFFC07FFFFFC7F0000000000000003FFFFFFFFFE000000000000
+      03FFFFC0FFFE00000000000003FFFF007FFE0000000000000000FF003FFE0000
+      000000000000FE001FFE0000000000000000FC000FFE0000000000000000F800
+      07800000000000000000F00003800000000000000000E0000300000000000000
+      0000E00003000000000000000000E00003000000000000000000E00003000000
+      000000000000E00003000000000000000000E00003000000000000000000E000
+      03000000000000000000E00003000000000000000000E00007000000000000E0
+      0000F0000F00003F000000E00000F8001F00003F000000E00000FC003F00003F
+      000000E00000FE007F00003F000000E00000FF00FF00003F000000E00000FFFF
+      FF00003F000000E00000FFFFFF0000FFFE0000800000FFC0FFFFFFFFFE000080
+      0000FE003FFFFFFFFE0000C00000F8000FFFFFFFFE0000800000F00007FFFFFF
+      FE0000800000F00003FE00FFFE0000C00000C00003F0003FFC0000C00000C000
+      01F0001FF00000E00000800001E0001FC00000E00000800000800007800000C0
+      0000800000800003800000800000000000000003000000000000000000000003
+      0000000000000000000000030000000000000000000000032000000000000000
+      0100000320000000000000000100000320001F00000080000100000330001F00
+      000080000300000390003F00000080000300000398003F800000C00007800003
+      CE00FF800000E0001FC0000FE600FF800000F0001FE0001FF1F1FFC00000F800
+      7FF0001FFC07FFF80000FF03FFF800FFFFFFFFFFC0FFFFFFFFFFFFFFFFFFFFFF
+      003FE00001E00001FFFFFFFC000FEC0007EB6DB7FFFFFFF00007EC000FEB6DBF
+      7F8000F00000AC001FAB6DBF3E0000C00000EE001FEF6DBF240000800000EE04
+      1FEF6DBF000000800000EE041FEF6DBF000000807C00AE063FAF6FBF00000080
+      7800EE063FEF6FBF240000807800EE063FEF6FBF3E0000803F00EE073FEF6FFF
+      7F0000800F00EE0F3FEF6FFFF80000800F00EE0F7FEF6FFFF83001801E01EF0F
+      FFEF6FFFF9780F800003EF1FFFEF7FFFFFF802800003EF1FFFEF7FFFFFFC0080
+      0003EFBFFFEFFFFFFFFC00000007EFBFFFEFFFFFFFFFFE70000FAFBFFFAFFFFF
+      FFFFFFFC003FEFFFFFEFFFFFFFFFFFFE007FEFFFFFEFFFFFFFFFFFFF81FFEFFF
+      FFEFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE
+      FF8FFFF8FFFFFFFFFFFFFFFC7F87FFF0FFFF807FFFFFFFFC3F03FFE0FFFE001F
+      FFFFFFF81C01C67F7FF8000FF7FFEFF80800C0FF9FE0000FFBFFDFF80000C7FF
+      C3C0000FFC003FF00000C1FFE1C0001FFC003FE00000ECFF0180001FFC003FE0
+      0001EF4C7780001FFC003FC00001EF8FF700078FFC003FC00001EF8FF7000787
+      FC003FC00001EFDFF7000381FC003F80001FEFD9F7000000FC003F80007FEFD0
+      F7400000FC003F80007FEFC0F7800000FC003F00007FCCDFB7E00001FC003F00
+      007F81DF81D00003F8001F00007F87DFF1D80005F1FF8FFFFFFFF8DF81FE0017
+      F3FFC7FFFFFFFE0871F9006FFFFFE7FFFFFFFF03FFFE7F9FFFFFFFFFFFFFFFDF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE00007FFFFFF81FFFFFF
+      FFFF800001FFFFFF81F803C000FF000000FFF9FF81F803C000FF000000FF998F
+      81F803C000FF000000FF000F81F803C000FFFF8001F8000F81F803C000FFFF80
+      01F8001F81F803C000FFFE0001F8000781F803C000FFFE0001F8000781F803C0
+      00FFFE0001F8000F81FFFFC000FFE00001F8000F81FFFFC000FFC00001F8000F
+      81FFFFC000FFC00001F8001F81FFFFC000FF800001F8007F81F803C000FF8000
+      01F8007F81F803C000FF800001F8007F81F803C0007FFE0001F8007F81F803FF
+      FE3FFE0001F8007F81F803FFFF1FFE0001F8007F81F803FFFF87FE8001F8007F
+      81F803FFFFC7FF8001FFFFFF81F803FFFFC3FF8001FFFFFF81FFFFFFFFF7FF80
+      07FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFC00001FFFFFFFFFFFFFF
+      FC7F800000FFFFFFFF87FFFFF83F800000FFFFCFFF03FFFFF81F800000FFFF87
+      FE03FFFFF80F800000FFFF07FE03FFFFFC07800000FFFE0FFC01FF0006038000
+      00FFFC1FF801FF000303800000FFF83FF000FF000381800000FFF07FE000FF00
+      03C1800000FDE0FFC0207F0007C0800000FC41FFC0603F007FE0800000CC03FF
+      C1F03F003FE0800000C007FFE3F81F001FE0800000E00FFFFFFC0F000FC08000
+      00E00FFFFFFE070407818000008003FFFFFF030600018000008003FFFFFF8107
+      00038000000003FFFFFFC1078007800000E01FFFFFFFE107C00F800000F45FFF
+      FFFFF38FF03F800000FCFFFFFFFFFFFFFFFF800000FCFFFFFFFFFFFFFFFF8000
+      00FCFFFFFFFFFFFFFFFFC00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF818001FF
+      8001FDF7EFFFFFF9818001FF8001C00001FFFFF1818001FF8001DFFFFFC7FFE3
+      818001FF8001DFFFFFC3FF87818001FF8001D86187C1FF0F818001FF80019861
+      87E0FE1F818001E00001D86187F07C3F818001800001D86187FC307F81800180
+      0001D86187FE00FF818001000001D86187FF01FF818001000001986187FF83FF
+      818001000001D86187FF01FF818001000001D86187FE00FF818001000001D861
+      87FC187F818001000001D86187F83C3F81FFFF801FFF986187F07F1F81FFFF80
+      1FFFD87F87E0FF8F81FFFFE07FFFD87F87C1FFEF81FFFFFFFFFFD87F8783FFFF
+      81FFFFFFFFFFDFFFFF87FFFF81FFFFFFFFFF9FFFFF8FFFFF81FFFFFFFFFFDFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00000000000000000000000000000000
+      000000000000}
+  end
+  object JvTrayIcon1: TJvTrayIcon
+    Active = True
+    Icon.Data = {
+      0000010001002020080000000000A80800001600000028000000200000004000
+      0000010008000000000000040000000000000000000000000000000000000000
+      00004000000080000000FF000000002000004020000080200000FF2000000040
+      00004040000080400000FF400000006000004060000080600000FF6000000080
+      00004080000080800000FF80000000A0000040A0000080A00000FFA0000000C0
+      000040C0000080C00000FFC0000000FF000040FF000080FF0000FFFF00000000
+      20004000200080002000FF002000002020004020200080202000FF2020000040
+      20004040200080402000FF402000006020004060200080602000FF6020000080
+      20004080200080802000FF80200000A0200040A0200080A02000FFA0200000C0
+      200040C0200080C02000FFC0200000FF200040FF200080FF2000FFFF20000000
+      40004000400080004000FF004000002040004020400080204000FF2040000040
+      40004040400080404000FF404000006040004060400080604000FF6040000080
+      40004080400080804000FF80400000A0400040A0400080A04000FFA0400000C0
+      400040C0400080C04000FFC0400000FF400040FF400080FF4000FFFF40000000
+      60004000600080006000FF006000002060004020600080206000FF2060000040
+      60004040600080406000FF406000006060004060600080606000FF6060000080
+      60004080600080806000FF80600000A0600040A0600080A06000FFA0600000C0
+      600040C0600080C06000FFC0600000FF600040FF600080FF6000FFFF60000000
+      80004000800080008000FF008000002080004020800080208000FF2080000040
+      80004040800080408000FF408000006080004060800080608000FF6080000080
+      80004080800080808000FF80800000A0800040A0800080A08000FFA0800000C0
+      800040C0800080C08000FFC0800000FF800040FF800080FF8000FFFF80000000
+      A0004000A0008000A000FF00A0000020A0004020A0008020A000FF20A0000040
+      A0004040A0008040A000FF40A0000060A0004060A0008060A000FF60A0000080
+      A0004080A0008080A000FF80A00000A0A00040A0A00080A0A000FFA0A00000C0
+      A00040C0A00080C0A000FFC0A00000FFA00040FFA00080FFA000FFFFA0000000
+      C0004000C0008000C000FF00C0000020C0004020C0008020C000FF20C0000040
+      C0004040C0008040C000FF40C0000060C0004060C0008060C000FF60C0000080
+      C0004080C0008080C000FF80C00000A0C00040A0C00080A0C000FFA0C00000C0
+      C00040C0C00080C0C000FFC0C00000FFC00040FFC00080FFC000FFFFC0000000
+      FF004000FF008000FF00FF00FF000020FF004020FF008020FF00FF20FF000040
+      FF004040FF008040FF00FF40FF000060FF004060FF008060FF00FF60FF000080
+      FF004080FF008080FF00FF80FF0000A0FF0040A0FF0080A0FF00FFA0FF0000C0
+      FF0040C0FF0080C0FF00FFC0FF0000FFFF0040FFFF0080FFFF00FFFFFF000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000920000000000000000000000000000000000920000000000000000
+      0000000000000092000000000000000000000000009200000000000000000000
+      0000000000000000009200000000000000000092000000000000000000000000
+      0000000000000000920000920092009200920000009200000000000000000000
+      0000000080820000000000000000000000009200000082900000000000000000
+      0000008080808200000000000092009200920000008290900000000000000000
+      0000E0E0808080000000000092009200920000000090FC900000000090000000
+      000000E0E080808000000092009200920092000090FCFC900000009000000000
+      00000000E0E08080800000009200920092000090FCFCFC90000090FC00000000
+      0000000000E0E0808080000000920092000090FCFC90FC900090FC0000000000
+      000000000000E0E080808000000000000090FCFC9090FC9090FC900000000000
+      00000000000000E0E08080800000000090FCFC900090FC90FC92000000000000
+      0000000000000000E0E0808080000090FCFC90009290FCFCFF90000000000000
+      000000000000000000E0E080808090FCFC9000920090FCFF9000000000000000
+      00000000000000900000E0E0808080FC900092009290FF900092000000000000
+      0000000000000090009200E0E080808000009292009090009200920000000000
+      000000000000909092000090E0E0808080000092929090009292929200000000
+      000000920090FC90000090FCFCE0E08080800000009000000000929292000000
+      009292000090FC900090FCFC9000E0E0808080000000000000000000000000DB
+      DB92000090FCFC9090FC1F90000000E0E0808080000000009292000000000000
+      DB000090FCFCFC90FC1F900000000000E0E08080800000929292920000000000
+      000090FCFC90FCFC1F9000000000000000E0E08080809292DB92929200000000
+      0090FC900090FC1F90000000000000000000E0E0809292DB92DB929292000000
+      9090000000901F900000000000000000000000809292DB92DB92DB9292000000
+      900000000090900000000000000000000000009292DB92DB92DB929200000090
+      00000000009000000000000000000000000092DBDB92DB92DB92920000000000
+      000000000000000000000000000000000092FFDB92DB02DB9292000000000000
+      0000000000000000000000000000000000009202DB02DB029200000000000000
+      000000000000000000000000000000000000009202DB02920000000000000000
+      000000000000000000000000000000000000000092DB9200000000000000F003
+      E00FF001C00FF000000FF800001FFC00003FFE00007FFC00003FF800003FF000
+      003DF800003BFC000033FE000027FF000007FF80000FFF800003FF800001FE00
+      0000F8000000E00000000000000000000000000000000000000700000003E21F
+      F001CE3FF801DE7FF803BEFFF007FFFFE00FFFFFF01FFFFFF83FFFFFFC7F}
+    IconIndex = -1
+    PopupMenu = PopupMenu1
+    OnClick = JvTrayIcon1Click
+    Left = 904
+    Top = 64
+  end
+  object JvBalloonHint1: TJvBalloonHint
+    Left = 768
+    Top = 56
+  end
+  object PopupMenu1: TPopupMenu
+    Left = 728
+    Top = 64
+    object Ativar1: TMenuItem
+      Caption = 'Ativar'
+      OnClick = Ativar1Click
+    end
+    object Sobre1: TMenuItem
+      Caption = 'Sobre...'
+    end
+    object N2: TMenuItem
+      Caption = '-'
+    end
+    object Sair1: TMenuItem
+      Caption = 'Sair'
+      OnClick = Fechar1Click
+    end
+  end
+end

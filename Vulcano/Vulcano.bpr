@@ -1,0 +1,194 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="Vulcano.exe"/>
+    <OBJFILES value="Vulcano.obj Codigos\fntCaptura.obj Codigos\fntConfig.obj 
+      Codigos\fntImagem.obj Codigos\fntHistograma.obj Codigos\fntAjusteGamma.obj 
+      Codigos\fntAjusteBrilho.obj Codigos\fntAjusteThreshold.obj 
+      Codigos\fntConvMatrix.obj Codigos\fntEscoPalhe.obj Codigos\fntDados.obj 
+      Codigos\fntSobre.obj Codigos\fntTolera.obj Codigos\fntParametros.obj 
+      Codigos\fntPontoFisico.obj"/>
+    <RESFILES value="Vulcano.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) Codigos\fntCaptura.dfm Codigos\fntConfig.dfm 
+      Codigos\fntImagem.dfm Codigos\fntHistograma.dfm Codigos\fntAjusteGamma.dfm 
+      Codigos\fntAjusteBrilho.dfm Codigos\fntAjusteThreshold.dfm 
+      Codigos\fntConvMatrix.dfm Codigos\fntEscoPalhe.dfm Codigos\fntDados.dfm 
+      Codigos\fntSobre.dfm Codigos\fntTolera.dfm Codigos\fntParametros.dfm 
+      Codigos\fntPontoFisico.dfm"/>
+    <LIBFILES value="vic32.lib vichrt32.lib"/>
+    <LIBRARIES value="CJCL60.lib"/>
+    <SPARELIBS value="vcl.lib rtl.lib bcbie.lib bcbsmp.lib vclx.lib dbrtl.lib bdertl.lib 
+      vcldb.lib CJCL60.lib"/>
+    <PACKAGES value="vcl.bpi rtl.bpi vclx.bpi bcbsmp.bpi vcldb.bpi dbrtl.bpi qrpt.bpi 
+      bdertl.bpi vcldbx.bpi dsnap.bpi cds.bpi bdecds.bpi teeui.bpi teedb.bpi 
+      tee.bpi teeqr.bpi ibxpress.bpi visualclx.bpi visualdbclx.bpi vclie.bpi 
+      xmlrtl.bpi inet.bpi inetdbbde.bpi inetdbxpress.bpi inetdb.bpi nmfast.bpi 
+      bcbie.bpi soaprtl.bpi dclocx.bpi dbexpress.bpi dbxcds.bpi indy.bpi 
+      bcb2kaxserver.bpi adortl.bpi"/>
+    <PATHCPP value=".;Codigos;Codigos;Codigos;Codigos;Codigos;Codigos;Codigos;Codigos;Codigos;Codigos;Codigos;Codigos;Codigos;Codigos"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="_DEBUG"/>
+    <SYSDEFINES value="NO_STRICT;USEPACKAGES"/>
+    <MAINSOURCE value="Vulcano.cpp"/>
+    <INCLUDEPATH value="Codigos;E:\Denny\Vulcano;E:\Denny\Vulcano\Include;&quot;D:\Arquivos de programas\Borland\CBuilder6\Projects&quot;;$(BCB)\include;$(BCB)\include\vcl;&quot;D:\Arquivos de programas\Borland\CBuilder6\Jedi\jvcl\source&quot;;&quot;D:\Arquivos de programas\Borland\CBuilder6\Include\Stlport&quot;"/>
+    <LIBPATH value="Codigos;E:\Denny\Vulcano;E:\Denny\Vulcano\Include;$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\Projects\Lib;&quot;D:\Arquivos de programas\Borland\CBuilder6\Jedi\jvcl\lib6&quot;;&quot;D:\Arquivos de programas\Borland\CBuilder6\Jedi\jvcl\source&quot;;&quot;D:\Arquivos de programas\Borland\CBuilder6\Projects&quot;;&quot;D:\Arquivos de programas\Borland\CBuilder6\Jedi\JCL\dcu&quot;;&quot;D:\Arquivos de programas\Borland\CBuilder6\Jedi\jvcl\dcu&quot;"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-ICodigos -ID:\Vulcano 
+      -I&quot;C:\Arquivos de programas\Borland\CBuilder6\Projects&quot; -I$(BCB)\include 
+      -I$(BCB)\include\vcl -I&quot;C:\Arquivos de programas\Borland\Jedi\jvcl\source&quot; 
+      -I&quot;C:\Arquivos de programas\Borland\CBuilder6\Include\Stlport&quot; -src_suffix 
+      cpp -D_DEBUG -boa"/>
+    <CFLAG1 value="-Od -H=$(BCB)\lib\vcl60.csm -Hc -P -Vx -Ve -X- -r- -a8 -6 -b- -k -y -v 
+      -vi- -c -tW -tWM"/>
+    <PFLAGS value="-$YD -$W -$O- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zd"/>
+    <LFLAGS value="-D&quot;&quot; -aa -Tpe -x -Gn -v"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj $(PACKAGES) sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib vic32.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="Vulcano.res" FORMNAME="" UNITNAME="Vulcano.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Vulcano.cpp" FORMNAME="" UNITNAME="Vulcano" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Codigos\fntCaptura.cpp" FORMNAME="frmCaptura" UNITNAME="fntCaptura" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Codigos\fntConfig.cpp" FORMNAME="frmConfig" UNITNAME="fntConfig" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Codigos\fntImagem.cpp" FORMNAME="frmImagem" UNITNAME="fntImagem" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Codigos\fntHistograma.cpp" FORMNAME="frmHistograma" UNITNAME="fntHistograma" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Codigos\fntAjusteGamma.cpp" FORMNAME="frmGamma" UNITNAME="fntAjusteGamma" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Codigos\fntAjusteBrilho.cpp" FORMNAME="frmBrilho" UNITNAME="fntAjusteBrilho" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Codigos\fntAjusteThreshold.cpp" FORMNAME="frmSegmenta" UNITNAME="fntAjusteThreshold" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Codigos\fntConvMatrix.cpp" FORMNAME="frmMatrix" UNITNAME="fntConvMatrix" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Codigos\fntEscoPalhe.cpp" FORMNAME="frmEscoPalhe" UNITNAME="fntEscoPalhe" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="vic32.lib" FORMNAME="" UNITNAME="vic32.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="vichrt32.lib" FORMNAME="" UNITNAME="vichrt32.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Codigos\fntDados.cpp" FORMNAME="dmDados" UNITNAME="fntDados" CONTAINERID="CCompiler" DESIGNCLASS="TDataModule" LOCALCOMMAND=""/>
+      <FILE FILENAME="Codigos\fntSobre.cpp" FORMNAME="frmSobre" UNITNAME="fntSobre" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Codigos\fntTolera.cpp" FORMNAME="frmTolera" UNITNAME="fntTolera" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Codigos\fntParametros.cpp" FORMNAME="frmParametros" UNITNAME="fntParametros" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Codigos\fntPontoFisico.cpp" FORMNAME="frmPontoFisico" UNITNAME="fntPontoFisico" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1046
+CodePage=1252
+
+[Version Info Keys]
+CompanyName=Denny P. Azevedo Filho
+FileDescription=
+FileVersion=1.0.0.0
+InternalName=
+LegalCopyright=Denny P. Azevedo Filho
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[HistoryLists\hlIncludePath]
+Count=21
+Item0=Codigos;E:\Denny\Vulcano;E:\Denny\Vulcano\Include;D:\Arquivos de programas\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;D:\Arquivos de programas\Borland\CBuilder6\Jedi\jvcl\source;D:\Arquivos de programas\Borland\CBuilder6\Include\Stlport
+Item1=Codigos;E:\Denny\Vulcano;E:\Denny\Vulcano\Include;D:\Arquivos de programas\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;D:\Arquivos de programas\Borland\CBuilder6\Jedi\JCL\source;D:\Arquivos de programas\Borland\CBuilder6\Include\Stlport
+Item2=Codigos;$(BCB)\include;$(BCB)\include\vcl;D:\Arquivos de programas\Borland\CBuilder6\Jedi\jvcl\source;D:\Arquivos de programas\Borland\CBuilder6\Jedi\JCL\source;D:\Arquivos de programas\Borland\CBuilder6\Jedi\JCL\dcu;D:\Arquivos de programas\Borland\CBuilder6\Jedi\jvcl\dcu;D:\Arquivos de programas\Borland\CBuilder6\Jedi\jvcl\lib6;E:\Denny\Vulcano\Include
+Item3=Codigos;$(BCB)\include;$(BCB)\include\vcl;D:\Arquivos de programas\Borland\CBuilder6\Jedi\jvcl\source;D:\Arquivos de programas\Borland\CBuilder6\Include;D:\Arquivos de programas\Borland\CBuilder6\Jedi\JCL\source;D:\Arquivos de programas\Borland\CBuilder6\Jedi\JCL\dcu;D:\Arquivos de programas\Borland\CBuilder6\Jedi\jvcl\dcu;D:\Arquivos de programas\Borland\CBuilder6\Jedi\jvcl\lib6;E:\Denny\Vulcano\Include
+Item4=Codigos;D:\Vulcano;C:\Arquivos de programas\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;C:\Arquivos de programas\Borland\Jedi\jvcl\source;C:\Arquivos de programas\Borland\CBuilder6\Include\Stlport
+Item5=Codigos;D:\IFUMCRIL;C:\Arquivos de programas\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;C:\Arquivos de programas\Borland\jvcl\jvcl\source;C:\Arquivos de programas\Borland\CBuilder6\Include\Stlport
+Item6=Codigos;D:\Dedalus;C:\Arquivos de programas\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;C:\Arquivos de programas\Borland\jvcl\jvcl\source;C:\Arquivos de programas\Borland\CBuilder6\Include\Stlport
+Item7=Codigos;D:\Dedalus\Codigos;D:\Dedalus;C:\Arquivos de programas\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;C:\Arquivos de programas\Borland\jvcl\jvcl\source;C:\Arquivos de programas\Borland\CBuilder6\Include\Stlport
+Item8=D:\Dedalus\Codigos;D:\Dedalus;C:\Arquivos de programas\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;C:\Arquivos de programas\Borland\jvcl\jvcl\source;C:\Arquivos de programas\Borland\CBuilder6\Include\Stlport
+Item9=Codigos;D:\hrt_mestrado\Units;D:\hrt_mestrado;Units;C:\Arquivos de programas\Borland\CBuilder6\Projects;C:\hrt_mestrado;$(BCB)\include;$(BCB)\include\vcl;C:\Arquivos de programas\Borland\jvcl\jvcl\source;C:\Arquivos de programas\Borland\CBuilder6\Include\Stlport
+Item10=Units;C:\Arquivos de programas\Borland\CBuilder6\Projects;C:\hrt_mestrado;$(BCB)\include;$(BCB)\include\vcl;C:\Arquivos de programas\Borland\jvcl\jvcl\source;C:\Arquivos de programas\Borland\CBuilder6\Include\Stlport
+Item11=C:\Arquivos de programas\Borland\jvcl\jvcl\source;Units;C:\Arquivos de programas\Borland\CBuilder6\Projects;C:\hrt_mestrado;$(BCB)\include;$(BCB)\include\vcl;C:\Arquivos de programas\Borland\CBuilder6\Include\Stlport
+Item12=Units;C:\Arquivos de programas\Borland\CBuilder6\Projects;C:\hrt_mestrado;$(BCB)\include;$(BCB)\include\vcl;C:\Arquivos de programas\Borland\CBuilder6\Include\Stlport
+Item13=Units;C:\hrt_mestrado\Units;C:\Arquivos de programas\Borland\CBuilder6\Projects;C:\hrt_mestrado;$(BCB)\include;$(BCB)\include\vcl;C:\Arquivos de programas\Borland\CBuilder6\Include\Stlport
+Item14=C:\hrt_mestrado\Units;C:\Arquivos de programas\Borland\CBuilder6\Projects;C:\hrt_mestrado;$(BCB)\include;$(BCB)\include\vcl;C:\Arquivos de programas\Borland\CBuilder6\Include\Stlport
+Item15=Units;C:\Arquivos de programas\Borland\CBuilder6\Projects;C:\hrt_mestrado;$(BCB)\include;$(BCB)\include\vcl
+Item16=Units;C:\hrt_mestrado\Units;C:\Arquivos de programas\Borland\CBuilder6\Projects;C:\hrt_mestrado;$(BCB)\include;$(BCB)\include\vcl
+Item17=C:\hrt_mestrado\Units;C:\Arquivos de programas\Borland\CBuilder6\Projects;C:\hrt_mestrado;$(BCB)\include;$(BCB)\include\vcl
+Item18=Units;C:\Arquivos de programas\Borland\CBuilder6\Projects;C:\hrt;$(BCB)\include;$(BCB)\include\vcl
+Item19=Units;d:\Arquivos de programas\Borland\CBuilder6\Projects;C:\hrt;$(BCB)\include;$(BCB)\include\vcl
+Item20=d:\Arquivos de programas\Borland\CBuilder6\Projects;C:\hrt;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=20
+Item0=Codigos;E:\Denny\Vulcano;E:\Denny\Vulcano\Include;$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\Projects\Lib;D:\Arquivos de programas\Borland\CBuilder6\Jedi\jvcl\lib6;D:\Arquivos de programas\Borland\CBuilder6\Jedi\jvcl\source;D:\Arquivos de programas\Borland\CBuilder6\Projects;D:\Arquivos de programas\Borland\CBuilder6\Jedi\JCL\dcu;D:\Arquivos de programas\Borland\CBuilder6\Jedi\jvcl\dcu
+Item1=Codigos;$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\Projects\Lib;E:\Denny\Vulcano;E:\Denny\Vulcano\Include;D:\Arquivos de programas\Borland\CBuilder6\Jedi\JCL\dcu;D:\Arquivos de programas\Borland\CBuilder6\Jedi\JCL\source;D:\Arquivos de programas\Borland\CBuilder6\Jedi\jvcl\dcu;D:\Arquivos de programas\Borland\CBuilder6\Jedi\jvcl\lib6;D:\Arquivos de programas\Borland\CBuilder6\Jedi\jvcl\source
+Item2=Codigos;D:\Vulcano;D:\Vulcano\Include;$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\Projects\Lib;C:\Arquivos de programas\Borland\Jedi\jvcl\lib6;C:\Arquivos de programas\Borland\Jedi\jvcl\source;C:\Arquivos de programas\Borland\CBuilder6\Projects;C:\Arquivos de programas\Borland\Jedi\JCL\dcu;C:\Arquivos de programas\Borland\Jedi\jvcl\dcu
+Item3=Codigos;D:\IFUMCRIL;D:\IFUMCRIL\Include;$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\Projects\Lib;C:\Arquivos de programas\Borland\jvcl\jvcl\lib6;C:\Arquivos de programas\Borland\jvcl\jvcl\source;C:\Arquivos de programas\Borland\CBuilder6\Projects;C:\Arquivos de programas\Borland\jvcl\JCL\dcu;C:\Arquivos de programas\Borland\jvcl\jvcl\dcu
+Item4=Codigos;D:\Dedalus;D:\Dedalus\Include;$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\Projects\Lib;C:\Arquivos de programas\Borland\jvcl\jvcl\lib6;C:\Arquivos de programas\Borland\jvcl\jvcl\source;C:\Arquivos de programas\Borland\CBuilder6\Projects;C:\Arquivos de programas\Borland\jvcl\JCL\dcu;C:\Arquivos de programas\Borland\jvcl\jvcl\dcu
+Item5=Codigos;D:\Dedalus\Codigos;D:\Dedalus;D:\Dedalus\Include;$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\Projects\Lib;C:\Arquivos de programas\Borland\jvcl\jvcl\lib6;C:\Arquivos de programas\Borland\jvcl\jvcl\source;C:\Arquivos de programas\Borland\CBuilder6\Projects;C:\Arquivos de programas\Borland\jvcl\JCL\dcu;C:\Arquivos de programas\Borland\jvcl\jvcl\dcu
+Item6=D:\Dedalus\Codigos;D:\Dedalus;D:\Dedalus\Include;$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\Projects\Lib;C:\Arquivos de programas\Borland\jvcl\jvcl\lib6;C:\Arquivos de programas\Borland\jvcl\jvcl\source;C:\Arquivos de programas\Borland\CBuilder6\Projects;C:\Arquivos de programas\Borland\jvcl\JCL\dcu;C:\Arquivos de programas\Borland\jvcl\jvcl\dcu
+Item7=Codigos;D:\hrt_mestrado\Units;D:\hrt_mestrado;$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\Projects\Lib;C:\Arquivos de programas\Borland\jvcl\jvcl\lib6;C:\Arquivos de programas\Borland\jvcl\jvcl\source;Units;C:\Arquivos de programas\Borland\CBuilder6\Projects;D:\hrt_mestrado\include;C:\Arquivos de programas\Borland\jvcl\JCL\dcu;C:\Arquivos de programas\Borland\jvcl\jvcl\dcu
+Item8=$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\Projects\Lib;C:\Arquivos de programas\Borland\jvcl\jvcl\lib6;C:\Arquivos de programas\Borland\jvcl\jvcl\source;Units;C:\Arquivos de programas\Borland\CBuilder6\Projects;D:\hrt_mestrado\include;C:\Arquivos de programas\Borland\jvcl\JCL\dcu;C:\Arquivos de programas\Borland\jvcl\jvcl\dcu
+Item9=$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\Projects\Lib;C:\Arquivos de programas\Borland\jvcl\jvcl\lib6;C:\Arquivos de programas\Borland\jvcl\jvcl\source;Units;C:\Arquivos de programas\Borland\CBuilder6\Projects;D:\hrt_mestrado;D:\hrt_mestrado\include;C:\Arquivos de programas\Borland\jvcl\JCL\dcu;C:\Arquivos de programas\Borland\jvcl\jvcl\dcu
+Item10=$(BCB)\Projects\Lib;C:\Arquivos de programas\Borland\jvcl\jvcl\source;Units;C:\Arquivos de programas\Borland\CBuilder6\Projects;$(BCB)\lib\obj;$(BCB)\lib;D:\hrt_mestrado;D:\hrt_mestrado\include;C:\Arquivos de programas\Borland\jvcl\JCL\dcu;C:\Arquivos de programas\Borland\jvcl\jvcl\dcu
+Item11=$(BCB)\Projects\Lib;C:\Arquivos de programas\Borland\jvcl\jvcl\source;Units;C:\Arquivos de programas\Borland\CBuilder6\Projects;C:\hrt_mestrado;C:\hrt_mestrado\include;$(BCB)\lib\obj;$(BCB)\lib
+Item12=Units;C:\Arquivos de programas\Borland\CBuilder6\Projects;C:\hrt_mestrado;C:\hrt_mestrado\include;$(BCB)\lib\obj;$(BCB)\lib
+Item13=Units;C:\hrt_mestrado\Units;C:\Arquivos de programas\Borland\CBuilder6\Projects;C:\hrt_mestrado;C:\hrt_mestrado\include;$(BCB)\lib\obj;$(BCB)\lib
+Item14=C:\hrt_mestrado\Units;C:\Arquivos de programas\Borland\CBuilder6\Projects;C:\hrt_mestrado;C:\hrt_mestrado\include;$(BCB)\lib\obj;$(BCB)\lib
+Item15=Units;C:\Arquivos de programas\Borland\CBuilder6\Projects;C:\hrt_mestrado;$(BCB)\lib\obj;$(BCB)\lib;C:\hrt_mestrado\include
+Item16=Units;C:\Arquivos de programas\Borland\CBuilder6\Projects;C:\hrt;$(BCB)\lib\obj;$(BCB)\lib;c:\hrt\include
+Item17=Units;d:\Arquivos de programas\Borland\CBuilder6\Projects;C:\hrt;$(BCB)\lib\obj;$(BCB)\lib;c:\hrt\include
+Item18=d:\Arquivos de programas\Borland\CBuilder6\Projects;C:\hrt;$(BCB)\lib\obj;$(BCB)\lib;c:\hrt\include
+Item19=d:\Arquivos de programas\Borland\CBuilder6\Projects;C:\hrt;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=2
+Item0=D:\Arquivos de programas\Arquivos comuns\Borland Shared\Debugger;$(BCB)\source\vcl
+Item1=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_DEBUG
+
+[Debugging]
+DebugSourceDirs=D:\Arquivos de programas\Arquivos comuns\Borland Shared\Debugger;$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+  </IDEOPTIONS>
+</PROJECT>
