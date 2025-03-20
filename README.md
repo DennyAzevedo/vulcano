@@ -58,10 +58,10 @@ Este projeto demonstra uma abordagem eficiente para a inspeção automatizada de
 ## Principais imagens do sistema
 
 ### Tela Principal do Vulcano
-![Tela Principal - Sistema Vulcano](https://mdcursos.dev.br/img/sisdesk/TelaPrincipal.jpg)
+![Tela Principal - Sistema Vulcano](https://mdcursos.dev.br/img/sisdesk/TelaPrincipalVulcano.png)
 
 ### Tela de Parametros
-![Tela de Parametros - Sistema Vulcano](https://mdcursos.dev.br/img/sisdesk/TelaParametro.jpg)
+![Tela de Parametros - Sistema Vulcano](https://mdcursos.dev.br/img/sisdesk/TelaParametro.png)
 
 ### Capa Livro - Resultado da Pesquisa para desenvolver o Sistema
 ![Capa Livro - Resultado da Pesquisa](https://mdcursos.dev.br/img/sisdesk/Capa_Livro.png)
